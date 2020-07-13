@@ -1,0 +1,157 @@
+
+/* html elements for vertical centering */
+
+html {
+
+height: 100%
+}
+
+ /* Beginning of section that holds the edits, design and layout for the video background on the home page
+.section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+
+.video-container {
+  position: absolute;
+  top:50%;
+          left:50%;
+          min-width:100%;
+          min-height:100%;
+          width:auto;
+          height:auto;
+          z-index:-100;
+          -ms-transform: translateX(-50%) translateY(-50%);
+          -moz-transform: translateX(-50%) translateY(-50%);
+          -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+          background-size: cover;
+}
+
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.2;
+}
+
+*/
+
+
+
+body {
+    background: url('/media/Hero.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
+    font-family: 'Hind';
+}
+
+.section h1 {
+  text-align: center;
+  font-size:8vw;
+  font-family: "Hind";
+  padding: 20px;
+  margin: 15px;
+  z-index: 1;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.shop-now-button {
+    background: white;
+    color: black;
+    min-width: 260px;
+    opacity: 0.3;
+}
+
+.btn-black {
+    background: rgb(72, 163, 238);
+    color: white;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-blak:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: rgb(5, 46, 160);
+    color: blue;
+}
+
+.text-black {
+    color: rgb(72, 163, 238); !important;
+}
+
+.border-black {
+    border: 1px solid blue !important;
+}
+
+
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
+}
+
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
