@@ -18,7 +18,7 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
                 <a href="" class="dropdown-item">Coats &amp; Essentials</a>
-                <a href="" class="dropdown-item">Dresses</a>
+                <a href="{% url 'products' %}?category=dresses" class="dropdown-item">Dresses</a>
                 <a href=""  class="dropdown-item">T-Shirts</a>
                 <a href=""  class="dropdown-item">All Clothing</a>
             </div>
@@ -29,7 +29,7 @@
                 Activeware
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Trainers</a>
+                <a href="{% url 'products' %}?category=Trainers" class="dropdown-item">Trainers</a>
                 <a href="" class="dropdown-item">Bags</a>
             </div>
         </li>
