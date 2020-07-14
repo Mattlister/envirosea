@@ -1,0 +1,16 @@
+[{"pk": 1, "model": "products.category", "fields": {"name": "coats", "friendly_name": "Coats"}}, 
+
+{"pk": 2, "model": "products.category", "fields": {"name": "bags", "friendly_name": "Bags"}}, 
+
+{"pk": 3, "model": "products.category", "fields": {"name": "dresses", "friendly_name": "Dresses"}}, 
+
+{"pk": 4, "model": "products.category", "fields": {"name": "tshirts", "friendly_name": "Tshirtss"}}, 
+
+{"pk": 5, "model": "products.category", "fields": {"name": "trainers", "friendly_name": "Trainers"}}, 
+
+{"pk": 6, "model": "products.category", "fields": {"name": "notebooks", "friendly_name": "Notebooks"}}, 
+
+{"pk": 7, "model": "products.category", "fields": {"name": "bottles", "friendly_name": "Water Bottles"}}, 
+
+{"pk": 8, "model": "products.category", "fields": {"name": "shades", "friendly_name": "Shades"}}
+]

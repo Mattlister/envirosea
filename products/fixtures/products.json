@@ -1,0 +1,406 @@
+[
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "Bionic Yellow",
+      "description": "Made by Bionic Yarn. This brighlty coloured coat is stunning on and really has the best of the nautical theme when worn",
+      "price": 30.0,
+      "category": 1,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "coatyellow.jpg"
+    }
+  },
+
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "Windproof White",
+      "description": "Made from upcycled plastic trash collected from remote islands, beaches and coastlines. It's a wind protecting jacket",
+      "price": 30.0,
+      "category": 1,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "coatwhite.jpg"
+    }
+  },
+
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "Seabreeze Blue",
+      "description": "Made from 100 precent recycled polyester, and made with goose down for the best insulation ",
+      "price": 30.0,
+      "category": 1,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "coatblue.jpg"
+    }
+  },
+
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "Sunshine Yellow",
+      "description": "Made with 50% recycled fibres to help reduce the environmental impact of material production",
+      "price": 12.99,
+      "category": 2,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "bagyellow.jpg"
+    }
+  },
+
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "Oxygen Blue",
+      "description": "Dubbed the Black Hole collection, this bag is made from recycled plastic bottles.",
+      "price": 12.99,
+      "category": 2,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "bagblue.jpg"
+    }
+  },
+
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "Autumn Brown",
+      "description": "This bag has two features and can be worn as a backpack or as a Duffel bag. It holds 55 litres and is made from 100 percent recycled plastic.",
+      "price": 99,
+      "category": 2,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "bagbrown.jpg"
+    }
+  },
+
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "White Surf",
+      "description": "The touch of this dress is mind blowing to think it was made from ocean plastics, amazing on",
+      "price": 12.99,
+      "category": 3,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "dresswhite.jpg"
+    }
+  },
+
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "Blue Surf",
+      "description": "Made from waste plastic, this dress is truly stunning and the material is so light to wear",
+      "price": 35.0,
+      "category": 3,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "dressblue.jpg"
+    }
+  },
+
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "Blue Wave",
+      "description": "This wave print designed swimming costume is made from recycled ocean plastics",
+      "price": 15.0,
+      "category": 3,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "dressswim.jpg"
+    }
+  },
+
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "Blue Flash",
+      "description": "Light and flexible. Made from recycled ocean plastic. Saving our oceans one garment at a time.",
+      "price": 15.0,
+      "category": 4,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "tshirtblue.jpg"
+    }
+  },
+
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "Great White Plastic",
+      "description": "100% cotton, organic and Fairtrade-certified. Protecting the planet in everyway",
+      "price": 16.0,
+      "category": 4,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "tshirtjawsplastic.jpg"
+    }
+  },
+
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "Storm Cloud Grey",
+      "description": "100% cotton and unisex. This is a great T-shirt for anyone to wear.",
+      "price": 16.0,
+      "category": 4,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "tshirtnoplanet.jpg"
+    }
+  },
+
+  {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "Rain Storm Grey",
+      "description": "Made with low waste printing and soft organic cotton.",
+      "price": 16.0,
+      "category": 4,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "tshirtstop.jpg"
+    }
+  },
+
+  {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "Great Whale Grey",
+      "description": "This awesome Plastic Ocean T-Shirt has a fantastic logo and is soft to the touch",
+      "price": 15.0,
+      "category": 4,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "tshirtwhale.jpg"
+    }
+  },
+
+  {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "Blue Wave White",
+      "description": "Made from certified organic cotton and you can send them back when they're worn out and we will recycle them again",
+      "price": 16.0,
+      "category": 4,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "tshirtbluewave.jpg"
+    }
+  },
+
+  {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "Speed Run Blue",
+      "description": "Made with Parley ocean plastic which is recycled plastic waste.",
+      "price": 50.0,
+      "category": 5,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "trainblue.jpg"
+    }
+  },
+
+  {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "White Lightning",
+      "description": "Our recycled plastic waste is collected and is to produce these amazing trainers.",
+      "price": 50.0,
+      "category": 5,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "trainwhite.jpg"
+    }
+  },
+
+  {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "Road Grip Grey",
+      "description": "Performance trainers created from recycled ocean plastics.",
+      "price": 50.0,
+      "category": 5,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "traingrey.jpg"
+    }
+  },
+
+  {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "Red Sunset",
+      "description": "Our Plastic Oceans Notebook - by Ayden",
+      "price": 9.99,
+      "category": 6,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "notered.jpg"
+    }
+  },
+
+  {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "Swordfish Blue",
+      "description": "Our Plastic Ocenas Notebook - by Joshua",
+      "price": 9.99,
+      "category": 6,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "noteblue.jpg"
+    }
+  },
+
+  {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "Red Coral",
+      "description": "Our Plastic Oceans notebook - by Mollie",
+      "price": 9.99,
+      "category": 6,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "notered2.jpg"
+    }
+  },
+
+  {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "Tiger Shark Grey",
+      "description": "This bottle is wrapped in a neoprene sleeve made from plastic bottles waste",
+      "price": 8.99,
+      "category": 7,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "bottlegrey.jpg"
+    }
+  },
+
+  {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "Deep Black Ocean",
+      "description": "Made from recycled sea plastics, a truly inspirational design",
+      "price": 8.99,
+      "category": 7,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "bottleblack.jpg"
+    }
+  },
+
+  {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "Night Sky Navy",
+      "description": "Each bottle funds the collection of 1000 plastic bottles from entering our oceans.",
+      "price": 8.99,
+      "category": 7,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "bottlenavy.jpg"
+    }
+  },
+
+  {
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "Orca Black",
+      "description": "Our glasses are helping protect all marine life and save the planet",
+      "price": 15.99,
+      "category": 8,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "glasses1.jpg"
+    }
+  },
+
+  {
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "Porpoise White",
+      "description": "All glasses made from high-density-polythene consumer ocean. plastics",
+      "price": 15.99,
+      "category": 8,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "glasses2.jpg"
+    }
+  },
+
+  {
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+      "sku": "",
+      "name": "Betta Fish Black",
+      "description": "Stylish in design, each pair is helpig the planet.",
+      "price": 15.99,
+      "category": 8,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "glasses3.jpg"
+    }
+  }
+]
