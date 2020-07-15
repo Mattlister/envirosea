@@ -3,7 +3,7 @@
     "pk": 1,
     "model": "products.product",
     "fields": {
-      "sku": "",
+      "sku": "1",
       "name": "Bionic Yellow",
       "description": "Made by Bionic Yarn. This brighlty coloured coat is stunning on and really has the best of the nautical theme when worn",
       "price": 30.0,
@@ -18,7 +18,7 @@
     "pk": 2,
     "model": "products.product",
     "fields": {
-      "sku": "",
+      "sku": "2",
       "name": "Windproof White",
       "description": "Made from upcycled plastic trash collected from remote islands, beaches and coastlines. It's a wind protecting jacket",
       "price": 30.0,
@@ -33,7 +33,7 @@
     "pk": 3,
     "model": "products.product",
     "fields": {
-      "sku": "",
+      "sku": "3",
       "name": "Seabreeze Blue",
       "description": "Made from 100 precent recycled polyester, and made with goose down for the best insulation ",
       "price": 30.0,
@@ -48,7 +48,7 @@
     "pk": 4,
     "model": "products.product",
     "fields": {
-      "sku": "",
+      "sku": "4",
       "name": "Sunshine Yellow",
       "description": "Made with 50% recycled fibres to help reduce the environmental impact of material production",
       "price": 12.99,
@@ -63,7 +63,7 @@
     "pk": 5,
     "model": "products.product",
     "fields": {
-      "sku": "",
+      "sku": "5",
       "name": "Oxygen Blue",
       "description": "Dubbed the Black Hole collection, this bag is made from recycled plastic bottles.",
       "price": 12.99,
