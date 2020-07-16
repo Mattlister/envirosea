@@ -3,7 +3,7 @@
     "pk": 1,
     "model": "products.product",
     "fields": {
-      "sku": "abc1",
+      "sku": "1",
       "name": "Bionic Yellow",
       "description": "Made by Bionic Yarn. This brighlty coloured coat is stunning on and really has the best of the nautical theme when worn",
       "price": 30.0,
@@ -18,7 +18,7 @@
     "pk": 2,
     "model": "products.product",
     "fields": {
-      "sku": "abc2",
+      "sku": "2",
       "name": "Windproof White",
       "description": "Made from upcycled plastic trash collected from remote islands, beaches and coastlines. It's a wind protecting jacket",
       "price": 30.0,
@@ -33,7 +33,7 @@
     "pk": 3,
     "model": "products.product",
     "fields": {
-      "sku": "abc3",
+      "sku": "3",
       "name": "Seabreeze Blue",
       "description": "Made from 100 precent recycled polyester, and made with goose down for the best insulation ",
       "price": 30.0,
@@ -48,7 +48,7 @@
     "pk": 4,
     "model": "products.product",
     "fields": {
-      "sku": "abc4",
+      "sku": "4",
       "name": "Sunshine Yellow",
       "description": "Made with 50% recycled fibres to help reduce the environmental impact of material production",
       "price": 12.99,
@@ -63,7 +63,7 @@
     "pk": 5,
     "model": "products.product",
     "fields": {
-      "sku": "abc5",
+      "sku": "5",
       "name": "Oxygen Blue",
       "description": "Dubbed the Black Hole collection, this bag is made from recycled plastic bottles.",
       "price": 12.99,
@@ -78,7 +78,7 @@
     "pk": 6,
     "model": "products.product",
     "fields": {
-      "sku": "abc6",
+      "sku": "",
       "name": "Autumn Brown",
       "description": "This bag has two features and can be worn as a backpack or as a Duffel bag. It holds 55 litres and is made from 100 percent recycled plastic.",
       "price": 99,
@@ -93,7 +93,7 @@
     "pk": 7,
     "model": "products.product",
     "fields": {
-      "sku": "abc7",
+      "sku": "",
       "name": "White Surf",
       "description": "The touch of this dress is mind blowing to think it was made from ocean plastics, amazing on",
       "price": 12.99,
@@ -108,7 +108,7 @@
     "pk": 8,
     "model": "products.product",
     "fields": {
-      "sku": "abc8",
+      "sku": "",
       "name": "Blue Surf",
       "description": "Made from waste plastic, this dress is truly stunning and the material is so light to wear",
       "price": 35.0,
@@ -123,7 +123,7 @@
     "pk": 9,
     "model": "products.product",
     "fields": {
-      "sku": "abc9",
+      "sku": "",
       "name": "Blue Wave",
       "description": "This wave print designed swimming costume is made from recycled ocean plastics",
       "price": 15.0,
@@ -138,7 +138,7 @@
     "pk": 10,
     "model": "products.product",
     "fields": {
-      "sku": "abc10",
+      "sku": "",
       "name": "Blue Flash",
       "description": "Light and flexible. Made from recycled ocean plastic. Saving our oceans one garment at a time.",
       "price": 15.0,
