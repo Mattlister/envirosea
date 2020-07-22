@@ -63,7 +63,7 @@ form.addEventListener('submit', function(ev) {
     };
     var url = '/checkout/cache_checkout_data/';
 
-    // may seem reduntandy but customers might have different delivery information to the billing info so adding both elements resolves
+    // may seem reduntant but customers might have different delivery information to the billing info so adding both elements resolves
     //this
     $.post(url, postData).done(function () {
         stripe.confirmCardPayment(clientSecret, {
