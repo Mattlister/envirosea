@@ -1,4 +1,3 @@
-
 /* html elements for vertical centering */
 
 html {
@@ -60,6 +59,13 @@ body {
     border: 1px solid black;
 }
 
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white !important;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -78,7 +84,9 @@ body {
     border: 1px solid blue !important;
 }
 
-
+.bg-black {
+    background: #000 !important;
+}
 
 .overlay {
     height: 100%;
