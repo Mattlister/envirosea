@@ -33,6 +33,7 @@ body {
     width: 1.5rem;
 }
 
+/* Header offer info */
 .logo-font {
     text-transform: uppercase;
 }
@@ -43,6 +44,9 @@ body {
 
 .shop-now-button {
     background: white;
+    width: 100px;
+    height: 100px;
+    position: absolute;
     color: black;
     min-width: 260px;
     opacity: 0.3;
