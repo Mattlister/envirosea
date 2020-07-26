@@ -1,0 +1,4 @@
+[{"pk": 1, "model": "bookings.trips", "fields": {"name": "spain", "friendly_name": "boat"}}, 
+
+{"pk": 2, "model": "bookings.trips", "fields": {"name": "greece", "friendly_name": "swim"}}
+]

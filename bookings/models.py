@@ -4,7 +4,7 @@ from django.db import models
 class Category(models.Model):
 
     class Meta:
-        verbose_name_plural = 'Bookings'
+        verbose_name_plural = 'Trips'
 
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
@@ -17,7 +17,7 @@ class Category(models.Model):
 
 
 class Booking(models.Model):
-    category = models.ForeignKey('Booking', null=True, blank=True, on_delete=models.SET_NULL)
+    Trips = models.ForeignKey('Trips', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()

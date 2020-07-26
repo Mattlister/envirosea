@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Booking, Category
+from .models import Booking, Trips
 
 # Register your models here.
 
@@ -8,7 +8,7 @@ class BookingAdmin(admin.ModelAdmin):
     list_display = (
         'sku',
         'name',
-        'category',
+        'Trips',
         'price',
         'rating',
         'image',
@@ -25,4 +25,4 @@ class CategoryAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Booking, BookingAdmin)
-admin.site.register(Category, CategoryAdmin)
+admin.site.register(trips, TripsAdmin)
