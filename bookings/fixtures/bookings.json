@@ -1,0 +1,31 @@
+[
+  {
+    "pk": 1,
+    "model": "bookings.booking",
+    "fields": {
+      "sku": "1",
+      "name": "",
+      "description": "",
+      "price": 30.0,
+      "category": 1,
+      "rating": 4.6,
+      "image_url": "",
+      "image": ""
+    }
+  },
+
+  {
+    "pk": 2,
+    "model": "bookings.booking",
+    "fields": {
+      "sku": "2",
+      "name": "",
+      "description": "",
+      "price": 30.0,
+      "category": 1,
+      "rating": 4.6,
+      "image_url": "",
+      "image": ""
+    }
+  }
+]

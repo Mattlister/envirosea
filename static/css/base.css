@@ -5,40 +5,9 @@ html {
 height: 100%
 }
 
-.section {
-    position: relative;
-    
-}
 
-.strong {
-  text-align: center;
-  font-size: 6rem;
-  font-family: "Cookie";
-  padding: 20px;
-  margin: 15px;
-  z-index: 1;
-  opacity: 0.7;
-}
 
-.video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.color-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: lightblue;
-  width: 100%;
-  height: 100vh;
-  opacity: 0.5;
-}
-
-/*
-body {
+section {
     background: url('/media/Video.mp4') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
@@ -46,7 +15,6 @@ body {
     font-family: 'Hind';
 }
 
-|*/
 .section h1 {
   text-align: center;
   font-size:8rem;
