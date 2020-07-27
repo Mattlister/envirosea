@@ -8,7 +8,7 @@ class BookingAdmin(admin.ModelAdmin):
     list_display = (
         'sku',
         'name',
-        'Trips',
+        'category',
         'price',
         'rating',
         'image',
@@ -17,7 +17,7 @@ class BookingAdmin(admin.ModelAdmin):
     ordering = ('sku',)
 
 
-class CategoryAdmin(admin.ModelAdmin):
+class TripAdmin(admin.ModelAdmin):
     list_display = (
         'friendly_name',
         'name',
@@ -25,4 +25,4 @@ class CategoryAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Booking, BookingAdmin)
-admin.site.register(trips, TripsAdmin)
+admin.site.register(Trips, TripAdmin)
