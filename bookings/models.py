@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Trips(models.Model):
 
     class Meta:
