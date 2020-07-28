@@ -104,6 +104,16 @@ section {
     z-index: -1;
 }
 
+.overlay_booking {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: blue;
+    z-index: -1;
+}
+
 a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
