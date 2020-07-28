@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .modesl import Booking
+from .models import Booking
 
 # Create your views here.
 
