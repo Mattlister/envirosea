@@ -4,13 +4,13 @@
     "model": "bookings.booking",
     "fields": {
       "sku": "1",
-      "name": "",
-      "description": "",
+      "name": "Cage Dive 1",
+      "description": "The best place to go",
       "price": 30.0,
       "category": 1,
       "rating": 4.6,
       "image_url": "",
-      "image": ""
+      "image": "optical.jpg"
     }
   },
 
@@ -25,7 +25,7 @@
       "category": 1,
       "rating": 4.6,
       "image_url": "",
-      "image": ""
+      "image": "shark.jpg"
     }
   }
 ]

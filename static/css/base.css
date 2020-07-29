@@ -5,6 +5,10 @@ html {
 height: 100%
 }
 
+h1 {
+    color: blue;
+    font-family: 'Hind';
+}
 
 
 section {
@@ -13,17 +17,6 @@ section {
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Hind';
-}
-
-.section h1 {
-  text-align: center;
-  font-size:8rem;
-  font-family: "Hind";
-  padding: 20px;
-  margin: 15px;
-  z-index: 1;
-  color: #ffffff;
-  opacity: 0.8;
 }
 
 /* from Bulma */
@@ -45,6 +38,16 @@ section {
 }
 
 .shop-now-button {
+    background: white;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    color: black;
+    min-width: 260px;
+    opacity: 0.3;
+}
+
+.shop-trips-button {
     background: white;
     width: 100px;
     height: 100px;
@@ -100,7 +103,7 @@ section {
     top: 0;
     left: 0;
     position: fixed;
-    background: white;
+    background: blue;
     z-index: -1;
 }
 
