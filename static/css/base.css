@@ -103,7 +103,7 @@ section {
     top: 0;
     left: 0;
     position: fixed;
-    background-image: url("/media/shark.jpg");
+    background-image: url("/media/ocean.jpg");
     z-index: -1;
 }
 
