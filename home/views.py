@@ -6,8 +6,3 @@ from django.shortcuts import render
 def index(request):
     """ View to return index page """
     return render(request, 'home/index.html')
-
-
-def index(request):
-    """ View to return index page """
-    return render(request, 'oceans/oceans.html')
