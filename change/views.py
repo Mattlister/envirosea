@@ -5,4 +5,4 @@ from django.shortcuts import render
 
 def change(request):
     """ View to return change page """
-    return render(request, 'change/why.html')
+    return render(request, 'change/change.html')

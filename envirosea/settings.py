@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'bookings',
+    'oceans',
     'why',
 
 
