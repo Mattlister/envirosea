@@ -47,8 +47,8 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'bookings',
+    'change',
     'oceans',
-    'why',
 
 
     # Other
