@@ -5,9 +5,15 @@ html {
 height: 100%x
 }
 
-h1 {
-    color: blue;
+.gradient-box {
+    color: rgb(94, 90, 90);
     font-family: 'Hind';
+    font-size: 20px;
+    border: 6px solid green ;
+    border-radius: 23px;
+    padding: px;
+    
+    
 }
 
 
@@ -46,6 +52,8 @@ section {
     min-width: 260px;
     opacity: 0.3;
 }
+
+
 
 .shop-trips-button {
     background: white;
