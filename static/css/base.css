@@ -5,6 +5,10 @@ html {
 height: 100%x
 }
 
+.img {
+  display: inline-block;
+}
+
 .wrapper {
   background: linear-gradient(rgb(248, 248, 248), rgb(255, 255, 255)), 
               linear-gradient(to right, rgb(2, 99, 155), rgb(0, 179, 0));
