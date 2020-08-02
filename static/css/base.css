@@ -5,15 +5,14 @@ html {
 height: 100%x
 }
 
-.gradient-box {
-    color: rgb(94, 90, 90);
-    font-family: 'Hind';
-    font-size: 20px;
-    border: 6px solid green ;
-    border-radius: 23px;
-    padding: px;
-    
-    
+.wrapper {
+  background: linear-gradient(rgb(248, 248, 248), rgb(255, 255, 255)), 
+              linear-gradient(to right, rgb(2, 99, 155), rgb(0, 179, 0));
+  background-origin: padding-box, border-box;
+  background-repeat: no-repeat; /* this is important */
+  padding: 7px;
+  border-radius: 10px;
+  border: 5px solid transparent;
 }
 
 
