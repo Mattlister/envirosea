@@ -173,21 +173,40 @@ realisation of what we're fighting for.
 
 ### Technologies Used
 
-
-* Python
-* HTML
-* CSS
-* JavaScript
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [JavaScript](https://www.w3schools.com/js/)
+* [JSON](https://www.json.org/json-en.html)
+* [Python](https://www.python.org/)
 
 ### Frameworks and Libraries
 
-* Django
-* Flask
-* [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/
+* [Django](https://www.djangoproject.com/)
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+* [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
 * [Google Fonts](https://fonts.google.com/) 
 * [Favicons](https://www.favicon.cc/)
 * [Github](https://www.github.com)
 * [Heroku](https://www.heroku.com)
+* [SCSS](https://sass-lang.com/)
+* [Stripe](https://stripe.com/gb/payments)
+* [GitPod](https://www.gitpod.io/)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -294,12 +313,16 @@ To deploy Envirosea to Heroku, I used a Linux based system as I have an Apple Ma
 
 4. Once done, you'll need to add the settings to tie Heroku in with Github, the application you are building and the Mongo DataBase you have created. So, first from the Heroku dashboard of the applcation, click on "Settings"> "Reveal Config Vars"
 
-5. Set the config vars as follows:
+5. Set the config variables as follows:
+
+
+
+
 
 | Key     | Value |
 | ----------- | ----------- |
-| DEBUG  | FALSE       |
-| IP   | 0.0.0.0     |
+| DATABSE_URL  | <your_database_url>       |
+| SECRET_KEY   | <your_secret_key>     |
 | MONGO_URI  | mongodb+srv:/<username>:<password>@<cluster_name>-qtxun.mongodb.net/            <database_name>?retryWrites=true&w=majority      |
 | PORT  | 5000        |
 | SECRET_KEY  | <your_secret_key>     |
@@ -312,14 +335,12 @@ To deploy Envirosea to Heroku, I used a Linux based system as I have an Apple Ma
 
 
 
-full stack based project using business logic. The front end 
 
-In this project, you'll build a full-stack site based around business logic used to control a centrally-owned dataset. 
-You will set up an authentication mechanism and provide paid access to the site's data and/or other activities based on
- the dataset, such as the purchase of a product/service.
+Credits
 
-Value provided:
-By authenticating on the site and paying for some of its services, users can advance their own goals. Before authenticating, 
-the site makes it clear how those goals would be furthered by the site. The site owner is able to make money by providing this 
-set of services to the users. There is no way for a regular user to bypass the site's mechanisms and derive all of the value 
-available to paid users without paying.
+
+
+
+Disclaimer
+
+The contents of this wesbite are for educational purposes only.
