@@ -11,6 +11,7 @@ height: 100%x
 
 /* Oceans page */
 
+
 .wrapper {
   background: linear-gradient(rgb(248, 248, 248), rgb(255, 255, 255)), 
               linear-gradient(to right, rgb(2, 99, 155), rgb(0, 179, 0));
@@ -21,7 +22,24 @@ height: 100%x
   border: 5px solid transparent;
 }
 
+/* sets base style for each page */
+html {
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
 
+/* set background image per page */
+.home-bg {
+background: url(images/home-bg.jpg) no-repeat center center fixed;
+}
+.about-bg {
+background: url(images/about.bg.jpg) no-repeat center center fixed;
+}
+.contact-bg {
+background: url(images/contact-bg.jpg) no-repeat center center fixed;
+}
 
 /* home oage */
 

@@ -131,6 +131,10 @@ drawn in Gravit designer. I looked at other sites with a similar theme to get an
 Going in to this with fresh eyes, I was able to pick out things I believed would work and put together a design that looked good on 
 all screen sizes.
 
+### Envirosea Design choices
+
+* The design of my website was designed with the colours of the ocean in mind. Blue's, Green's and "Aqua" we're what I envisioned
+when I started working on the project. 
 
 ### Colours 
 
