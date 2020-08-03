@@ -9,6 +9,8 @@ height: 100%x
   display: inline-block;
 }
 
+/* Oceans page */
+
 .wrapper {
   background: linear-gradient(rgb(248, 248, 248), rgb(255, 255, 255)), 
               linear-gradient(to right, rgb(2, 99, 155), rgb(0, 179, 0));
@@ -19,6 +21,9 @@ height: 100%x
   border: 5px solid transparent;
 }
 
+
+
+/* home oage */
 
 section {
     background: url('/media/Video.mp4') no-repeat center center fixed;
