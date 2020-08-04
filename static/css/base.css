@@ -46,7 +46,7 @@ background: url(images/contact-bg.jpg) no-repeat center center fixed;
 section {
     background: url('/media/Video.mp4') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    /* height: calc(100vh - 164px); */
     color: #555;
     font-family: 'Hind';
 }
@@ -350,11 +350,11 @@ input[name='q']::placeholder {
     .header-container {
         padding-top: 116px;
     }
-
+/*
     body {
         height: calc(100vh - 116px);
     }
-
+*/
     .display-4.logo-font.text-black {
         font-size: 2rem;
     }
