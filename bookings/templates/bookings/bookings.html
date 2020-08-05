@@ -47,7 +47,7 @@
                             {% if search_term or current_trips or current_sorting != 'None_None' %}
                                 <span class="small"><a href="{% url 'bookings' %}">Bookings Home</a> | </span>
                             {% endif %}
-                            {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                            {{ bookings|length }} Bookings{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                         </p>
                     </div>
                 <div class="row">
@@ -55,11 +55,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0">
                                 {% if booking.image %}
-                                <a href="">
+                                <a href="{% url 'booking_detail' booking.id %}">
                                     <img class="card-img-top img-fluid" src="{{ booking.image.url }}" alt="{{ booking.name }}">
                                 </a>
                                 {% else %}
-                                <a href="">
+                                <a href="{% url 'booking_detail' booking.id %}">
                                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ booking.name }}">
                                 </a>
                                 {% endif %}
@@ -69,7 +69,13 @@
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
-                                        <!--bootstrap card for images and prices of items-->
+                                         {% if booking.category %}
+                                                <p class="small mt-1 mb-0">
+                                                    <a class="text-muted" href="{% url 'bookings' %}?category={{ booking.category.name }}">
+                                                        <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                                    </a>
+                                                </p>
+                                            {% endif %}
                                             <p class="lead mb-0 text-left font-weight-bold">£{{ booking.price }}</p>
                                             {% if booking.rating %}
                                                 <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ booking.rating }} / 5</small>

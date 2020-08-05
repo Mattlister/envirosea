@@ -1,29 +1,29 @@
 [
   {
-    "pk": 1,
+    "pk": 41,
     "model": "bookings.booking",
     "fields": {
-      "sku": "1",
+      "sku": "50",
       "name": "Cage Dive 1",
       "description": "The best place to go",
-      "price": 30.0,
+      "price": 25.0,
       "category": 1,
-      "rating": 4.6,
+      "rating": 9,
       "image_url": "",
-      "image": "optical.jpg"
+      "image": "/media/optical.jpg"
     }
   },
 
   {
-    "pk": 2,
+    "pk": 42,
     "model": "bookings.booking",
     "fields": {
-      "sku": "2",
-      "name": "",
-      "description": "",
-      "price": 30.0,
+      "sku": "51",
+      "name": "Cage Dive 2",
+      "description": "The underwater scenery is amazing",
+      "price": 25.0,
       "category": 1,
-      "rating": 4.6,
+      "rating": 10,
       "image_url": "",
       "image": "shark.jpg"
     }
