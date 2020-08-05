@@ -11,6 +11,9 @@ height: 100%x
 
 /* Oceans page */
 
+p #colorred{
+    color: red;
+}
 
 .wrapper {
   background: linear-gradient(rgb(248, 248, 248), rgb(255, 255, 255)), 
@@ -20,6 +23,13 @@ height: 100%x
   padding: 7px;
   border-radius: 10px;
   border: 5px solid transparent;
+}
+
+/* Change pages */
+
+ul:nth-of-type(5) {
+  list-style-type: decimal-leading-zero;
+  color: red;
 }
 
 /* sets base style for each page */

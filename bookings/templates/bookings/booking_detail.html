@@ -27,7 +27,7 @@
             </div>
             <div class="booking-details-container mb-5 mt-md-5">
                     <p class="mb-0">{{ booking.name }}</p>
-                    <p class="lead mb-0 text-left font-weight-bold">${{ booking.price }}</p>
+                    <p class="lead mb-0 text-left font-weight-bold">£{{ booking.price }}</p>
                     {% if booking.rating %}
                         <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ booking.rating }} / 5</small>
                     {% else %}
