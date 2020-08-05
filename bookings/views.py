@@ -20,7 +20,8 @@ def all_bookings(request):
                     request, "You didn't enter any search criteria!")
                 return redirect(reverse('bookings'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | Q(
+                description__icontains=query)
             bookings = bookings.filter(queries)
 
     context = {
