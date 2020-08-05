@@ -9,12 +9,19 @@
                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
                 <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+            </div>
+        </li>
+         <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item dropdown">
+        <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="Trips" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Trips
+            </a>
+        <div class="dropdown-menu border-0" aria-labelledby="trips-link">
                 <a href="{% url 'bookings' %}" class="dropdown-item">Make a Booking</a>
                 <a href="{% url 'oceans' %}" class="dropdown-item">Our amazing oceans</a>
                 <a href="{% url 'change' %}" class="dropdown-item">Our Mission</a>
             </div>
         </li>
-        
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
