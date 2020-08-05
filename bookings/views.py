@@ -11,6 +11,13 @@ def all_bookings(request):
 
     bookings = Booking.objects.all()
     query = None
+    booking = None
+    trips = None
+
+    if 'booking' in request.GET:
+        bookings = request.GET['booking'].split(',')
+        trips = trips.filter(booking__name__in=bookings)
+        bookings = booking.objects.filter(name__in=bookings)
 
     if request.GET:
         if 'q' in request.GET:
@@ -27,6 +34,7 @@ def all_bookings(request):
     context = {
         'bookings': bookings,
         'search_term': query,
+        'current_trips': trips,
 
     }
 
