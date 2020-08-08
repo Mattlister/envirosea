@@ -10,18 +10,18 @@ def view_book(request):
 
 
 def add_person(request, item_id):
+
     """ Add a quantity of people to the booking """
 
-    quantity1 = int(request.POST.get('quantity1'))
+    quantity = int(request.POST.get('quantity'))
 
     redirect_url = request.POST.get('redirect_url')
     book = request.session.get('book', {})
 
     if item_id in list(book.keys()):
-        book[item_id] += quantity1
+        book[item_id] += quantity
     else:
-        book[item_id] = quantity1
+        book[item_id] = quantity
 
     request.session['book'] = book
-    print(request.session['book'])
     return redirect(redirect_url)

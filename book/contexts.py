@@ -41,7 +41,7 @@ def book_contents(request):
     booking_total = delivery + total
 
     context = {
-        'bag_items': book_items,
+        'book_items': book_items,
         'total': total,
         'booking_count': booking_count,
         'delivery': delivery,
