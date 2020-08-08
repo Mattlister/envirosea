@@ -15,7 +15,17 @@
     </div>
     <div class="row">
       <div class="col">
-        {% if book_items %} {% else %} {% endif %}
+        {% if book_items %} 
+            <div class="table-responsive rounded"></div>
+        {% else %}
+            <p class="lead mb-5">You haven't made a booking.</p>
+                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="text-uppercase">Keep Discovering</span>
+                    </a>
+        {% endif %}
       </div>
     </div>
   </div>
