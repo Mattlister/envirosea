@@ -23,6 +23,7 @@ p #colorred {
   color: red;
 }
 
+
 .wrapper {
   background: linear-gradient(rgb(248, 248, 248), rgb(255, 255, 255)),
     linear-gradient(to right, rgb(2, 99, 155), rgb(0, 179, 0));
@@ -94,9 +95,9 @@ h1 {
 .shop-trips-button {
   width: 100px;
   height: 100px;
-  position: right;
   color: white;
   min-width: 260px;
+  left: 100px;
 }
 
 .btn-black {
@@ -120,13 +121,22 @@ h1 {
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.btn-blak:hover,
+.btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
 
   color: rgb(11, 173, 73);
 }
 
+.shop-trips-button:hover,
+.shop-trips-button:active,
+.shop-trips-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+
+  color: rgb(11, 173, 73);
+}
 .text-black {
   color: rgb(72, 163, 238) !important;
 }
