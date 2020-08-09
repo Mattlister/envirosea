@@ -3,7 +3,7 @@
 html {
   height: 100%x;
 }
-
+/* Video background image */
 #videoBG {
     position: fixed;
     z-index : -1;
@@ -12,6 +12,7 @@ html {
     width:100%;     
     height: auto;
 }
+
 .img {
   display: inline-block;
 }
@@ -66,9 +67,17 @@ section {
   width: 1.5rem;
 }
 
-/* Header offer info */
-.logo-font {
-  text-transform: uppercase;
+.floated {
+   float:left;
+   margin-right:5px;
+}
+
+h1 {
+  padding: 60px;
+  text-align: center;
+  color: white;
+  font-size: 10vw;
+  font-family: "Hind";
 }
 
 .main-logo-link {
@@ -76,23 +85,18 @@ section {
 }
 
 .shop-now-button {
-  background: white;
   width: 100px;
   height: 100px;
-  position: absolute;
-  color: black;
+  color: white;
   min-width: 260px;
-  opacity: 0.3;
 }
 
 .shop-trips-button {
-  background: white;
   width: 100px;
   height: 100px;
-  position: absolute;
-  color: black;
+  position: right;
+  color: white;
   min-width: 260px;
-  opacity: 0.3;
 }
 
 .btn-black {
@@ -119,8 +123,8 @@ section {
 .btn-blak:hover,
 .btn-black:active,
 .btn-black:focus {
-  background: rgb(5, 46, 160);
-  color: blue;
+
+  color: rgb(11, 173, 73);
 }
 
 .text-black {
