@@ -26,7 +26,7 @@ SECRET_KEY = '@tn*9$m9^ox8=a8nr$4s+!g)#!n#84@(2ks#1jo$w+6st7u+&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mattlister-envirosea.herokuapp.com', 'localhost']
 
 
 # Application definition
