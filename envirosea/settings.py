@@ -21,7 +21,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', '00g*c*qr8jiaz*2vb6-+ik)uc)u1_gkxr)q%^h+2f04uw2q-mp')
+SECRET_KEY = os.environ.get(
+    'SECRET_KEY', '00g*c*qr8jiaz*2vb6-+ik)uc)u1_gkxr)q%^h+2f04uw2q-mp')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
@@ -86,7 +87,8 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request',  # required by allauth, do not delete
+                # required by allauth, do not delete
+                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
@@ -116,11 +118,14 @@ SITE_ID = 1
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-ACCOUNT_AUTHENTICATION_METHOD = 'username_email'  # Tells allauth to use username or emails for authentication
+# Tells allauth to use username or emails for authentication
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'  # It's mandatory so must be real
-ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True  # and it has to be entered twice on registration page as typo checker
-ACCOUNT_USERNAME_MIN_LENGTH = 4  # Must have a minimum uername length of 4 characters
+# and it has to be entered twice on registration page as typo checker
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
+# Must have a minimum uername length of 4 characters
+ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'  # Specifies a login
 LOGIN_REDIRECT_URL = '/'  # URL redirect back after logging in
 
@@ -184,13 +189,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-if os.environ:
-    # Cache control
-    AWS_S3_OBJECT_PARAMETERS = {
-        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
-        'CacheControl': 'max-age=94608000',
-    }
-
+if 'USE_AWS' in os.environ:
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'mattlister-envirosea'
     AWS_S3_REGION_NAME = 'us-east-1'
