@@ -197,13 +197,14 @@ realisation of what we're fighting for.
 * [Stripe](https://stripe.com/gb/payments)
 * [GitPod](https://www.gitpod.io/)
 
+Database Design:
 
+* Development of the Envirsoea was developed using sqlite3 that is installed as part of the Django Framework.
 
+* The database used is a Postgres SQL database which is hosted and provided by Heroku. Both products used allowed me to publish my data
+using these and also the Allauth secure software.
 
-
-
-
-
+### Data Models
 
 
 
