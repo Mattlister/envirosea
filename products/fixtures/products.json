@@ -99,7 +99,7 @@
       "price": 12.99,
       "category": 3,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50217363246/in/dateposted-public/",
       "image": "dresswhite.jpg"
     }
   },
@@ -114,7 +114,7 @@
       "price": 35.0,
       "category": 3,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50217363256/in/dateposted-public/",
       "image": "dressblue.jpg"
     }
   },
@@ -129,7 +129,7 @@
       "price": 15.0,
       "category": 3,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50217363261/in/dateposted-public/",
       "image": "dressswim.jpg"
     }
   },
@@ -144,7 +144,7 @@
       "price": 15.0,
       "category": 4,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50217363021/in/dateposted-public/",
       "image": "tshirtblue.jpg"
     }
   },
@@ -159,7 +159,7 @@
       "price": 16.0,
       "category": 4,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50217585087/in/dateposted-public/",
       "image": "tshirtplastic.jpg"
     }
   },
@@ -174,7 +174,7 @@
       "price": 16.0,
       "category": 4,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50217585097/in/dateposted-public/",
       "image": "tshirtnoplanet.jpg"
     }
   },
@@ -189,8 +189,8 @@
       "price": 16.0,
       "category": 4,
       "rating": 4.6,
-      "image_url": "",
-      "image": "tshirtstop1.jpg"
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50217362996/in/dateposted-public/",
+      "image": "tshirtstop.jpg"
     }
   },
 
@@ -219,7 +219,7 @@
       "price": 16.0,
       "category": 4,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50217363006/in/dateposted-public/",
       "image": "tshirtbluewave.jpg"
     }
   },
@@ -234,7 +234,7 @@
       "price": 50.0,
       "category": 5,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50217363141/in/dateposted-public/",
       "image": "trainblue.jpg"
     }
   },
@@ -249,7 +249,7 @@
       "price": 50.0,
       "category": 5,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50216706793/in/dateposted-public/",
       "image": "trainwhite.jpg"
     }
   },
@@ -264,7 +264,7 @@
       "price": 50.0,
       "category": 5,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50217585112/in/dateposted-public/",
       "image": "traingrey.jpg"
     }
   },
@@ -279,7 +279,7 @@
       "price": 9.99,
       "category": 6,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50217585152/in/dateposted-public/",
       "image": "notered.jpg"
     }
   },
@@ -294,7 +294,7 @@
       "price": 9.99,
       "category": 6,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50217363181/in/dateposted-public/",
       "image": "noteblue.jpg"
     }
   },
@@ -309,7 +309,7 @@
       "price": 9.99,
       "category": 6,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50217363171/in/dateposted-public/",
       "image": "notered2.jpg"
     }
   },
@@ -369,7 +369,7 @@
       "price": 15.99,
       "category": 8,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50217585227/in/dateposted-public/",
       "image": "glasses1.jpg"
     }
   },
@@ -384,7 +384,7 @@
       "price": 15.99,
       "category": 8,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50216706863/in/dateposted-public/",
       "image": "glasses2.jpg"
     }
   },
@@ -399,7 +399,7 @@
       "price": 15.99,
       "category": 8,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50216706923/in/dateposted-public/",
       "image": "glasses3.jpg"
     }
   }
