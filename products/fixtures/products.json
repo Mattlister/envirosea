@@ -9,7 +9,7 @@
       "price": 10.0,
       "category": 1,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50217363291/in/dateposted-public/",
       "image": "coatyellow.jpg"
     }
   },
@@ -24,7 +24,7 @@
       "price": 30.0,
       "category": 1,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50217585322/in/dateposted-public/",
       "image": "coatwhite.jpg"
     }
   },
@@ -39,7 +39,7 @@
       "price": 30.0,
       "category": 1,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50216707023/in/dateposted-public/",
       "image": "coatblue.jpg"
     }
   },
@@ -54,7 +54,7 @@
       "price": 12.99,
       "category": 2,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50216707048/in/dateposted-public/",
       "image": "bagyellow.jpg"
     }
   },
@@ -69,7 +69,7 @@
       "price": 12.99,
       "category": 2,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50217585377/in/dateposted-public/",
       "image": "bagblue.jpg"
     }
   },
@@ -84,7 +84,7 @@
       "price": 99,
       "category": 2,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50217585372/in/dateposted-public/",
       "image": "bagbrown.jpg"
     }
   },
@@ -204,7 +204,7 @@
       "price": 15.0,
       "category": 4,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50217362981/in/dateposted-public/",
       "image": "tshirtwhale.jpg"
     }
   },
@@ -324,7 +324,7 @@
       "price": 8.99,
       "category": 7,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50216707033/in/dateposted-public/",
       "image": "bottlegrey.jpg"
     }
   },
@@ -339,7 +339,7 @@
       "price": 8.99,
       "category": 7,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50217585357/in/dateposted-public/",
       "image": "bottleblack.jpg"
     }
   },
@@ -354,7 +354,7 @@
       "price": 8.99,
       "category": 7,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://www.flickr.com/photos/189520525@N04/50217585282/in/dateposted-public/",
       "image": "bottlenavy.jpg"
     }
   },
