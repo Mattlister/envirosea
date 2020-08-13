@@ -1,4 +1,0 @@
-[{"pk": 41, "model": "bookings.trips", "fields": {"name": "spain", "friendly_name": "boat"}}, 
-
-{"pk": 42, "model": "bookings.trips", "fields": {"name": "greece", "friendly_name": "swim"}}
-]

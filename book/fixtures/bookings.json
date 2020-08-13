@@ -1,0 +1,87 @@
+[
+  {
+    "pk": 41,
+    "model": "bookings.booking",
+    "fields": {
+      "sku": "50",
+      "name": "Cage Dive 1",
+      "description": "The best place to go",
+      "price": 25.0,
+      "category": 1,
+      "rating": 9,
+      "image_url": "",
+      "image": "coatwhite.jpg"
+    }
+  },
+
+  {
+    "pk": 42,
+    "model": "bookings.booking",
+    "fields": {
+      "sku": "51",
+      "name": "Cage Dive 2",
+      "description": "The underwater scenery is amazing",
+      "price": 25.0,
+      "category": 1,
+      "rating": 10,
+      "image_url": "",
+      "image": "shark.jpg"
+    }
+  },
+  {
+    "pk": 42,
+    "model": "bookings.booking",
+    "fields": {
+      "sku": "51",
+      "name": "Cage Dive 2",
+      "description": "The underwater scenery is amazing",
+      "price": 25.0,
+      "category": 1,
+      "rating": 10,
+      "image_url": "",
+      "image": "shark.jpg"
+    }
+  },
+  {
+    "pk": 42,
+    "model": "bookings.booking",
+    "fields": {
+      "sku": "51",
+      "name": "Cage Dive 2",
+      "description": "The underwater scenery is amazing",
+      "price": 25.0,
+      "category": 1,
+      "rating": 10,
+      "image_url": "",
+      "image": "shark.jpg"
+    }
+  },
+  {
+    "pk": 42,
+    "model": "bookings.booking",
+    "fields": {
+      "sku": "51",
+      "name": "Cage Dive 2",
+      "description": "The underwater scenery is amazing",
+      "price": 25.0,
+      "category": 1,
+      "rating": 10,
+      "image_url": "",
+      "image": "shark.jpg"
+    }
+  },
+  {
+    "pk": 42,
+    "model": "bookings.booking",
+    "fields": {
+      "sku": "51",
+      "name": "Cage Dive 2",
+      "description": "The underwater scenery is amazing",
+      "price": 25.0,
+      "category": 1,
+      "rating": 10,
+      "image_url": "",
+      "image": "shark.jpg"
+    }
+  }
+]
