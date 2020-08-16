@@ -7,11 +7,28 @@
       "name": "Cage Dive 1",
       "description": "The best place to go",
       "price": 25.0,
+      "bookings": 1,
       "rating": 9,
-      "image_url": "",
-      "image": "coatwhite.jpg"
+      "image_url": "https://mattlister-envirosea.s3.eu-west-2.amazonaws.com/media/shark.jpg",
+      "image": "shark.jpg"
+    }
+  },
+  {
+    "pk": 49,
+    "model": "bookings.booking",
+    "fields": {
+      "sku": "51",
+      "name": "Cage Dive 9",
+      "description": "The best place to go",
+      "price": 25.0,
+      "bookings": 1,
+      "rating": 9,
+      "image_url": "https://mattlister-envirosea.s3.eu-west-2.amazonaws.com/media/turtleamazing.jpg",
+      "image": "shark.jpg"
     }
   }
+
+
 
   
 

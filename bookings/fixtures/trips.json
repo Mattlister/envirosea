@@ -2,11 +2,11 @@
 
 {"pk": 42, "model": "bookings.trips", "fields": {"name": "greece", "friendly_name": "swim"}},
 
-{"pk": 42, "model": "bookings.trips", "fields": {"name": "greece", "friendly_name": "swim"}},
+{"pk": 43, "model": "bookings.trips", "fields": {"name": "greece", "friendly_name": "swim"}},
 
-{"pk": 42, "model": "bookings.trips", "fields": {"name": "greece", "friendly_name": "swim"}},
+{"pk": 44, "model": "bookings.trips", "fields": {"name": "greece", "friendly_name": "swim"}},
 
-{"pk": 42, "model": "bookings.trips", "fields": {"name": "greece", "friendly_name": "swim"}},
+{"pk": 45, "model": "bookings.trips", "fields": {"name": "greece", "friendly_name": "swim"}},
 
-{"pk": 42, "model": "bookings.trips", "fields": {"name": "greece", "friendly_name": "swim"}}
+{"pk": 46, "model": "bookings.trips", "fields": {"name": "greece", "friendly_name": "swim"}}
 ]
