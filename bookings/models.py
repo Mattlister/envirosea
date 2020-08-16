@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class Trips(models.Model):
 
     class Meta:
@@ -14,7 +13,6 @@ class Trips(models.Model):
 
     def get_friendly_name(self):
         return self.friendly_name
-
 
 class Booking(models.Model):
     trips = models.ForeignKey(
