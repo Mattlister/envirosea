@@ -1,9 +1,9 @@
 [
   {
-    "pk": 41,
+    "pk": 28,
     "model": "bookings.booking",
     "fields": {
-      "sku": "50",
+      "sku": "28",
       "name": "Cage Dive 1",
       "description": "The best place to go",
       "price": 25.0,
@@ -14,10 +14,24 @@
     }
   },
   {
-    "pk": 49,
+    "pk": 29,
     "model": "bookings.booking",
     "fields": {
-      "sku": "51",
+      "sku": "29",
+      "name": "Cage Dive 9",
+      "description": "The best place to go",
+      "price": 25.0,
+      "bookings": 1,
+      "rating": 9,
+      "image_url": "https://mattlister-envirosea.s3.eu-west-2.amazonaws.com/media/coral.jpg",
+      "image": "shark.jpg"
+    }
+  },
+  {
+    "pk": 30,
+    "model": "bookings.booking",
+    "fields": {
+      "sku": "30",
       "name": "Cage Dive 9",
       "description": "The best place to go",
       "price": 25.0,
@@ -26,10 +40,19 @@
       "image_url": "https://mattlister-envirosea.s3.eu-west-2.amazonaws.com/media/turtleamazing.jpg",
       "image": "shark.jpg"
     }
+  },
+  {
+    "pk": 31,
+    "model": "bookings.booking",
+    "fields": {
+      "sku": "31",
+      "name": "Cage Dive 9",
+      "description": "The best place to go",
+      "price": 25.0,
+      "bookings": 1,
+      "rating": 9,
+      "image_url": "https://mattlister-envirosea.s3.eu-west-2.amazonaws.com/media/turtlentangled.jpg",
+      "image": "shark.jpg"
+    }
   }
-
-
-
-  
-
 ]
