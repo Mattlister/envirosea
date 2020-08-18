@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Booking
+from .models import Booking, Trips
 
 # Create your views here.
 
@@ -11,13 +11,28 @@ def all_bookings(request):
 
     bookings = Booking.objects.all()
     query = None
-    booking = None
-    trips = None
+    sort = None
+    direction = None
 
     if 'booking' in request.GET:
         bookings = request.GET['booking'].split(',')
         trips = trips.filter(booking__name__in=bookings)
         bookings = booking.objects.filter(name__in=bookings)
+
+        if request.GET:
+            if 'sort' in request.GET:
+                sortkey = request.GET['sort']
+                sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                bookings = bookings.annotate(lower_name=Lower('name'))
+            if sortkey == 'trips':
+                sortkey = 'trips__name'
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            bookings = bookings.order_by(sortkey)    
 
     if request.GET:
         if 'q' in request.GET:
