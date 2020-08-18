@@ -9,9 +9,6 @@ class Trips(models.Model):
     def __str__(self):
         return self.name
 
-    def get_friendly_name(self):
-        return self.friendly_name
-
 
 class Booking(models.Model):
     trips = models.ForeignKey('Trips', null=True, blank=True, on_delete=models.SET_NULL)

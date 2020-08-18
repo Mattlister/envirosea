@@ -1,7 +1,10 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
+from django.db.models.functions import Lower
+
 from .models import Booking, Trips
+
 
 # Create your views here.
 
@@ -11,18 +14,14 @@ def all_bookings(request):
 
     bookings = Booking.objects.all()
     query = None
+    trips = None
     sort = None
     direction = None
 
-    if 'booking' in request.GET:
-        bookings = request.GET['booking'].split(',')
-        trips = trips.filter(booking__name__in=bookings)
-        bookings = booking.objects.filter(name__in=bookings)
-
-        if request.GET:
-            if 'sort' in request.GET:
-                sortkey = request.GET['sort']
-                sort = sortkey
+    if request.GET:
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
             if sortkey == 'name':
                 sortkey = 'lower_name'
                 bookings = bookings.annotate(lower_name=Lower('name'))
@@ -32,7 +31,12 @@ def all_bookings(request):
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
-            bookings = bookings.order_by(sortkey)    
+            bookings = bookings.order_by(sortkey)
+
+        if 'trips' in request.GET:
+            trips = request.GET['trips'].split(',')
+            bookings = bookings.filter(category__name__in=trips)
+            trips = trips.objects.filter(name__in=trips)
 
     if request.GET:
         if 'q' in request.GET:
@@ -46,10 +50,13 @@ def all_bookings(request):
                 description__icontains=query)
             bookings = bookings.filter(queries)
 
+    current_sorting = f'{sort}_{direction}'
+
     context = {
         'bookings': bookings,
         'search_term': query,
         'current_trips': trips,
+        'current_sorting': current_sorting,
 
     }
 
