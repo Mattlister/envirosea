@@ -5,6 +5,7 @@ class Bookings(models.Model):
 
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
+    bookings = models.bookings
 
     def __str__(self):
         return self.name
