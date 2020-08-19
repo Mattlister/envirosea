@@ -46,11 +46,11 @@
 				<div class="card h-100 border-0">
 					{% if booking.image %}
 					<a href="{% url 'booking_detail' booking.id %}">
-						<img class="card-img-top img-fluid" src="{{ trips.image.url }}" alt="{{ booking.name }}">
+						<img class="card-img-top img-fluid" src="{{ bookingPoiss.image_url }}" alt="{{ booking.name }}">
                                 </a>
 						{% else %}
 						<a href="{% url 'booking_detail' booking.id %}">
-							<img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.jpg" alt="{{ booking.name }}">
+							<img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.jpg" alt="{{ trips.name }}">
                                 </a>
 							{% endif %}
 							<div class="card-body pb-0">
