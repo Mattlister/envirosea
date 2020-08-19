@@ -4,7 +4,7 @@
     "model": "bookings.booking",
     "fields": {
       "sku": "29",
-      "name": "Cage Dive 2",
+      "name": "Cage Dive 1",
       "description": "The best place to go",
       "price": 25.0,
       "rating": 9,
