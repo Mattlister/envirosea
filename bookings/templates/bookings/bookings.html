@@ -15,8 +15,8 @@
 	<div class="row">
 		<div class="col text-center mt-3">
 			<h2 class="logo-font">Bookings</h2>
-			{% for c in current_category %}
-			<a class="category-badge text-decoration-none" href="{% url 'bookings' %}?trips={{ c.name }}">
+			{% for t in current_trips %}
+			<a class="category-badge text-decoration-none" href="{% url 'bookings' %}?trips={{ .name }}">
 				<span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
 			</a>
 			{% endfor %}
@@ -46,7 +46,7 @@
 				<div class="card h-100 border-0">
 					{% if booking.image %}
 					<a href="{% url 'booking_detail' booking.id %}">
-						<img class="card-img-top img-fluid" src="{{ booking.image.url }}" alt="{{ booking.name }}">
+						<img class="card-img-top img-fluid" src="{{ trips.image.url }}" alt="{{ booking.name }}">
                                 </a>
 						{% else %}
 						<a href="{% url 'booking_detail' booking.id %}">
