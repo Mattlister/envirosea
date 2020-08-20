@@ -4,19 +4,19 @@ from django.shortcuts import get_object_or_404
 from bookings.models import Booking
 
 
-def book_contents(request):
+def person_contents(request):
 
-    book_items = []
+    person_items = []
     total = 0
     booking_count = 0
-    book = request.session.get('book', {})
+    person = request.session.get('person', {})
 
-    for item_id, item_data in book.items():
+    for item_id, item_data in person.items():
         if isinstance(item_data, int):
             booking = get_object_or_404(Booking, pk=item_id)
             total += item_data * booking.price
             booking_count += item_data
-            book_items.append({
+            person_items.append({
                 'item_id': item_id,
                 'quantity': item_data,
                 'product': booking,
@@ -24,9 +24,9 @@ def book_contents(request):
         else:
             booking = get_object_or_404(Booking, pk=item_id)
             for person, quantity in item_data['items_by_person'].items():
-                total += item_data * product.price
+                total += item_data * booking.price
                 booking_count += item_data
-                book_items.append({
+                person_items.append({
                     'item_id': item_id,
                     'quantity': quantity,
                     'booking': booking,
@@ -40,7 +40,7 @@ def book_contents(request):
     booking_total = delivery + total
 
     context = {
-        'book_items': book_items,
+        'person_items': person_items,
         'total': total,
         'booking_count': booking_count,
         'delivery': delivery,

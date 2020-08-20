@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'home',
     'products',
     'bag',
-    'book',
+    'person',
     'checkout',
     'profiles',
     'bookings',
@@ -93,7 +93,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
                 'bag.contexts.bag_contents',
-                'book.contexts.book_contents',
+                'person.contexts.person_contents',
             ],
             'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
