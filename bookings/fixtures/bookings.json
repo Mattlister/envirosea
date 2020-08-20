@@ -8,8 +8,8 @@
       "description": "The best place to go",
       "price": 25.0,
       "rating": 9,
-      "image_url": "",
-      "image": "shark.jpg"
+      "image_url": "https://mattlister-envirosea.s3.eu-west-2.amazonaws.com/media/close.jpg",
+      "image": "close.jpg"
     }
   },
   {
