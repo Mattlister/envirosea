@@ -30,6 +30,7 @@ def person_contents(request):
                     'item_id': item_id,
                     'quantity': quantity,
                     'booking': booking,
+                    'person': person,
                 })
 
     if total < settings.FREE_DELIVERY_THRESHOLD:

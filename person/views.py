@@ -21,7 +21,7 @@ def add_person(request, item_id):
 
     if 'booking_person' in request.POST:
         person = request.POST['booking_person']
-        person = request.session.get('bag', {})
+        person = request.session.get('person', {})
 
     if person:
         if item_id in list(person.keys()):
