@@ -1,15 +1,15 @@
 [
   {
-    "pk": 29,
+    "pk": 28,
     "model": "bookings.booking",
     "fields": {
-      "sku": "29",
+      "sku": "28",
       "name": "Cage Dive 1",
       "description": "The best place to go",
       "price": 25.0,
       "rating": 9,
       "image_url": "",
-      "image": ""
+      "image": "shark.jpg"
     }
   },
   {
@@ -21,8 +21,8 @@
       "description": "The best place to go",
       "price": 25.0,
       "rating": 9,
-      "image_url": "",
-      "image": ""
+      "image_url": "https://mattlister-envirosea.s3.eu-west-2.amazonaws.com/media/turtleamazing.jpg",
+      "image": "turtleamzing.jpg"
     }
   },
   {
