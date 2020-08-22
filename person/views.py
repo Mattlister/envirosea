@@ -17,23 +17,21 @@ def add_person(request, item_id):
     booking = get_object_or_404(Booking, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
+    age = None
     person = request.session.get('person', {})
 
     if 'booking_person' in request.POST:
         person = request.POST['booking_person']
         person = request.session.get('person', {})
 
-    if person:
+    if age:
         if item_id in list(person.keys()):
-            if person in person[item_id]['items_by_person'].keys():
-                person[item_id]['items_by_person'][person] += quantity
+            if person in person[item_id]['items_add_person'].keys():
+                person[item_id]['items_add_person'][person] += quantity
                 messages.success(request, f'Updated person {person.upper()} {booking.name} quantity to {person[item_id]["items_by_person"][person]}')
             else:
                 person[item_id]['items_by_person'][person] = quantity
                 messages.success(request, f'Added person {person.upper()} {booking.name} to your person')
-        else:
-            person[item_id] = {'items_by_person': {person: quantity}}
-            messages.success(request, f'Added person {person.upper()} {booking.name} to your person')
     else:
         if item_id in list(person.keys()):
             person[item_id] += quantity

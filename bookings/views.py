@@ -3,14 +3,14 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Booking, Trips
+from .models import Booking
 
 
 # Create your views here.
 
 
 def all_bookings(request):
-    """ A view to show all bookings, including sorting and search queries """
+    """ A view to show all bookings """
 
     bookings = Booking.objects.all()
     query = None
