@@ -155,7 +155,7 @@ h1 {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgb(139, 187, 250);
+  background: white;
   z-index: -1;
 }
 
