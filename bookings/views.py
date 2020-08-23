@@ -35,7 +35,7 @@ def all_bookings(request):
 
         if 'trips' in request.GET:
             trips = request.GET['trips'].split(',')
-            bookings = bookings.filter(category__name__in=trips)
+            bookings = bookings.filter(trips__name__in=trips)
             trips = trips.objects.filter(name__in=trips)
 
     if request.GET:

@@ -47,7 +47,7 @@
                 {% endif %}
 			    <p class="mt-3">{{ booking.description }}</p>
 
-			<form class="form" action="{% url 'add_to_bag' booking.id %}" method="POST">
+			<form class="form" action="{% url 'add_person' booking.id %}" method="POST">
 				{% csrf_token %}
 				<!--Django's cross-site forgery protection-->
 				<div class="form-row">
