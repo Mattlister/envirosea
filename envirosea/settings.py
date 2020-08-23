@@ -26,6 +26,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['mattlister-envirosea.herokuapp.com', 'localhost']
 
+AWS_DEFAULT_ACL = None
 
 # Application definition
 
