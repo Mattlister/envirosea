@@ -1,14 +1,14 @@
 Envirosea
 
 Envirosea is a website dedicated to preserving our oceans and helping to save all marine life. This is something we must do in vain
-to help the future of the planet or it will die. The oceans provide the planet with so many resources and without it, the world has 
-no chance of life. The greatest killer of the sea is plastic. Plastic has been around since the 19 and its uses have grown and grown 
-to become one of the most common materials in life. It's not a natural material, not a natural resource but it's everywhere and the
-frightening fact behind it is, it doesn't work with the rest of the planet. It kills the planet. This man made material can not be 
-broken down, it will not go away on it's own for thousands of years. It just sits there and helps to kill all of the natural resources
-of the planet. Envirosea has been designed to showcase what plastic is doing to our oceans. What it's killing and how it's going to take
-an absolutely huge cleanup to reverse it's affects. We need to stamp out plastic all over the planet. We can see what it's doing on land.
-We can see the affect on land, we can gather up the plastics and work out what to do with it. In the ocean, it's a hidden killer and we
+to help the future of the planet or it will simply die. The oceans provide the planet with so many resources and without it, the world has 
+no chance of life. That may sound blunt and harsh but it is a true fact. The greatest killer of the sea is plastic. Plastic has been around 
+since the 1800's and its uses have grown and grown to become one of the most common materials in life. It's not a natural material, not a natural 
+resource but it's everywhere and the frightening fact behind it is, it doesn't work with the rest of the planet. It kills the planet. This man 
+made material cannot be broken down, it will not go away on it's own for thousands of years. It just sits there and helps to kill all of the 
+natural resources of the planet. Envirosea has been designed to showcase what plastic is doing to our oceans. What it's killing and how it's 
+going to take an absolutely huge cleanup to reverse it's affects. We need to stamp out plastic all over the planet. We can see what it's doing 
+on land. We can see the affect on land, we can gather up the plastics and work out what to do with it. In the ocean, it's a hidden killer and we
 need to change this. Welcome to the Envirosea Project.
 
 ## Table of Contents
@@ -52,7 +52,7 @@ need to change this. Welcome to the Envirosea Project.
 
 ### Project Functionailty of Envirosea. 
 
-The Envirosea application is a full-stack built project built using business logic to create a central databsae created using SQL.
+The Envirosea application is a full-stack project built using business logic to create a central databsae created using SQL.
 It using Django Frameworks as the main backbone of the project but also incoroprates HTML, CSS and JavaScript for design purposes.
 It has CRUD technology built in so a user can update their information and this will transfer to the dataset at the backend. It's 
 a fully functional site using all elements of Full Stack to create a fully designed project. Defensive design has also been used for
@@ -512,17 +512,20 @@ when accessing the database (Build on this)
 
 ### Huge Thanks
 
-   * I'm extremely grateful to my mentor Simen Daehlin who has supported me throughout the entire course and has been a 
+   * I'm extremely grateful to my mentor [Simen Daehlin](https://github.com/Eventyret) who has supported me throughout the entire course and has been a 
     great influence and supported me all through each project. He helped me understand better processes of my code and 
     develop better efficient industry standards. He was patient, considered some of my issues when I was struggling and helped
     me in many ways.
 
-   * I'd like to say a huge thank you to Anna Greaves for helping me, seeing my determination and helping me with my progression.
+   * I'd like to say a huge thank you to [Anna Greaves](https://github.com/AJGreaves) for helping me, seeing my determination and helping me with my progression.
 
-   * Thank you to Anthony O'Brien for checking in and helping me progress and offering his advice to keep me going.
+   * Thank you to [Anthony O'Brien](https://github.com/auxfuse) for checking in and helping me progress and offering his advice to keep me going.
 
-   * Thank you as well to Anna, Scott, Tim, Samantha, Haley and all the CI tutors and support team who really had my back to help me 
-    progress again through my course and with this project.
+   * Thank you to [Scott Kipp](https://github.com/ShavingSeagull) for his amazing support with some obstacles with my project.
+
+
+  * Thank you as well to <b>Anna</b>, <b>Scott</b>, <b>Tim</b>, <b>Samantha</b>, <b>Haley</b> and all the <b>CI tutors</b> and <b>support team</b> who really helped me progress with the project and my entire 
+  course because I wouldn't have made it without any of you.
 
 ### Disclaimer
 
@@ -541,7 +544,6 @@ Kind Regards,
 Matthew
 
 
-
-### isclaimer
+### Disclaimer
 
 The contents of this wesbite are for educational purposes only.
