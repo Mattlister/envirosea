@@ -11,7 +11,7 @@ an absolutely huge cleanup to reverse it's affects. We need to stamp out plastic
 We can see the affect on land, we can gather up the plastics and work out what to do with it. In the ocean, it's a hidden killer and we
 need to change this. Welcome to the Envirosea Project.
 
-## Contents
+## Table of Contents
 
 ### 1. UX
 
@@ -23,17 +23,25 @@ need to change this. Welcome to the Envirosea Project.
 * [Deployment](#Deployment)
 * [Testing](#Testing-and-Bugs)
 
-
-### 2. Features
-
 ### 2. Features
 
 * [Site Features](#Site-Features)
 * [Future Plans](#Future-plans)
 
-### 3. Technologies Used 
+3. [Technologies Used](#Technologies-Used)
 
-* [Technologies Used](#Technologies-Used)
+* [Languages](*Languages)
+* [Libraries and Frameworks](*Libraries-and-Frameworks)
+* [Tools](*Tools)
+* [Databases](*Databases)
+
+
+5. [Testing](*Testing)
+
+6. [Deployment](*Deployment)
+
+* [Local Deployment](*Local-Deployment)
+* [Heroku Deployment](*Heroku-Deployment)
 
 
 ### Project Functionailty of Envirosea. 
@@ -266,18 +274,10 @@ AWS S3 Basket within the [Amazon_Web_Services_AWS](https://aws.amazon.com/)
 
 7. Then Press Enter and your local clone will be created.
 
-8. You may need to upgrade pip locally with:
-
-pip install --upgrade pip
-
-To install all required modules, use the command
-
-pip -r requirements.txt.
-
 For more information [GitHub_Help_Page](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
 
-9. In your local IDE, you will need to enter the environment variables by doing the following:
+8. In your local IDE, you will need to enter the environment variables by doing the following:
 
     * Click on your profile image in the top right hand corner and select 'Open Access Control' which will take you to the homepage.
 
@@ -294,16 +294,50 @@ For more information [GitHub_Help_Page](https://docs.github.com/en/github/creati
     os.environ["STRIPE_SECRET_KEY"] = "<Your Stripe Secret key>"    
     os.environ["STRIPE_WH_SECRET"] = "<Your Stripe WH_Secret key>"    
 
+Stripe is being used to handle credit card payments and is an extremely useful tool to use and understand. For more information about
+how it works and managing API Keys, please head over to the following site for more information [Stripe](https://stripe.com/docs/keys)
 
 
+9. You will then need to install all required modules found in the requirements.txt file by using the following command:
 
-Inside the .env file, create a SECRET_KEY variable and a MONGO_URI to link to your own database. Please make sure to call your database Envirosea.
+pip -r requirements.txt.
+   
+10. You will then need to create the DataBase in the terminal of your IDE so you can migrate information to the DataBase. You will need to
+do this when you are migrating new information to your AllAuth DataBase.
 
-10. To run the application, use the command
+* Firstly, to make sure there are no errors, do a dry run in the terminal@
 
-python app.py
+python3 manage.py makemigrations --dry-run
 
-Then, you can visit the website at http://127.0.0.1:5000
+If no changes, run:
+
+python3 manage.py makemigrations
+
+These command prepare the migration and then run:
+
+python3 manage.py migrate
+
+11. You then need to load your JSON data fixtures/ files into the AllAuth DataBase. The JSON file includes the SKU, categories etc and 
+this determines your products on the front end. Ratings, pricing and other details is produced in here.
+
+Load the data fixtures(categories, products, Bookings, Trips) in that order into the database using the following command:
+python3 manage.py loaddata <fixture_name>
+
+12. You will then need to create a SuperUser who will have access to the admin panel. Follow the instructions to create this information
+and create your username, email and password (needed twice for confirmation). 
+
+To do this, use the following command in the IDE Terminal:
+
+python3 manage.py createsuperuser
+
+13. You can then run your application using:
+
+python3 manage.py runserver
+
+This will then load up your website/application. To view the admin panel, add /admin at the end of the URL and log in with your
+SuperUser credentials.
+
+
 
 ### Back to Heroku Deployment (Windows Deployment is different and explained within the course)
 
@@ -313,25 +347,39 @@ To deploy Envirosea to Heroku, I used a Linux based system as I have an Apple Ma
 
 2. I had to create a requirement.txt file using a terminal command: pip freeze > requirements.txt.
 
-3. Then, I had to add to create a Procfile using the following command: echo web: python app.py > Procfile.
+3. Then, I had to add to create a Procfile using the following command: web: envirosea.wsgi:application
 
-4. I then had to push the files to GitHub. git add (Enter) git commit (Named commit) which adds the requirements and Procfile to GitHub. Then using the git push command, it updates to my GitHub repository.
+4. I then pushed the files to GitHub doing the following:
+
+git add . (The full stop includes all file that have been changed and adds them to be committed)
+git commit (Named commit) which adds the requirements and Procfile to GitHub. 
+Then using the git push command, it updates to my GitHub repository.
 
 
 ## The next stage pushing to Heroku
 
-### We know the commits push to GirHub but I need the commits I make to reflect within Heroku and so to do this, I have to create a new Heroku application by doing the following.
+### We know the commits push to GitHub but I need the commits I make to reflect within Heroku and so to do this, I have to create a new Heroku application by doing the following.
 
-1. Create an account and log into the Heroku website. Then, Create a new app by clicking the "New" button in the dashboard. You need to name the application so I gave mine the same name as the application I'm creating and then set the region to Europe.
+Firstly, other applications which need to be installed for Heroku deployment are: 
+
+gunicorn (WSGI HTTP Server)
+dj-database-url for database connection
+Psycopg (PostgreSQL driver for Python). 
+
+I have these installed in this project and the information can be found in the requirements.txt file.
+
+1. Create an account and log into the Heroku website. Then, Create a new app by clicking the "New" button in the dashboard. 
+You need to name the application so I gave mine the same name as the application I'm creating and then set the region to Europe.
 
 2. On the Heroku dashboard, you'll see Deploy. You need to click on "Deploy" > "Deployment method" and select Github. 
 
 3. Confirm the linking of the Heroku app to the correct GitHub repository. This ties the two applications together.
 
-4. Once done, you'll need to add the settings to tie Heroku in with Github, the application you are building and the Mongo DataBase you have created. So, first from the Heroku dashboard of the applcation, click on "Settings"> "Reveal Config Vars"
+4. Once done, you'll need to add the settings to tie Heroku in with Github. Do this by going Resources tab in Heroku, then in 
+the Add-ons search bar look for Heroku Postgres(you can type postgres), select Hobby Dev — Free and click the Provision button to add it to your project.
+Within the Heroku Settings click on Reveal Config Vars.
 
-5. Set the config variables as follows:
-
+5. Set the config variables as follows (bear in mind this information is the same as the AWS secret keys from earlier)
 
 
 | Key     | Value |
@@ -347,17 +395,61 @@ To deploy Envirosea to Heroku, I used a Linux based system as I have an Apple Ma
 | STRIPE_WH_SECRET  | <your_secret_wh_key>     |
 | USE_AWS  | <True>     |
 
-
  6. Back in the Heroku dashboard, click the "Deploy" button.
 
  7. In the Manual Deployment section of the page, make sure you have the master branch selected. Now click "Deploy Branch".
 
  8. Your site has now been deployed successfully.
 
+ 9. Copy DATABASE_URL's value(Postrgres database URL) from the Convig Vars and temporary paste it into the default database in 
+ settings.py. Comment out the current database settings code temporarily add the following to settings.py:
+  
+  DATABASES = {     
+        'default': dj_database_url.parse("<your Postrgres database URL here>")     
+    }
 
+THIS SHOULD NOT BE COMMITTED TO GITHUB FOR SECURITY REASONS
 
- * You're Django Framework setup is specic to YOUR site, to create your own, use the Django Frameworks documenation [Found Here](https://www.djangoproject.com/)
+ Make sure not to commit your changes to Git whilst your URL is in the settings.py file.
 
+10. Once this is done, you then migrate the database models to the Postgres database using the same commands as above in the terminal:
+
+python3 manage.py makemigrations --dry run (for testing)
+
+python3 manage.py makemigrations (To deploy if no errors)
+
+python3 manage.py migrate (To push the data across)
+
+11. Load the data fixtures(categories, products, Bookings, Trips) into the Postgres database using the following command:
+python3 manage.py loaddata <fixture_name>
+
+12. Again, you need to create a superuser for the Postgres database using the same settings as above:
+python3 manage.py createsuperuser
+
+12. Then remove your Postgres URL database from the settings and uncomment the default DATABASE settings code in the settings.py file.
+Note: for production you'll add the environment variable 'DATABASE_URL' from the Heroku Config Vars and use Postgress database, 
+but for development you need to use the SQLite as a default database.
+
+13. Once done, add your Heroku app URL to ALLOWED_HOSTS in the settings.py file. 
+
+14. You can connect Heroku to GitHub to automatically deploy 
+each time you push to GitHub from the terminal command line. To do so, you need to go to the Heroku 
+dashboard and carry out following the steps:
+
+Go to: Deploy section -> Deployment method -> select GitHub and
+link the Heroku app to your GitHub repository for this project.
+-> click Enable Automatic Deploys in the Automatic Deployment section
+-> Run git push commands in the terminal as normal, this would now deploy your code to both Github and Heroku.
+
+You can do the following from the terminal by doing the following:
+
+heroku login
+after adding and comitting to Git, run the following command:
+git push heroku master
+After successful deployment, you can view your app bu clicking Open App on Heroku platform.
+You will also need to verify your email address, so you need to login with your superuser credentials and verify your email address in the admin panel. Now you will be able to view the app running!
+Hosting media files with AWS
+The static files for this project are hosted in WhiteNoise(all the settings are in place and will be installed with requirements.txt, you don't need to do anything). The media files that will be uploaded by users(product/service images upliaded by superuser) are hosted in the AWS S3 Bucket. To do so, you need to create an account in AWS and create your S3 basket with public access. More about setting it up you can read in Amazon S3 documentation and this tutorial.
 
 
 
