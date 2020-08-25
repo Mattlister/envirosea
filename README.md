@@ -152,7 +152,7 @@ The colour palette below displays the core content colours of the site. Based ar
 contains the overall colour choices of the site.
 
 <p align="center">
-  <img width="600" height="100" src="media/bluetogreen.jpg">
+  <img width="600" height="100" src="media/greentoblue.jpg">
 </p>
 
 ### images
@@ -175,12 +175,21 @@ realisation of what we're fighting for.
 </p>
 
 <p align="center">
-  <img width="700" height="400" src="wireframes/tabpagehome.jpg">
+  <img width="700" height="400" src="wireframes/enviroseamob.jpg">
 </p>
 
 <p align="center">
-  <img width="700" height="400" src="wireframes/mobpagehome.jpg">
+  <img width="700" height="400" src="wireframes/oceanfullscreen.jpg">
 </p>
+
+<p align="center">
+  <img width="700" height="400" src="wireframes/oceantab.jpg">
+</p>
+
+<p align="center">
+  <img width="700" height="400" src="wireframes/oceanmob.jpg">
+</p>
+
 
 * Envirosea Data Models
 
