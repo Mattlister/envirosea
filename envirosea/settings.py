@@ -22,7 +22,10 @@ SECRET_KEY = os.environ.get(
     'SECRET_KEY', '00g*c*qr8jiaz*2vb6-+ik)uc)u1_gkxr)q%^h+2f04uw2q-mp')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+# DEBUG = 'DEVELOPMENT' in os.environ
+
+DEBUG = True
+
 
 ALLOWED_HOSTS = ['mattlister-envirosea.herokuapp.com', 'localhost']
 
@@ -222,4 +225,4 @@ STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 DEFAULT_FROM_EMAIL = 'envirosea@example.com'
 
-Debug = True
+
