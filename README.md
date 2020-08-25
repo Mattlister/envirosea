@@ -66,7 +66,6 @@ from being accessible to an outside user. To enhance layout and responsive fluid
 design of the project as it's such a great resource. 
 
 
-
 ### UX (User Experience)
 
 ### User Stories
@@ -101,12 +100,7 @@ ignore what we're doing and I want to be able make a difference and using the in
 to fight the threat of plastics and prevent more danger to our oceans.
 
 
-### User and Project Goals
-
-I would also like users:
-
-
-### User Objects
+### Project Goals
 
 * Envirosea has been designed for the soul purpose of changing the planet. As a life support to Earth, we must protect our oceans. 97% of
 the worlds water is held by the ocean and provides us with so much. It regulates our climate, absorbs CO2 and provides us with sustainable
@@ -146,6 +140,7 @@ and help to aid the design of the site.
 Going in to this with fresh eyes, I was able to pick out things I believed would work and put together a design that looked good on 
 all screen sizes.
 
+
 ### Envirosea Design choices
 
 * The design of my website was designed with the colours of the ocean in mind. Blue's, Green's and "Aqua" we're what I envisioned
@@ -157,7 +152,7 @@ The colour palette below displays the core content colours of the site. Based ar
 contains the overall colour choices of the site.
 
 <p align="center">
-  <img width="600" height="100" src="static/images/bluetogreen.jpg">
+  <img width="600" height="100" src="media/bluetogreen.jpg">
 </p>
 
 ### images
@@ -225,7 +220,6 @@ study and follow the course material in depth. Envirosea brought some interestin
 and most poweful work I've produced. Django as a framework has opened my eyes in regards to what else I can achieve and I shall be using
 it for many projects going forward.
 
-* 
 
 ### Database Design:
 
@@ -233,8 +227,6 @@ it for many projects going forward.
 
 * The database used is a Postgres SQL database which is hosted and provided by Heroku. Both products used allowed me to publish my data
 using these and also the Allauth secure software.
-
-
 
 
 ### Deployment
