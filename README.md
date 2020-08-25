@@ -233,6 +233,9 @@ using these and also the Allauth secure software.
 
 GitHub Full Template Used as part of the process including software extensions for GitPod [Gitpod-Full-Template](https://github.com/Code-Institute-Org/gitpod-full-template)
 
+* The site is hosted via the [Heroku](https://www.heroku.com/) cloud platform. Static files and uplaoded images into an online media location to create URL's was done using the 
+AWS S3 Basket within the [Amazon_Web_Services_AWS](https://aws.amazon.com/)
+
 ### Deployment to Github
 
 ### When deploying Envirosea from the [GitHub repository], I used the following process:
@@ -247,11 +250,9 @@ GitHub Full Template Used as part of the process including software extensions f
 
 [Python3 (Mine is MAC SPECIFIC)](https://www.python.org/downloads/mac-osx/) Prerequisites for installing Python3 on MAC
 
-[Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03)
+[Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03) was the IDE I used to create my project.
 
- * You're MONGO_URI is specific to YOUR site, to create your own, read the MongoDB Atlas documenation [Found Here](https://docs.atlas.mongodb.com/)
-
- 1. Open the GitHub dashboard and locate the repository
+1. Open the GitHub dashboard and locate the repository
 
 2. Under repository name, select the "Clone or download" green button located to the right of the page.
 
@@ -265,7 +266,7 @@ GitHub Full Template Used as part of the process including software extensions f
 
 7. Then Press Enter and your local clone will be created.
 
-8. You mauy need to upgrade pip locally with:
+8. You may need to upgrade pip locally with:
 
 pip install --upgrade pip
 
@@ -273,8 +274,28 @@ To install all required modules, use the command
 
 pip -r requirements.txt.
 
+For more information [GitHub_Help_Page](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
-9. In your local IDE create a file called .env (environment variables file)
+
+9. In your local IDE, you will need to enter the environment variables by doing the following:
+
+    * Click on your profile image in the top right hand corner and select 'Open Access Control' which will take you to the homepage.
+
+    * Click on the downard facing arrow to the right of your profile image and choose 'Settings' from the menu and this will take you
+    to the environment variables page. The information is displayed here but hidden within the project for security reasons.
+    In this location, you will enter the stripe security keys provided by their settings when you create an account and follow the processes.
+
+    * The following information within your settings.py file is the stripe key settings. These works in tangent with the environment variable settings:
+
+    import os  
+    os.environ["DEVELOPMENT"] = "True"    
+    os.environ["SECRET_KEY"] = "<Your Secret key>"    
+    os.environ["STRIPE_PUBLIC_KEY"] = "<Your Stripe Public key>"    
+    os.environ["STRIPE_SECRET_KEY"] = "<Your Stripe Secret key>"    
+    os.environ["STRIPE_WH_SECRET"] = "<Your Stripe WH_Secret key>"    
+
+
+
 
 Inside the .env file, create a SECRET_KEY variable and a MONGO_URI to link to your own database. Please make sure to call your database Envirosea.
 
@@ -334,6 +355,8 @@ To deploy Envirosea to Heroku, I used a Linux based system as I have an Apple Ma
  8. Your site has now been deployed successfully.
 
 
+
+ * You're Django Framework setup is specic to YOUR site, to create your own, use the Django Frameworks documenation [Found Here](https://www.djangoproject.com/)
 
 
 
