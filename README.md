@@ -43,6 +43,14 @@ need to change this. Welcome to the Envirosea Project.
 * [Local Deployment](*Local-Deployment)
 * [Heroku Deployment](*Heroku-Deployment)
 
+7. [Credits](*Credits)
+
+* [Code Used](*Code-Used)
+* [Media Used](*Media-Used)
+* [Acknowledgements](*Acknowledgements)
+
+8. [Disclaimer](*Disclaimer)
+
 
 ### Project Functionailty of Envirosea. 
 
