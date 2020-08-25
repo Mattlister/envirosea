@@ -417,7 +417,7 @@ Within the Heroku Settings click on Reveal Config Vars.
 
 THIS SHOULD NOT BE COMMITTED TO GITHUB FOR SECURITY REASONS
 
- Make sure not to commit your changes to Git whilst your URL is in the settings.py file.
+* Make sure not to commit your changes to Git whilst your URL is in the settings.py file.
 
 10. Once this is done, you then migrate the database models to the Postgres database using the same commands as above in the terminal:
 
@@ -433,22 +433,22 @@ python3 manage.py loaddata <fixture_name>
 12. Again, you need to create a superuser for the Postgres database using the same settings as above:
 python3 manage.py createsuperuser
 
-12. Then remove your Postgres URL database from the settings and uncomment the default DATABASE settings code in the settings.py file.
+13. Then remove your Postgres URL database from the settings and uncomment the default DATABASE settings code in the settings.py file.
 Note: for production you'll add the environment variable 'DATABASE_URL' from the Heroku Config Vars and use Postgress database, 
 but for development you need to use the SQLite as a default database.
 
-13. Once done, add your Heroku app URL to ALLOWED_HOSTS in the settings.py file. 
+14. Once done, add your Heroku app URL to ALLOWED_HOSTS in the settings.py file. 
 
-14. You can connect Heroku to GitHub to automatically deploy 
+15. You can connect Heroku to GitHub to automatically deploy 
 each time you push to GitHub from the terminal command line. To do so, you need to go to the Heroku 
 dashboard and carry out following the steps:
 
-Go to: Deploy section -> Deployment method -> select GitHub and
+16. Go to: Deploy section -> Deployment method -> select GitHub and
 link the Heroku app to your GitHub repository for this project.
 -> click Enable Automatic Deploys in the Automatic Deployment section
 -> Run git push commands in the terminal as normal, this would now deploy your code to both Github and Heroku.
 
-You can do the following from the terminal by doing the following:
+17. You can do the same from the terminal by doing the following:
 
 heroku login
 after adding and comitting to Git, run the following command:
@@ -478,7 +478,6 @@ go to helping protecting the oceans on our planet.
 </p>
 
 
-
 * The video background is responsive and holds the options to visit the products store or bookings part of the site.
 
 * The Oceans page holds information about Envirosea, what we're doing and why we're doing it. Some images of some amazing sea creatures and has a
@@ -486,16 +485,6 @@ gradient wrapper around the content.
 
 * The Change page has information in regards to plastics in the oceans, facts about what the Oceans provide and what we can do to take care of it. 
 Again, there's a gradient wrapper which holds the content and information.
-
-
-
-
-
-
-
-
-
-
 
 
 ### Registration and Login added for security and defensive design
@@ -604,8 +593,6 @@ To deploy Envirosea to Heroku, I used a Linux based system as I have an Apple Ma
 
 
 
-
-
 | Key     | Value |
 | ----------- | ----------- |
 | DATABSE_URL  | <your_database_url>       |
@@ -622,43 +609,36 @@ To deploy Envirosea to Heroku, I used a Linux based system as I have an Apple Ma
 
 
 
+### Acknowledgements
 
-Acknowledgements
-
-    I would like to thank many people that have helped me with my MS4 and my journey through the course. It hasn't been easy for me as
-
+   * I would like to thank many people that have helped me with my MS4 and my journey through the course. It hasn't been easy for me as
     I've had personal issues that have held me back. I'm very thankful for the extensions I was given and the understanding provided by
-
     the support staff.
 
 
-Huge Thanks
+### Huge Thanks
 
-    I'm extremely grateful to my mentor Simen Daehlin who has supported me throughout the entire course and has been a 
-    
+   * I'm extremely grateful to my mentor Simen Daehlin who has supported me throughout the entire course and has been a 
     great influence and supported me all through each project. He helped me understand better processes of my code and 
-    
     develop better efficient industry standards. He was patient, considered some of my issues when I was struggling and helped
-
     me in many ways.
 
-    I'd like to say a huge thank you to Anna Greaves for helping me, seeing my determination and helping me with my progression.
+   * I'd like to say a huge thank you to Anna Greaves for helping me, seeing my determination and helping me with my progression.
 
-    Thank you to Anthony O'Brien for checking in and helping me progress and offering his advice to keep me going.
+   * Thank you to Anthony O'Brien for checking in and helping me progress and offering his advice to keep me going.
 
-    Thank you as well to Anna, Scott, Tim, Samantha, Haley and all the CI tutors and support team who really had my back to help me 
-    
+   * Thank you as well to Anna, Scott, Tim, Samantha, Haley and all the CI tutors and support team who really had my back to help me 
     progress again through my course and with this project.
 
-Disclaimer
+### Disclaimer
 
-    The content of the Website I have produced is for educational purposes only including all images and videos.
-    The links for the Facebook and Twitter sites were added for educational use only as well
-    Information used for facts were provided by WWF and 
+   * The content of the Website I have produced is for educational purposes only including all images and videos.
+   * The links for the Facebook and Twitter sites were added for educational use only as well
+   * Information used for facts were provided by WWF and 
 
-For my friends currently working on their Milestone 4 projects.
-
-    I'm happy if youy'd like to use my readme file as a reference and guide as an example of how to write a strucured milestone project. The format will hopefully be of use to you but it is not ok to copy directly from mine for your own project.
+### For my friends currently working on their Milestone 4 projects.
+*
+I'm happy if youy'd like to use my readme file as a reference and guide as an example of how to write a strucured milestone project. The format will hopefully be of use to you but it is not ok to copy directly from mine for your own project.
 
 Thank you for your understanding,
 
@@ -668,6 +648,6 @@ Matthew
 
 
 
-Disclaimer
+### isclaimer
 
 The contents of this wesbite are for educational purposes only.
