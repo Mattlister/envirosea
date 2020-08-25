@@ -197,17 +197,145 @@ realisation of what we're fighting for.
 
 ### Databases:
 
-* [PostgresSQL](https://www.postgresql.org/)
+* [PostgresSQL](https://www.postgresql.org/) - Production Database
+* [SQLite3](https://www.sqlite.org/index.html) - Development Database
 
 
-Database Design:
+### Planning:
+
+* Using new technologies on a project is sometimes daunting and so planning was of high importance to make sure everything went as 
+smoothly as possible. Using new frameworks, API's and new programming languages was a learning curve and so I had to make sure to
+study and follow the course material in depth. Envirosea brought some interesting challenges but I found it to be the most rewarding
+and most poweful work I've produced. Django as a framework has opened my eyes in regards to what else I can achieve and I shall be using
+it for many projects going forward.
+
+* 
+
+### Database Design:
 
 * Development of the Envirsoea was developed using sqlite3 that is installed as part of the Django Framework.
 
 * The database used is a Postgres SQL database which is hosted and provided by Heroku. Both products used allowed me to publish my data
 using these and also the Allauth secure software.
 
-### Data Models
+
+
+
+### Deployment
+
+### Software Deployment and Software Cloning Technologies Used:
+
+* This project was developed using the GitPod IDE (Integrated Development Environment) software. The data was then pushed to GitHub also using the GitPod IDE.
+
+* The project was regularly pushed to the GitHub repository  and published to GitHub and Heroku pages using GitPod commands. Please read the guides below.
+
+* First, I used the following as pre made template base for my site provided by Code Institute: 
+
+GitHub Full Template Used as part of the process including software extensions for GitPod [Gitpod-Full-Template](https://github.com/Code-Institute-Org/gitpod-full-template)
+
+### Deployment to Github
+
+### When deploying Envirosea from the [GitHub repository], I used the following process:
+
+### Deployment
+
+### To run the project locally
+
+* To run this project within your own IDE such as GitPod, Visual Studio or PyCharm, you'll need the following installed on your machine as they are necessary tools needed for the sites creation:
+
+[PIP](https://pip.pypa.io/en/stable/installing/) Is a standard package management system used to install and manage software packages specifically written in Python.
+
+[Python3 (Mine is MAC SPECIFIC)](https://www.python.org/downloads/mac-osx/) Prerequisites for installing Python3 on MAC
+
+[Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03)
+
+ * You're MONGO_URI is specific to YOUR site, to create your own, read the MongoDB Atlas documenation [Found Here](https://docs.atlas.mongodb.com/)
+
+ 1. Open the GitHub dashboard and locate the repository
+
+2. Under repository name, select the "Clone or download" green button located to the right of the page.
+
+3. Select the "clipboard icon" on the right hand side of the page to copy the URL of the clone.
+
+4. In your own IDE, open a terminal window.
+
+5. Change the current working directory to your location of choice where you'd like the directory to be made.
+
+6. Paste your Git URL which you copied and click "OK".
+
+7. Then Press Enter and your local clone will be created.
+
+8. You mauy need to upgrade pip locally with:
+
+pip install --upgrade pip
+
+To install all required modules, use the command
+
+pip -r requirements.txt.
+
+
+9. In your local IDE create a file called .env (environment variables file)
+
+Inside the .env file, create a SECRET_KEY variable and a MONGO_URI to link to your own database. Please make sure to call your database Envirosea.
+
+10. To run the application, use the command
+
+python app.py
+
+Then, you can visit the website at http://127.0.0.1:5000
+
+### Back to Heroku Deployment (Windows Deployment is different and explained within the course)
+
+To deploy Envirosea to Heroku, I used a Linux based system as I have an Apple MacBook Pro laptop.
+
+1. I had to download and install the Heroku CLI software and run: brew install heroku from the command line. This makes it easier to create and manage the Heroku application direct from the command line.
+
+2. I had to create a requirement.txt file using a terminal command: pip freeze > requirements.txt.
+
+3. Then, I had to add to create a Procfile using the following command: echo web: python app.py > Procfile.
+
+4. I then had to push the files to GitHub. git add (Enter) git commit (Named commit) which adds the requirements and Procfile to GitHub. Then using the git push command, it updates to my GitHub repository.
+
+
+## The next stage pushing to Heroku
+
+### We know the commits push to GirHub but I need the commits I make to reflect within Heroku and so to do this, I have to create a new Heroku application by doing the following.
+
+1. Create an account and log into the Heroku website. Then, Create a new app by clicking the "New" button in the dashboard. You need to name the application so I gave mine the same name as the application I'm creating and then set the region to Europe.
+
+2. On the Heroku dashboard, you'll see Deploy. You need to click on "Deploy" > "Deployment method" and select Github. 
+
+3. Confirm the linking of the Heroku app to the correct GitHub repository. This ties the two applications together.
+
+4. Once done, you'll need to add the settings to tie Heroku in with Github, the application you are building and the Mongo DataBase you have created. So, first from the Heroku dashboard of the applcation, click on "Settings"> "Reveal Config Vars"
+
+5. Set the config variables as follows:
+
+
+
+| Key     | Value |
+| ----------- | ----------- |
+| AWS_ACCESS_KEY_ID  | <your_aws_secret_key>       |
+| AWS_SECRET_ACCESS_KEY   | <your_aws_secret_access_key>     |
+| DATABASE_URL  | <your_postgres_database_URL>     |
+| EMAIL_HOST_PASS  | <your_email_password(generated_by_Hotmail)>       |
+| EMAIL_HOST_USER  | <your_email_address>        |
+| SECRET_KEY  | <your_secret_key>     |
+| STRIPE_PUBLIC_KEY  | <your_stripe_public_key>     |
+| STRIPE_SECRET_KEY  | <your_stripe_secret_key>     |
+| STRIPE_WH_SECRET  | <your_secret_wh_key>     |
+| USE_AWS  | <True>     |
+
+
+ 6. Back in the Heroku dashboard, click the "Deploy" button.
+
+ 7. In the Manual Deployment section of the page, make sure you have the master branch selected. Now click "Deploy Branch".
+
+ 8. Your site has now been deployed successfully.
+
+
+
+
 
 
 
