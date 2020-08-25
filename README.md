@@ -171,7 +171,7 @@ realisation of what we're fighting for.
 ### Wireframes and concept drawings
 
 <p align="center">
-  <img width="700" height="400" src="wireframes/fullpagehome.jpg">
+  <img width="700" height="400" src="wireframes/enviroseatab.jpg">
 </p>
 
 <p align="center">
