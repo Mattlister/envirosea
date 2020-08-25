@@ -126,8 +126,7 @@ in with the colour of the ocean and white because it's clean. A grey font colour
 on the pages. The images themsleves, frightening and stunning showcase the changes we need to make. The videos are all from vimeo
 and help to aid the design of the site.
 
-* My wireframes have a general layout for the pages and the inital template for my design. There are also concept images which I've
-drawn in Gravit designer. I looked at other sites with a similar theme to get an understanding of what my design would benefit from.
+* My wireframes have a general layout for the pages and the inital template for my design. I looked at other sites with a similar theme to get an understanding of what my design would benefit from.
 Going in to this with fresh eyes, I was able to pick out things I believed would work and put together a design that looked good on 
 all screen sizes.
 
@@ -157,8 +156,6 @@ But, we also have to see the other side and so my images are used to show everyt
 realisation of what we're fighting for.
 
 ### Font's Used
-
-
 
 ### Wireframes and concept drawings
 
@@ -196,6 +193,12 @@ realisation of what we're fighting for.
 * [SCSS](https://sass-lang.com/)
 * [Stripe](https://stripe.com/gb/payments)
 * [GitPod](https://www.gitpod.io/)
+* [Gunicorn](https://pypi.org/project/gunicorn/)
+
+### Databases:
+
+* [PostgresSQL](https://www.postgresql.org/)
+
 
 Database Design:
 
@@ -342,8 +345,48 @@ To deploy Envirosea to Heroku, I used a Linux based system as I have an Apple Ma
 
 
 
-Credits
+Acknowledgements
 
+    I would like to thank many people that have helped me with my MS4 and my journey through the course. It hasn't been easy for me as
+
+    I've had personal issues that have held me back. I'm very thankful for the extensions I was given and the understanding provided by
+
+    the support staff.
+
+
+Huge Thanks
+
+    I'm extremely grateful to my mentor Simen Daehlin who has supported me throughout the entire course and has been a 
+    
+    great influence and supported me all through each project. He helped me understand better processes of my code and 
+    
+    develop better efficient industry standards. He was patient, considered some of my issues when I was struggling and helped
+
+    me in many ways.
+
+    I'd like to say a huge thank you to Anna Greaves for helping me, seeing my determination and helping me with my progression.
+
+    Thank you to Anthony O'Brien for checking in and helping me progress and offering his advice to keep me going.
+
+    Thank you as well to Anna, Scott, Tim, Samantha, Haley and all the CI tutors and support team who really had my back to help me 
+    
+    progress again through my course and with this project.
+
+Disclaimer
+
+    The content of the Website I have produced is for educational purposes only including all images and videos.
+    The links for the Facebook and Twitter sites were added for educational use only as well
+    Information used for facts were provided by WWF and 
+
+For my friends currently working on their Milestone 4 projects.
+
+    I'm happy if youy'd like to use my readme file as a reference and guide as an example of how to write a strucured milestone project. The format will hopefully be of use to you but it is not ok to copy directly from mine for your own project.
+
+Thank you for your understanding,
+
+Kind Regards,
+
+Matthew
 
 
 
