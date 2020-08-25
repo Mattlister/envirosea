@@ -36,8 +36,6 @@ need to change this. Welcome to the Envirosea Project.
 * [Databases](*Databases)
 
 
-5. [Testing](*Testing)
-
 6. [Deployment](*Deployment)
 
 * [Local Deployment](*Local-Deployment)
@@ -460,6 +458,28 @@ You will also need to verify your email address, so you need to login with your 
 Hosting media files with AWS
 The static files for this project are hosted in WhiteNoise(all the settings are in place and will be installed with requirements.txt, you don't need to do anything). The media files that will be uploaded by users(product/service images upliaded by superuser) are hosted in the AWS S3 Bucket. To do so, you need to create an account in AWS and create your S3 basket with public access. More about setting it up you can read in Amazon S3 documentation and this tutorial.
 
+### Testing
+
+* Testing this project was relatively difficult. There were so many elements to understand and use within the project and so each stage of testing after 
+implementation was of high importance. I tested locally within the project and through the live connection. I also asked for testers from Slack in the Peer Review
+to see what they thought of the site. To gain an understanding of what the site did and I used their feedback to make the final touches to the site.
+
+### Features
+
+* Envirosea's applications are: Home, Oceans, Change, Products and Bookings.
+
+* Each application showcases different elements of protecting the oceans. There is an option for users to book trips, purchase products and the funds
+go to helping protecting the oceans on our planet.
+
+* The Home Page has a video background playing constantly. It sit's below a header which has separate seach functions. 
+
+* The video background is responsive and holds the options to visit the products store or bookings part of the site.
+
+* The Oceans page holds information about Envirosea, what we're doing and why we're doing it. Some images of some amazing sea creatures and has a
+gradient wrapper around the content.
+
+* The Change page has information in regards to plastics in the oceans, facts about what the Oceans provide and what we can do to take care of it. 
+Again, there's a gradient wrapper which holds the content and information.
 
 
 
