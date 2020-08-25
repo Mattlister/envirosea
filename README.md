@@ -473,6 +473,12 @@ go to helping protecting the oceans on our planet.
 
 * The Home Page has a video background playing constantly. It sit's below a header which has separate seach functions. 
 
+<p align="center">
+  <img width="700" height="400" src="media/homepage.jpg">
+</p>
+
+
+
 * The video background is responsive and holds the options to visit the products store or bookings part of the site.
 
 * The Oceans page holds information about Envirosea, what we're doing and why we're doing it. Some images of some amazing sea creatures and has a
