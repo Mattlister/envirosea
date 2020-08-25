@@ -1,7 +1,7 @@
 [
   {
     "pk": 1,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "1",
       "name": "Bionic Yellow",
@@ -16,7 +16,7 @@
 
   {
     "pk": 2,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "2",
       "name": "Windproof White",
@@ -31,7 +31,7 @@
 
   {
     "pk": 3,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "3",
       "name": "Seabreeze Blue",
@@ -46,7 +46,7 @@
 
   {
     "pk": 4,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "4",
       "name": "Sunshine Yellow",
@@ -61,7 +61,7 @@
 
   {
     "pk": 5,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "5",
       "name": "Oxygen Blue",
@@ -76,7 +76,7 @@
 
   {
     "pk": 6,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "",
       "name": "Autumn Brown",
@@ -91,7 +91,7 @@
 
   {
     "pk": 7,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "7",
       "name": "White Surf",
@@ -106,7 +106,7 @@
 
   {
     "pk": 8,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "8",
       "name": "Blue Surf",
@@ -121,7 +121,7 @@
 
   {
     "pk": 9,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "9",
       "name": "Blue Wave",
@@ -136,7 +136,7 @@
 
   {
     "pk": 10,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "10",
       "name": "Blue Flash",
@@ -151,7 +151,7 @@
 
   {
     "pk": 11,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": 11,
       "name": "Great White Plastic",
@@ -166,7 +166,7 @@
 
   {
     "pk": 12,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "12",
       "name": "Storm Cloud Grey",
@@ -181,7 +181,7 @@
 
   {
     "pk": 13,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "13",
       "name": "Rain Storm Grey",
@@ -196,7 +196,7 @@
 
   {
     "pk": 14,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "14",
       "name": "Great Whale Grey",
@@ -211,7 +211,7 @@
 
   {
     "pk": 15,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "15",
       "name": "Blue Wave White",
@@ -226,7 +226,7 @@
 
   {
     "pk": 16,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "16",
       "name": "Speed Run Blue",
@@ -241,7 +241,7 @@
 
   {
     "pk": 17,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "17",
       "name": "White Lightning",
@@ -256,7 +256,7 @@
 
   {
     "pk": 18,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "18",
       "name": "Road Grip Grey",
@@ -271,7 +271,7 @@
 
   {
     "pk": 19,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "19",
       "name": "Red Sunset",
@@ -286,7 +286,7 @@
 
   {
     "pk": 20,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "20",
       "name": "Swordfish Blue",
@@ -301,7 +301,7 @@
 
   {
     "pk": 21,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "21",
       "name": "Red Coral",
@@ -316,7 +316,7 @@
 
   {
     "pk": 22,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "22",
       "name": "Tiger Shark Grey",
@@ -331,7 +331,7 @@
 
   {
     "pk": 23,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "23",
       "name": "Deep Black Ocean",
@@ -346,7 +346,7 @@
 
   {
     "pk": 24,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "24",
       "name": "Night Sky Navy",
@@ -361,7 +361,7 @@
 
   {
     "pk": 25,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "25",
       "name": "Orca Black",
@@ -376,7 +376,7 @@
 
   {
     "pk": 26,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "26",
       "name": "Porpoise White",
@@ -391,7 +391,7 @@
 
   {
     "pk": 27,
-    "model": "products.product",
+    "model": "products.products",
     "fields": {
       "sku": "27",
       "name": "Betta Fish Black",
