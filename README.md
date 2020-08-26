@@ -234,34 +234,50 @@ For more information about the authentication system Django uses, [click here](h
 | Name     | DataBase Key | Validation | Field Type |
 | ----------- | ----------- | -----------| ----------|
 | User | <user> |
-| Full_Name  | <profile_full_name> |
-| Phone_Number  | <profile_phone_number> | <CharField> |
-| Address_Line_1  | <profile_address_line1>| <CharField> |
-| Address_Line_2  | <profile_address_line2>| <CharField> |
-| Town/City | <profile_town_or_city>     | <CharField> |
-| PostCode  | <profile_county>     | <CharField> |
-| County  | <your_stripe_secret_key>     | <CharField> |
-| Postcode  | <profile_postcode>     | <CharField> |
-| Country  | <profile_country>     | <CharField> |
+| Full_Name  | <profile_full_name> | <max_length=50,_null=False,_blank=False> |
+| Phone_Number  | <profile_phone_number> | <CharField> | <max_length=20,_null=False,_blank=False> |
+| Address_Line_1  | <profile_address_line1>| <CharField> | <max_length=80,_null=False,_blank=False> |
+| Address_Line_2  | <profile_address_line2>| <CharField> | <max_length=80,_null=True,|blank=True> |
+| Town/City | <profile_town_or_city>     | <CharField> | <max_length=40,_null=False,_blank=False> |
+| PostCode  | <profile_county>     | <CharField> | <max_length=20,_null=True,_blank=True> |
+| County  | <your_stripe_secret_key>     | <CharField> | <max_length=80,_null=True,_blank=True> |
+| Postcode  | <profile_postcode>     | <CharField> | <max_length=20,_null=True,_blank=True> |
+| Country  | <profile_country>     | <CharField> | <blank_label='Country_*',_null=False,_blank=False> |
+
+### Checkout App
+
+# Order
+
+ Name     | DataBase Key | Validation | Field Type |
+| ----------- | ----------- | -----------| ----------|
+| Order_Number | <order_number> | <CharField> | <max_length=32,_null=False,_editable=False> |
+| User_Profile | <user_profile> | <ForeignKey> | <UserProfile,_on_delete=models.SET_NULL,_null=True,_blank=True,_related_name='orders'> |
+| Full_Name  | <profile_full_name> | <max_length=50,_null=False,_blank=False> |
+| Email | <email>| <EmailField> | <max_length=254,_null=False,_blank=False> |
+| Phone_Number  | <profile_phone_number> | <CharField> | <max_length=20,_null=False,_blank=False> |
+| Address_Line_1  | <profile_address_line1>| <CharField> | <max_length=80,_null=False,_blank=False> |
+| Address_Line_2  | <profile_address_line2>| <CharField> | <max_length=80,_null=True,|blank=True> |
+| Town/City | <profile_town_or_city>     | <CharField> | <max_length=40,_null=False,_blank=False> |
+| PostCode  | <profile_county>     | <CharField> | <max_length=20,_null=True,_blank=True> |
+| County  | <your_stripe_secret_key>     | <CharField> | <max_length=80,_null=True,_blank=True> |
+| Postcode  | <profile_postcode>     | <CharField> | <max_length=20,_null=True,_blank=True> |
+| Country  | <profile_country>     | <CharField> | <blank_label='Country_*',_null=False,_blank=False> |
+| Delivery_Cost | <delivery_cost>| <DecimalField> | <max_digits=6,_decimal_places=2,_null=False,_default=0> |
+| Order_Total| <order_total> | <DecimalField> | <max_digits=10,_decimal_places=2,_null=False,_default=0> |
+| Grand_Total| <grand_total> | <DecimalField> | <max_digits=10,_decimal_places=2,_null=False,_default=0> |
+| Stripe_Pid| <stripe_pid> | <CharField> |  <max_length=254,_null=False,_blank=False,_default=''> |
+
+
 
 order_number = models.CharField(max_length=32, null=False, editable=False)
-    user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL, 
-                                     null=True, blank=True, related_name='orders')
-    full_name = models.CharField(max_length=50, null=False, blank=False)
-    email = models.EmailField(max_length=254, null=False, blank=False)
-    phone_number = models.CharField(max_length=20, null=False, blank=False)
-    country = CountryField(blank_label='Country *', null=False, blank=False)
-    postcode = models.CharField(max_length=20, null=True, blank=True)
-    town_or_city = models.CharField(max_length=40, null=False, blank=False)
-    street_address1 = models.CharField(max_length=80, null=False, blank=False)
-    street_address2 = models.CharField(max_length=80, null=True, blank=True)
-    county = models.CharField(max_length=80, null=True, blank=True)
+    user_profile = models.ForeignKey()
+    email = models.EmailField()
     date = models.DateTimeField(auto_now_add=True)
-    delivery_cost = models.DecimalField(max_digits=6, decimal_places=2, null=False, default=0)
+    delivery_cost = models.DecimalField()
     order_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
     grand_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
     original_bag = models.TextField(null=False, blank=False, default='')
-    stripe_pid = models.CharField(max_length=254, null=False, blank=False, default='')
+    stripe_pid = models.CharField()
 
 # Product Model
 
