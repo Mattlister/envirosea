@@ -231,7 +231,8 @@ For more information about the authentication system Django uses, [click here](h
 
 # Profile Model
 
-| Name     | DataBase Key | Validation | Field Type |
+|Name     | DataBase Key | Field Type | Validation |
+| ----------- | ----------- | -----------| ----------|
 | ----------- | ----------- | -----------| ----------|
 | User | <user> |
 | Full_Name  | <profile_full_name> | <max_length=50,_null=False,_blank=False> |
@@ -246,6 +247,8 @@ For more information about the authentication system Django uses, [click here](h
 
 # Products Model
 
+|Name     | DataBase Key | Field Type | Validation |
+| ----------- | ----------- | -----------| ----------|
 | Category | <ForeignKey_'Category'> | <null=True,_blank=True,_on_delete=models.SET_NULL> |
 | Sku |  <sku> | <CharField> | <max_length=254,_null=True,_blank=True> | 
 | Name | <name> | <CharField> <max_length=254> 
@@ -260,7 +263,7 @@ For more information about the authentication system Django uses, [click here](h
 
 # Order
 
- Name     | DataBase Key | Validation | Field Type |
+ |Name     | DataBase Key | Field Type | Validation |
 | ----------- | ----------- | -----------| ----------|
 | Order_Number | <order_number> | <CharField> | <max_length=32,_null=False,_editable=False> |
 | User_Profile | <user_profile> | <ForeignKey> | <UserProfile,_on_delete=models.SET_NULL,_null=True,_blank=True,_related_name='orders'> |
@@ -280,7 +283,13 @@ For more information about the authentication system Django uses, [click here](h
 | Stripe_Pid| <stripe_pid> | <CharField> |  <max_length=254,_null=False,_blank=False,_default=''> |
 
 
-# Product Model
+# Categories Model
+
+|Name     | DataBase Key | Field Type | Validation |
+| ----------- | ----------- | -----------| ----------|
+| Name | <name> | <CharField> | <max_length=254> |
+| Friendly_name |<friendly_name> | <CharField> | <max_length=254,_null=True,_blank=True> |
+
 
 
 
