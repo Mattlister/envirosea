@@ -14,7 +14,7 @@ def view_bag(request):
     return render(request, 'bag/bag.html')
 
 
-def add_to_bag(request, item_id):
+def add_product_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
 
     product = get_object_or_404(Product, pk=item_id)
@@ -50,6 +50,7 @@ def add_to_bag(request, item_id):
 
     request.session['bag'] = bag
     return redirect(redirect_url)
+
 
 def add_booking_to_bag(request, item_id):
     """ Add a quantity of the specified booking to the shopping bag """
