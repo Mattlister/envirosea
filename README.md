@@ -231,8 +231,21 @@ For more information about the authentication system Django uses, [click here](h
 
 # Order Model
 
-| Name     | DataBase Key | Validation | Field Type |
+| Key     | Value |
 | ----------- | ----------- |
+| AWS_ACCESS_KEY_ID  | <your_aws_secret_key>       |
+| AWS_SECRET_ACCESS_KEY   | <your_aws_secret_access_key>     |
+| DATABASE_URL  | <your_postgres_database_URL>     |
+| EMAIL_HOST_PASS  | <your_email_password(generated_by_Hotmail)>       |
+| EMAIL_HOST_USER  | <your_email_address>        |
+| SECRET_KEY  | <your_secret_key>     |
+| STRIPE_PUBLIC_KEY  | <your_stripe_public_key>     |
+| STRIPE_SECRET_KEY  | <your_stripe_secret_key>     |
+| STRIPE_WH_SECRET  | <your_secret_wh_key>     |
+| USE_AWS  | <True>     |
+
+| Name     | DataBase Key | Validation | Field Type |
+| ----------- | ----------- | ----------| -----------|
 | User | <user> |
 | Full_Name  | <profile_full_name> |
 | Phone_Number  | <profile_phone_number> | <CharField> |
