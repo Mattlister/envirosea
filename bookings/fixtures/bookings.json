@@ -17,8 +17,8 @@
     "model": "bookings.booking",
     "fields": {
       "sku": "29",
-      "name": "Cage Dive 2",
-      "description": "The best place to go",
+      "name": "See the amazing Giant Turtles",
+      "description": "The giant turtle is one of the oldest creatures in the world. You can snorkel with out qualified team to see them in their element",
       "price": 25.0,
       "rating": 9,
       "image_url": "https://mattlister-envirosea.s3.eu-west-2.amazonaws.com/media/turtleamazing.jpg",
@@ -43,8 +43,8 @@
     "model": "bookings.booking",
     "fields": {
       "sku": "31",
-      "name": "Cage Dive 4",
-      "description": "The best place to go",
+      "name": "The Great White Shark in open water is a mesmerising vision that you will never forget",
+      "description": "See the Great White Shark in the deepest depths of the ocean off the coast of South Africa",
       "price": 25.0,
       "rating": 9,
       "image_url": "https://mattlister-envirosea.s3.eu-west-2.amazonaws.com/media/up+close.jpg",
