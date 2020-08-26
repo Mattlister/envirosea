@@ -28,13 +28,14 @@ need to change this. Welcome to the Envirosea Project.
 * [Site Features](#Site-Features)
 * [Future Plans](#Future-plans)
 
-3. [Technologies Used](#Technologies-Used)
+* [Technologies Used](#Technologies-Used)
 
 * [Languages](*Languages)
 * [Libraries and Frameworks](*Libraries-and-Frameworks)
 * [Tools](*Tools)
 * [Databases](*Databases)
 
+* [Information Architecture](#Information-Architecture)
 
 6. [Deployment](*Deployment)
 
@@ -213,10 +214,36 @@ realisation of what we're fighting for.
 * [GitPod](https://www.gitpod.io/)
 * [Gunicorn](https://pypi.org/project/gunicorn/)
 
-### Databases:
+### Databases
 
 * [PostgresSQL](https://www.postgresql.org/) - Production Database
 * [SQLite3](https://www.sqlite.org/index.html) - Development Database
+
+
+### Information Architecture
+
+* To develop the project, I used sqlite3 which is the database installed as part of Django. For the deployment itself, a PostgreSQL database is an add-on provided by the Heroku platform.
+
+* The user model was also provided by Django as part of the defaults: django.contrib.auth.models.
+For more information about the authentication system Django uses, [click here](https://docs.djangoproject.com/en/3.0/ref/contrib/auth/)
+
+### Data Modelling
+
+
+| Name     | DataBase Key | Validation | Field Type |
+| ----------- | ----------- |
+| User | <user> |
+| Full_Name  | <profile_full_name>     |
+| Phone_Number  | <profile_phone_number> | <CharField> |
+| Address_Line_1  | <profile_address_line1>| <CharField> |
+| Address_Line_2  | <profile_address_line2>| <CharField> |
+| Town/City | <profile_town_or_city>     | <CharField> |
+| PostCode  | <profile_county>     | <CharField> |
+| County  | <your_stripe_secret_key>     | <CharField> |
+| Postcode  | <profile_postcode>     | <CharField> |
+| Country  | <profile_country>     | <CharField> |
+
+
 
 
 ### Planning:
