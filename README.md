@@ -229,7 +229,7 @@ For more information about the authentication system Django uses, [click here](h
 
 ### Data Modelling
 
-# Order Model
+# Profile Model
 
 | Name     | DataBase Key | Validation | Field Type |
 | ----------- | ----------- | -----------| ----------|
@@ -243,6 +243,18 @@ For more information about the authentication system Django uses, [click here](h
 | County  | <your_stripe_secret_key>     | <CharField> | <max_length=80,_null=True,_blank=True> |
 | Postcode  | <profile_postcode>     | <CharField> | <max_length=20,_null=True,_blank=True> |
 | Country  | <profile_country>     | <CharField> | <blank_label='Country_*',_null=False,_blank=False> |
+
+# Products Model
+
+| Category | <ForeignKey_'Category'> | <null=True,_blank=True,_on_delete=models.SET_NULL> |
+| Sku |  <sku> | <CharField> | <max_length=254,_null=True,_blank=True> | 
+| Name | <name> | <CharField> <max_length=254> 
+| Description |<description> | <TextField> | <max_length=800> |
+| Has_Size | <has_sizes> | <BooleanField> | <default=False,_null=True,_blank=True> |
+| Price | <price> | <DecimalField> | <max_digits=6,_decimal_places=2> |
+| Rating | <rating> | <DecimalField> | <max_digits=6,_decimal_places=2,_null=True,_blank=True> |
+| Image_Url | <image_url> | <URLField> | <max_length=1024,_null=True,_blank=True> |
+| Image | <image> | <ImageField> | <null=True,_blank=True>
 
 ### Checkout App
 
@@ -268,18 +280,9 @@ For more information about the authentication system Django uses, [click here](h
 | Stripe_Pid| <stripe_pid> | <CharField> |  <max_length=254,_null=False,_blank=False,_default=''> |
 
 
-
-order_number = models.CharField(max_length=32, null=False, editable=False)
-    user_profile = models.ForeignKey()
-    email = models.EmailField()
-    date = models.DateTimeField(auto_now_add=True)
-    delivery_cost = models.DecimalField()
-    order_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
-    grand_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
-    original_bag = models.TextField(null=False, blank=False, default='')
-    stripe_pid = models.CharField()
-
 # Product Model
+
+
 
 # The 
 
