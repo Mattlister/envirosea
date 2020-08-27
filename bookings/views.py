@@ -5,7 +5,6 @@ from django.db.models.functions import Lower
 
 from .models import Booking
 
-
 # Create your views here.
 
 

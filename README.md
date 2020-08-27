@@ -229,7 +229,7 @@ For more information about the authentication system Django uses, [click here](h
 
 ### Data Modelling
 
-# Profile Model
+# profiles Model
 
 |Name     | DataBase Key | Field Type | Validation |
 | ----------- | ----------- | -----------| ----------|
@@ -259,9 +259,30 @@ For more information about the authentication system Django uses, [click here](h
 | Image_Url | <image_url> | <URLField> | <max_length=1024,_null=True,_blank=True> |
 | Image | <image> | <ImageField> | <null=True,_blank=True>
 
+# Categories Model
+
+|Name     | DataBase Key | Field Type | Validation |
+| ----------- | ----------- | -----------| ----------|
+| Name | <name> | <CharField> | <max_length=254> |
+| Friendly_name |<friendly_name> | <CharField> | <max_length=254,_null=True,_blank=True> |
+
+# Bookings Model
+
+|Name     | DataBase Key | Field Type | Validation |
+| ----------- | ----------- | -----------| ----------|
+| Trips | <ForeignKey_'Category'> | <null=True,_blank=True,_on_delete=models.SET_NULL> |
+| Sku |  <sku> | <CharField> | <max_length=254,_null=True,_blank=True> | 
+| Name | <name> | <CharField> <max_length=254> 
+| Description |<description> | <TextField> | <max_length=800> |
+| Has_People | <has_people> | <BooleanField> | <default=False,_null=True,_blank=True> |
+| Price | <price> | <DecimalField> | <max_digits=6,_decimal_places=2> |
+| Rating | <rating> | <DecimalField> | <max_digits=6,_decimal_places=2,_null=True,_blank=True> |
+| Image_Url | <image_url> | <URLField> | <max_length=1024,_null=True,_blank=True> |
+| Image | <image> | <ImageField> | <null=True,_blank=True>
+
 ### Checkout App
 
-# Order
+# Order Model
 
  |Name     | DataBase Key | Field Type | Validation |
 | ----------- | ----------- | -----------| ----------|
@@ -282,18 +303,6 @@ For more information about the authentication system Django uses, [click here](h
 | Grand_Total| <grand_total> | <DecimalField> | <max_digits=10,_decimal_places=2,_null=False,_default=0> |
 | Stripe_Pid| <stripe_pid> | <CharField> |  <max_length=254,_null=False,_blank=False,_default=''> |
 
-
-# Categories Model
-
-|Name     | DataBase Key | Field Type | Validation |
-| ----------- | ----------- | -----------| ----------|
-| Name | <name> | <CharField> | <max_length=254> |
-| Friendly_name |<friendly_name> | <CharField> | <max_length=254,_null=True,_blank=True> |
-
-
-
-
-# The 
 
 
 ### Planning:
