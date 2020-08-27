@@ -1,49 +1,44 @@
+# Envirosea
+
 <p align="center">
   <img width="600" height="100" src="media/header.jpg">
 </p>
 
+Welcome to Envirosea. A website dedicated to preserving our oceans and helping to save all marine life. The site was developed by Matthew Lister
+as the final milestone project of the Code Institute Full-Stack Web Developer Course. The website has been designed to help bring information about
+the danger of plastics in the oceans and what we can do to help fight the spread and remove them altogether. 
 
-Envirosea is a website dedicated to preserving our oceans and helping to save all marine life. This is something we must do in vain
-to help the future of the planet or it will simply die. The oceans provide the planet with so many resources and without it, the world has 
-no chance of life. That may sound blunt and harsh but it is a true fact. The greatest killer of the sea is plastic. Plastic has been around 
-since the 1800's and its uses have grown and grown to become one of the most common materials in life. It's not a natural material, not a natural 
-resource but it's everywhere and the frightening fact behind it is, it doesn't work with the rest of the planet. It kills the planet. This man 
-made material cannot be broken down, it will not go away on it's own for thousands of years. It just sits there and helps to kill all of the 
-natural resources of the planet. Envirosea has been designed to showcase what plastic is doing to our oceans. What it's killing and how it's 
-going to take an absolutely huge cleanup to reverse it's affects. We need to stamp out plastic all over the planet. We can see what it's doing 
-on land. We can see the affect on land, we can gather up the plastics and work out what to do with it. In the ocean, it's a hidden killer and we
-need to change this. Welcome to the Envirosea Project.
+Plastic is a killer of the oceans and in turn, the planet and we need to change this. 
 
-## Table of Contents
+Welcome to Envirosea
 
-### 1. UX
+## Contents
+
+### UX
 
 * [Project Design](#Project-Design)
 * [User Objects](#User-Objects)
 * [Developers Objects](#Developers-Objects)
 * [User Stories](#User-Stories)
 * [Wireframes](#Original-wireframe-concepts)
-* [Deployment](#Deployment)
-* [Testing](#Testing-and-Bugs)
 
 ### 2. Features
 
 * [Site Features](#Site-Features)
 * [Future Plans](#Future-plans)
-
 * [Technologies Used](#Technologies-Used)
-
 * [Languages](*Languages)
 * [Libraries and Frameworks](*Libraries-and-Frameworks)
 * [Tools](*Tools)
 * [Databases](*Databases)
-
 * [Information Architecture](#Information-Architecture)
 
 ### Deployment
 
 * [Local Deployment](*Local-Deployment)
 * [Heroku Deployment](*Heroku-Deployment)
+* [Deployment](#Deployment)
+* [Testing](#Testing-and-Bugs)
 
 7. [Credits](*Credits)
 
@@ -54,27 +49,38 @@ need to change this. Welcome to the Envirosea Project.
 8. [Disclaimer](*Disclaimer)
 
 
-### Project Functionailty of Envirosea. 
+### Project Goals of Envirosea:
 
-The Envirosea application is a full-stack project built using business logic to create a central databsae created using SQL.
-It using Django Frameworks as the main backbone of the project but also incoroprates HTML, CSS and JavaScript for design purposes.
-It has CRUD technology built in so a user can update their information and this will transfer to the dataset at the backend. It's 
-a fully functional site using all elements of Full Stack to create a fully designed project. Defensive design has also been used for
-a users protection and so Registration and Login are two key factors of the site. This protects the users data entries and is a secure
-way of protecting the information they add to the database. As well as the software used for designing the various elements, the Heroku
-platform is also used to create an online portal to the user. New changes to the site are controlled using Git and GitHub commanmds to
-push information to Heroku. Secret Keys are also used and I have included .env files and .gitignore to stop essential security data
-from being accessible to an outside user. To enhance layout and responsive fluidity on the site, Bootstrap is also used as part of the 
-design of the project as it's such a great resource. 
+The Envirosea project's goal is to bring presence to the danger of plastics in the oceans and what we can be doing to prevent them. users
+of the site can create an account, purchase products and add them to a shopping basket. They book trips to go cage diving or view sea Turtles.
+They can use a credit card payment method and view a personal profile dashboard.
 
 
-### UX (User Experience)
+### User Goals - Products:
 
-### User Stories
+1. View products and review information about the product.
+2. Purchase products from the online available webstore. 
+3. Register an account and purchase products from the available webstore.
+4. An well laid out design that's visually appealing.
 
-* As a user. The site must:
+### User Goals - Bookings:
 
-1. Be designed with high importance and finished to a high standard for the user. Good design and functionailty are core within the project.
+1. View available trips and review information about them.
+2. Book Trips from the Bookings options. 
+3. Add people to the bookings.
+
+### Owner Goals
+
+1. User has a safe and secure e-commerce platform which is easy to use and builds revenue to help fund ocean protection.
+2. Encourages users to have an interest in fighting the battle against plastic in the oceans.
+3. Showcases the amazing wonders of the oceans and builds from there.
+4. Helps organisations such as the WWF and Greenpeace gain wider followings.
+5. Encourages users to participate in helping the oceans survive.
+
+
+### User Stories - Looing 
+
+1. 
 
 2. Have easy to use registration and login features. I also want to be able to use the purchasing system with ease and not get errors when
 using the shopping features of the site.
@@ -86,6 +92,15 @@ design must be well thought out and of a high standard.
 
 5. Get through to me. This site should help me see what we're doing to our planet. How can I change it and if I have to see something which 
 may cause me discomfort, it is all part of the project.
+
+
+
+### Project Goals
+
+* Envirosea has been designed for the soul purpose of changing the planet. As a life support to Earth, we must protect our oceans. 97% of
+the worlds water is held by the ocean and provides us with so much. It regulates our climate, absorbs CO2 and provides us with sustainable
+resources. My goal is for this to become a mainstream site and help change the planet.
+
 
 * For me as a developer. Creating this site has:
 
@@ -101,20 +116,17 @@ ignore what we're doing and I want to be able make a difference and using the in
 4. Helped me to understnad more about the state of the world. I hope this site becomes a reality and people can learn and help develop changes
 to fight the threat of plastics and prevent more danger to our oceans.
 
+( is a full-stack project built using business logic to create a central databsae created using SQL.
+It using Django Frameworks as the main backbone of the project but also incoroprates HTML, CSS and JavaScript for design purposes.
+It has CRUD technology built in so a user can update their information and this will transfer to the dataset at the backend. It's 
+a fully functional site using all elements of Full Stack to create a fully designed project. Defensive design has also been used for
+a users protection and so Registration and Login are two key factors of the site. This protects the users data entries and is a secure
+way of protecting the information they add to the database. As well as the software used for designing the various elements, the Heroku
+platform is also used to create an online portal to the user. New changes to the site are controlled using Git and GitHub commanmds to
+push information to Heroku. Secret Keys are also used and I have included .env files and .gitignore to stop essential security data
+from being accessible to an outside user. To enhance layout and responsive fluidity on the site, Bootstrap is also used as part of the 
+design of the project as it's such a great resource.)
 
-### Project Goals
-
-* Envirosea has been designed for the soul purpose of changing the planet. As a life support to Earth, we must protect our oceans. 97% of
-the worlds water is held by the ocean and provides us with so much. It regulates our climate, absorbs CO2 and provides us with sustainable
-resources. My goal is for this to become a mainstream site and help change the planet.
-
-* Aimed at everyone to help the cause
-* Informative and helpful to understand the changes we need to make
-* Easy to use
-* Well designed
-* Engaging
-* A good strong layout with colour choices
-* Well thought out Content
 
 ### Developer Objects
 
