@@ -1,4 +1,7 @@
-Envirosea
+<p align="center">
+  <img width="600" height="100" src="media/header.jpg">
+</p>
+
 
 Envirosea is a website dedicated to preserving our oceans and helping to save all marine life. This is something we must do in vain
 to help the future of the planet or it will simply die. The oceans provide the planet with so many resources and without it, the world has 

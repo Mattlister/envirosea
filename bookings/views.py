@@ -80,7 +80,7 @@ def add_booking_to_bag(request):
     return render(request)
 
 
-def add_booking(request):
+def add_booking(request, booking_id):
     """ Add a booking to the store """
 
     return render(request)
