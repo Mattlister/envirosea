@@ -72,3 +72,15 @@ def booking_detail(request, booking_id):
     }
 
     return render(request, 'bookings/booking_detail.html', context)
+
+
+def add_booking_to_bag(request):
+    """ Add a booking to the store """
+
+    return render(request)
+
+
+def add_booking(request):
+    """ Add a booking to the store """
+
+    return render(request)
