@@ -40,7 +40,7 @@ need to change this. Welcome to the Envirosea Project.
 
 * [Information Architecture](#Information-Architecture)
 
-6. [Deployment](*Deployment)
+### Deployment
 
 * [Local Deployment](*Local-Deployment)
 * [Heroku Deployment](*Heroku-Deployment)
@@ -124,7 +124,7 @@ resources. My goal is for this to become a mainstream site and help change the p
 * The strength of the site will help to focus a users attention on the dangers of plastics in the ocean
 
 
-## Project Design
+### Project Design
 
 * When I design a project, I feel the strength of an image can say a great deal. They can bring joy, bring back a memory and
 we always find something within an image. An image can also be added to shock and to bring realisation but not in a cruel
@@ -173,11 +173,11 @@ realisation of what we're fighting for.
 ### Wireframes and concept drawings
 
 <p align="center">
-  <img width="700" height="400" src="wireframes/enviroseatab.jpg">
+  <img width="400" height="700" src="wireframes/enviroseatab.jpg">
 </p>
 
 <p align="center">
-  <img width="700" height="400" src="wireframes/enviroseamob.jpg">
+  <img width="300" height="500" src="wireframes/enviroseamob.jpg">
 </p>
 
 <p align="center">
@@ -185,7 +185,7 @@ realisation of what we're fighting for.
 </p>
 
 <p align="center">
-  <img width="700" height="400" src="wireframes/oceantab.jpg">
+  <img width="400" height="700" src="wireframes/oceantab.jpg">
 </p>
 
 <p align="center">
@@ -232,7 +232,7 @@ For more information about the authentication system Django uses, [click here](h
 
 ### Data Modelling
 
-# profiles Model
+### Profile Model
 
 |Name     | DataBase Key | Field Type | Validation |
 | ----------- | ----------- | -----------| ----------|
@@ -248,7 +248,7 @@ For more information about the authentication system Django uses, [click here](h
 | Postcode  | <profile_postcode>     | <CharField> | <max_length=20,_null=True,_blank=True> |
 | Country  | <profile_country>     | <CharField> | <blank_label='Country_*',_null=False,_blank=False> |
 
-# Products Model
+### Products Model
 
 |Name     | DataBase Key | Field Type | Validation |
 | ----------- | ----------- | -----------| ----------|
@@ -262,14 +262,14 @@ For more information about the authentication system Django uses, [click here](h
 | Image_Url | <image_url> | <URLField> | <max_length=1024,_null=True,_blank=True> |
 | Image | <image> | <ImageField> | <null=True,_blank=True>
 
-# Categories Model
+### Categories Model
 
 |Name     | DataBase Key | Field Type | Validation |
 | ----------- | ----------- | -----------| ----------|
 | Name | <name> | <CharField> | <max_length=254> |
 | Friendly_name |<friendly_name> | <CharField> | <max_length=254,_null=True,_blank=True> |
 
-# Bookings Model
+### Bookings Model
 
 |Name     | DataBase Key | Field Type | Validation |
 | ----------- | ----------- | -----------| ----------|
@@ -285,7 +285,7 @@ For more information about the authentication system Django uses, [click here](h
 
 ### Checkout App
 
-# Order Model
+### Order Model
 
  |Name     | DataBase Key | Field Type | Validation |
 | ----------- | ----------- | -----------| ----------|
