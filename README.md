@@ -127,36 +127,14 @@ contains the overall colour choices of the site.
   <img width="600" height="100" src="media/greentoblue.jpg">
 </p>
 
-* In all colour palettes, there are pairings that work well together. Red and black, Black and white or orange and grey. Simple
-colours that can add more to a design then on their own. I've chosen a theme of predominantly blue and white. Blue to focus and tie
-in with the colour of the ocean and white because it's clean. A grey font colour sits nicely between the two and stands out nicely
-on the pages. The images themsleves, frightening and stunning showcase the changes we need to make. The videos are all from vimeo
-and help to aid the design of the site.
+* In all colour palettes, there are pairings that work well together. Simple colours that can add more to a design then on their own. 
+I've chosen a theme of predominantly blue, green and white. Blue to focus and tie in with the colour of the ocean and white because
+it's clean. A grey font colour sits nicely between the two and stands out nicely on the pages. The images themsleves, frightening 
+and stunning showcase the changes we need to make. The videos are all from vimeo and help to aid the design of the site.
 
 * My wireframes have a general layout for the pages and the inital template for my design. I looked at other sites with a similar theme to get an understanding of what my design would benefit from.
 Going in to this with fresh eyes, I was able to pick out things I believed would work and put together a design that looked good on 
 all screen sizes.
-
-### Project Goals
-
-* Envirosea has been designed for the soul purpose of changing the planet. As a life support to Earth, we must protect our oceans. 97% of
-the worlds water is held by the ocean and provides us with so much. It regulates our climate, absorbs CO2 and provides us with sustainable
-resources. My goal is for this to become a mainstream site and help change the planet.
-
-
-* For me as a developer. Creating this site has:
-
-1. Really opened my eyes to the amazing work that can be created with a heavy duty framework. Django as the next logical step from Python is
-clever, well built and robust and showcases what can be achieved as a full stack developer.
-
-2. Made me think more about the environment, what we're doing and what can we do to help. I want a user to feel the same and to use this 
-site to help re-shape the future of our ocenas and the planet.
-
-3. Hopefully started something. I want the site to grow a following and to help the ongoing fight of protecting all marine life. We can't 
-ignore what we're doing and I want to be able make a difference and using the internet and this site is a good place to start.
-
-4. Helped me to understnad more about the state of the world. I hope this site becomes a reality and people can learn and help develop changes
-to fight the threat of plastics and prevent more danger to our oceans.
 
 ### Envirosea Design choices
 
@@ -200,37 +178,6 @@ realisation of what we're fighting for.
   <img width="700" height="400" src="wireframes/oceanmob.jpg">
 </p>
 
-
-* Envirosea Data Models
-
-### Technologies Used
-
-* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-* [JavaScript](https://www.w3schools.com/js/)
-* [JSON](https://www.json.org/json-en.html)
-* [Python](https://www.python.org/)
-
-### Frameworks and Libraries
-
-* [Django](https://www.djangoproject.com/)
-* [Flask](https://flask.palletsprojects.com/en/1.1.x/)
-* [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
-* [Google Fonts](https://fonts.google.com/) 
-* [Favicons](https://www.favicon.cc/)
-* [Github](https://www.github.com)
-* [Heroku](https://www.heroku.com)
-* [SCSS](https://sass-lang.com/)
-* [Stripe](https://stripe.com/gb/payments)
-* [GitPod](https://www.gitpod.io/)
-* [Gunicorn](https://pypi.org/project/gunicorn/)
-
-### Databases
-
-* [PostgresSQL](https://www.postgresql.org/) - Production Database
-* [SQLite3](https://www.sqlite.org/index.html) - Development Database
-
-
 ### Information Architecture
 
 * To develop the project, I used sqlite3 which is the database installed as part of Django. For the deployment itself, a PostgreSQL database is an add-on provided by the Heroku platform.
@@ -238,7 +185,13 @@ realisation of what we're fighting for.
 * The user model was also provided by Django as part of the defaults: django.contrib.auth.models.
 For more information about the authentication system Django uses, [click here](https://docs.djangoproject.com/en/3.0/ref/contrib/auth/)
 
-### Data Modelling
+### Data Modelling:
+
+* Development of the Envirsoea was developed using sqlite3 that is installed as part of the Django Framework.
+
+* The database used is a Postgres SQL database which is hosted and provided by Heroku. Both products used allowed me to publish my data
+using these and also the Allauth secure software.
+
 
 ### Profile Model
 
@@ -314,7 +267,89 @@ For more information about the authentication system Django uses, [click here](h
 | Grand_Total| <grand_total> | <DecimalField> | <max_digits=10,_decimal_places=2,_null=False,_default=0> |
 | Stripe_Pid| <stripe_pid> | <CharField> |  <max_length=254,_null=False,_blank=False,_default=''> |
 
+### Design Features 
 
+## Features Developed for the site
+
+A video playing background for the landing page which contains links to the producs and booking page.
+
+Account creation, The user can login to view orders on their personal profile dashboard.
+
+A user can update their details within the profile dashboard.
+
+A search bar that returns a list of products available to purchase.
+
+A search bar that returns a list of trips available for the user to book.
+
+An individual descriptive page for each product and booking so the user can find more information.
+
+An active shopping cart that users can update live. The features to add or remove items  to change the quantities or person amounts.
+
+Users can take the cart of items or bookings and checkout using the secure Stripe API system. This will process the payment details and place an order.
+
+Users can send a message via the contact form on the contact page via email.
+
+
+## Future features to develop:
+
+* An interchangeable video background for each page.
+* More bookings available so users can do more.
+* A volunteers program that will help users to become involved in local activities such as beach clean up's.
+* Discussions with other recycling product manufacturers to build the portfolio or products.
+
+### Technologies Used
+
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [JavaScript](https://www.w3schools.com/js/)
+* [JSON](https://www.json.org/json-en.html)
+* [Python](https://www.python.org/)
+
+### Frameworks and Libraries
+
+* [Django](https://www.djangoproject.com/)
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+* [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
+* [Google Fonts](https://fonts.google.com/) 
+* [Favicons](https://www.favicon.cc/)
+* [Github](https://www.github.com)
+* [Heroku](https://www.heroku.com)
+* [SCSS](https://sass-lang.com/)
+* [Stripe](https://stripe.com/gb/payments)
+* [GitPod](https://www.gitpod.io/)
+* [Gunicorn](https://pypi.org/project/gunicorn/)
+
+### Databases
+
+* [PostgresSQL](https://www.postgresql.org/) - Production Database
+* [SQLite3](https://www.sqlite.org/index.html) - Development Database
+
+
+
+
+
+### Project Goals
+
+* Envirosea has been designed for the soul purpose of changing the planet. As a life support to Earth, we must protect our oceans. 97% of
+the worlds water is held by the ocean and provides us with so much. It regulates our climate, absorbs CO2 and provides us with sustainable
+resources. My goal is for this to become a mainstream site and help change the planet.
+
+
+* For me as a developer. Creating this site has:
+
+1. Really opened my eyes to the amazing work that can be created with a heavy duty framework. Django as the next logical step from Python is
+clever, well built and robust and showcases what can be achieved as a full stack developer.
+
+2. Made me think more about the environment, what we're doing and what can we do to help. I want a user to feel the same and to use this 
+site to help re-shape the future of our ocenas and the planet.
+
+3. Hopefully started something. I want the site to grow a following and to help the ongoing fight of protecting all marine life. We can't 
+ignore what we're doing and I want to be able make a difference and using the internet and this site is a good place to start.
+
+4. Helped me to understnad more about the state of the world. I hope this site becomes a reality and people can learn and help develop changes
+to fight the threat of plastics and prevent more danger to our oceans.
+
+* Envirosea Data Models
 
 ### Planning:
 
@@ -324,13 +359,14 @@ study and follow the course material in depth. Envirosea brought some interestin
 and most poweful work I've produced. Django as a framework has opened my eyes in regards to what else I can achieve and I shall be using
 it for many projects going forward.
 
+* Wireframes are always a good base to start your project. Putting them together starts the project in your mind on how you can layout the frontend
+design of the site for multiple devices. These are some early conecpt drawings I started with before moving onto the layout of the pages with wireframes
+design.
 
-### Database Design:
+* I also used a Kanban board to work out an early version of features and necessties in the site. Which then grew to this Flow Chart.
+And then became an even bigger project but these steps started me off on the path to developing the project and design of the site.
 
-* Development of the Envirsoea was developed using sqlite3 that is installed as part of the Django Framework.
 
-* The database used is a Postgres SQL database which is hosted and provided by Heroku. Both products used allowed me to publish my data
-using these and also the Allauth secure software.
 
 
 ### Deployment
