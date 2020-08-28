@@ -213,7 +213,7 @@ using these and also the Allauth secure software.
 | ----------- | ----------- | -----------| ----------|
 | Category | <ForeignKey_'Category'> | <null=True,_blank=True,_on_delete=models.SET_NULL> |
 | Sku |  <sku> | <CharField> | <max_length=254,_null=True,_blank=True> | 
-| Name | <name> | <CharField> <max_length=254> 
+| Name | <name> | <CharField> <max_length=254> |
 | Description |<description> | <TextField> | <max_length=800> |
 | Has_Size | <has_sizes> | <BooleanField> | <default=False,_null=True,_blank=True> |
 | Price | <price> | <DecimalField> | <max_digits=6,_decimal_places=2> |
