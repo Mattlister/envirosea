@@ -351,7 +351,7 @@ to fight the threat of plastics and prevent more danger to our oceans.
 
 * Envirosea Data Models
 
-### Planning:
+### Planning & Testing:
 
 * Using new technologies on a project is sometimes daunting and so planning was of high importance to make sure everything went as 
 smoothly as possible. Using new frameworks, API's and new programming languages was a learning curve and so I had to make sure to
@@ -364,9 +364,60 @@ design of the site for multiple devices. These are some early conecpt drawings I
 design.
 
 * I also used a Kanban board to work out an early version of features and necessties in the site. Which then grew to this Flow Chart.
-And then became an even bigger project but these steps started me off on the path to developing the project and design of the site.
+And then became an even bigger project but these steps started me off on the path to developing the project and design of the site. I 
+then worked on each phase by working on the plan, testing and noting the results.
+
+Product List Page
+
+Plan: An e-commerce site is an online shopping experience and so needs available products or sale items. Users can browse through the 
+products that the business has to offer. I spent a great deal of time sourcing materials made from recycled poducts as I wanted this
+to be an enviormentally specific site. Time went into the layout of the home page as it's a focul point for the site. The products 
+themselves and the layout was relatively straightforward as a template but showcases the products neatly and efficiently. I wanted to 
+include the same level of design with the bookings page for consistency without making the site overloaded.
+
+Method: Once I had setup the products and bookings models, I migrated the tables into the database and I could then create 
+the view within the products and bookings applications that uses a GET request to talk to the database returning the products and 
+bookings into the products variables. This is then available at the front end via the 
+return statement meaning I could loop through the products in the database. This would then render the information using 
+Djangos template language in the HTML.
+
+Testing Testing that the feature worked, I navigated to both products.html and bookings.html page to see each product/booking in the database had been rendered into the HTML.
+
+Outcome: All products and bookings displayed correctly on the front end pages.
+
+Product View Page (detailed view)
+
+Plan: Each product and booking needed a more informative page which held more information to what each item was about. As I was using branded products, I didn't include names for copyright purposes and so I had a short description about what the product was made from or what the booking was about such as cage diving or diving with Turtles. These pages would also include the options to add more quantity to a purchase or more people to a booking.
+
+Method: Using the primary Key of the product or booking (primary key within the database), via the URL meant that I was able to select a product from the database when the product is chosen by the user, this allowed me to build up a page with the products only selected by the user.
+
+Testing: To test this option I navigated to the product list page, selected any product available to see if the item and information would load on the page. I checked the url to see what ID was correct against it's JSON data equivalent and the database information which meant it was all working.
+
+Outcome: The page displayed as expected with the correct product or booking information. I could then up the quantity of the item or find out more about the product/ booking and add the item to a cart.
+
+Bag (add-to, edit-bag, view-bag)
+
+Plan: As mentioned before, an e-commerce website needs a functioning shopping bag and so planning and testing for this feature was important. The bag had to be available to view throughout the shopping experience whether user was signed in or not. More people can use the site even without entering their personal information and so they're not "tied in" just to browse. but, if they do sign in, gathering session information is an important part of e-commerce site as it helps build brand awareness and indicates how the store is operating with growth and other factors.
+
+Plan: A context.py file was needed to function within the bag application and also needed to be included within the context processor section within templates in the settings.py file. This tells the app what the bag should look like and what information is available to it. This is also required as the bag is not stored in the database, it is stored in the session. Once done, I put the view function together so Adding to the bag, Editing the quantity in the bag, and Viewing the bag contents was available.
+
+Testing: To test these features I did the following:
+
+1: Navigated to the products and booking list pages and checked the product detail and booking details pages. I added items to the bag and saw the total of the bag add up as hoped.
+2: Then, I waited to see if the returned page was a new version of the bag.html page with products and bookings showing as expected with each change.
+
+Outcome: The website correctly changed as I edited the contents during the session. The bag.html page displayed correctly with each change as I edited the quantity of the contents Using the Update and Remove buttons. The bag page automatically reloaded correctly as expected to show the correct items remaining in the cart.
 
 
+Checkout (using the STRIPE API)
+
+Plan: Being able to buy and checkout products on an e-commerce is the most importand part and a requirement. Users have to feel comfortable and have an expectation that the website they are using will securely handle their sensitive information with the highest of care and conform to strict legal guidelines. As a major feature within the project, it needed to work seamlessly and inform the user at each stage during the payment process.
+
+Method: Using the course material supplied by Code Institute aswell as the Django & stripe documentation, I produced the Order and OrderItem models in the checkout app and peformed migrations which setup the tables in the database. Once done, I could then create the views and forms needed allowing the customer to input their personal details and process their orders. Once I had finished building these, I then setup validation required by STRIPE in a stripe.js file which handled the creation of the stripe_id. This is required in order to process a payment with the API.
+
+Testing: To test the checkout feature, I needed to add products to the bag, then go to the checkout.html page and enter dummy contact information. I used stripe test card details (available on the STRIPE website) to attempt to create a purchase. I tested the feature with incorrect payment information on purpose to create an error message to make sure they were both visible and clear to flag a warning for the user, again, keeping them informed throughout the process.
+
+Outcome: The payment was processed and checking the stripe dashboard, I could see stripe had processed the dummy payment for the products or bookings inside the bag.
 
 
 ### Deployment
