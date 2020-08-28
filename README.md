@@ -78,22 +78,64 @@ They can use a credit card payment method and view a personal profile dashboard.
 5. Encourages users to participate in helping the oceans survive.
 
 
-### User Stories - Looing 
+### User Stories
 
-1. 
+User 1 Says: "I'm so tired of seeing these issues on Sky (other TV services are available) about the state of our oceans. I wish there was a
+was a way I could help in some way"
 
-2. Have easy to use registration and login features. I also want to be able to use the purchasing system with ease and not get errors when
-using the shopping features of the site.
+User 2 says: "I've become more aware of the planet and it's decline. Is there a website which sells products from recycleable clothing and trainers for when 
+I'm running... ohh and a water bottle as well. I want to use a website online which is easy to use and well designed."
 
-3. Have good information to help me learn what the site is about. What information does Envirosea provide and how does it engage with me. 
-
-4. Not be hard to use. I don't want the site to have broken elements or cause me levels of uncertainty when purchasing. Security and Defensive
-design must be well thought out and of a high standard.
-
-5. Get through to me. This site should help me see what we're doing to our planet. How can I change it and if I have to see something which 
-may cause me discomfort, it is all part of the project.
+User 3 Says: "If I'm going to use this site to go Shark diving, I want the site to be secure and safe as I'm putting my personal credit card details to book this trip.
+I'd also like confirmation via email and a reciept "
 
 
+## User Requirements and Expectations
+
+* When a user is shopping on the web, they need to feel that their information is protected and secure. Using a payment online needs
+to be something a user feels comfortable when doing. Proper authentication ans secure payments (using Stripe for my project) is necessary
+and it needs to be done with a neat and clean UX design.
+
+### Requirements:
+
+1. An intuitive design which is clean and appealing to the user.
+2. The design looks good and functions on any device.
+3. Easily add products and bookings to a shopping cart securely and safely.
+4. A user can view orders in an online profile.
+5. Orders can be updated, changed and removed.
+
+### Expectations:
+
+1. Safe storage of user details when using the website.
+2. Users payment information will not be stored in the database for security reasons.
+3. Dynamic design that will work on all devices.
+4. Easy to naviagte when using the site and clear when using.
+5. A professionally designed site which utilises all functional requests required by the project.
+
+
+## Project Design
+
+* When designing the website, I thought the colours associated with the ocean would be a good choice to use. The blues and greens nicely
+brings the site together and compliment the images used.
+
+### Colours 
+
+The colour palette below displays the core content colours of the site. Based around an aqua design colour palette, I feel this
+contains the overall colour choices of the site.
+
+<p align="center">
+  <img width="600" height="100" src="media/greentoblue.jpg">
+</p>
+
+* In all colour palettes, there are pairings that work well together. Red and black, Black and white or orange and grey. Simple
+colours that can add more to a design then on their own. I've chosen a theme of predominantly blue and white. Blue to focus and tie
+in with the colour of the ocean and white because it's clean. A grey font colour sits nicely between the two and stands out nicely
+on the pages. The images themsleves, frightening and stunning showcase the changes we need to make. The videos are all from vimeo
+and help to aid the design of the site.
+
+* My wireframes have a general layout for the pages and the inital template for my design. I looked at other sites with a similar theme to get an understanding of what my design would benefit from.
+Going in to this with fresh eyes, I was able to pick out things I believed would work and put together a design that looked good on 
+all screen sizes.
 
 ### Project Goals
 
@@ -116,58 +158,12 @@ ignore what we're doing and I want to be able make a difference and using the in
 4. Helped me to understnad more about the state of the world. I hope this site becomes a reality and people can learn and help develop changes
 to fight the threat of plastics and prevent more danger to our oceans.
 
-( is a full-stack project built using business logic to create a central databsae created using SQL.
-It using Django Frameworks as the main backbone of the project but also incoroprates HTML, CSS and JavaScript for design purposes.
-It has CRUD technology built in so a user can update their information and this will transfer to the dataset at the backend. It's 
-a fully functional site using all elements of Full Stack to create a fully designed project. Defensive design has also been used for
-a users protection and so Registration and Login are two key factors of the site. This protects the users data entries and is a secure
-way of protecting the information they add to the database. As well as the software used for designing the various elements, the Heroku
-platform is also used to create an online portal to the user. New changes to the site are controlled using Git and GitHub commanmds to
-push information to Heroku. Secret Keys are also used and I have included .env files and .gitignore to stop essential security data
-from being accessible to an outside user. To enhance layout and responsive fluidity on the site, Bootstrap is also used as part of the 
-design of the project as it's such a great resource.)
-
-
-### Developer Objects
-
-* A well thought out user experience with crisp clean design
-* A professionally designed site which utilises all functional requests required by the project
-* A strong backend showing understanding of the framework and all other programming languages used
-* The strength of the site will help to focus a users attention on the dangers of plastics in the ocean
-
-
-### Project Design
-
-* When I design a project, I feel the strength of an image can say a great deal. They can bring joy, bring back a memory and
-we always find something within an image. An image can also be added to shock and to bring realisation but not in a cruel
-or vicious way. I understand the term ignorance can be used for all elements of cruelty but in this instance, the way I'm using
-ignorance is to show the devastation of plastics in the ocean and the realisation of what it's doing. There are shocking images 
-as explained but there are also beautiful images and videos of the stunning animals and plantlife that the ocean's give us. 
-
-* In all colour palettes, there are pairings that work well together. Red and black, Black and white or orange and grey. Simple
-colours that can add more to a design then on their own. I've chosen a theme of predominantly blue and white. Blue to focus and tie
-in with the colour of the ocean and white because it's clean. A grey font colour sits nicely between the two and stands out nicely
-on the pages. The images themsleves, frightening and stunning showcase the changes we need to make. The videos are all from vimeo
-and help to aid the design of the site.
-
-* My wireframes have a general layout for the pages and the inital template for my design. I looked at other sites with a similar theme to get an understanding of what my design would benefit from.
-Going in to this with fresh eyes, I was able to pick out things I believed would work and put together a design that looked good on 
-all screen sizes.
-
-
 ### Envirosea Design choices
 
 * The design of my website was designed with the colours of the ocean in mind. Blue's, Green's and "Aqua" we're what I envisioned
 when I started working on the project. 
 
-### Colours 
 
-The colour palette below displays the core content colours of the site. Based around an aqua design colour palette, I feel This
-contains the overall colour choices of the site.
-
-<p align="center">
-  <img width="600" height="100" src="media/greentoblue.jpg">
-</p>
 
 ### images
 
