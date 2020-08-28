@@ -197,29 +197,29 @@ using these and also the Allauth secure software.
 
 |Name     | DataBase Key | Field Type | Validation |
 | ----------- | ----------- | -----------| ----------|
-| Full Name  | <user> |<CharField>| <max_length=50,_null=False,_blank=False> |
-| Phone Number | <profile_phone_number> |<CharField>| <max_length=20,_null=False,_blank=False> |
-| Address Line 1  | <profile_address_line1>|<CharField>| <max_length=80,_null=False,_blank=False> |
-| Address Line 2  | <profile_address_line2>|<CharField> | <max_length=80,_null=True,|blank=True> |
-| Town/City | <profile_town_or_city>     |<CharField> | <max_length=40,_null=False,_blank=False> |
-| PostCode  | <profile_county>     | <CharField> | <max_length=20,_null=True,_blank=True> |
-| County  | <your_stripe_secret_key>     | <CharField> | <max_length=80,_null=True,_blank=True> |
-| Postcode  | <profile_postcode>     | <CharField> | <max_length=20,_null=True,_blank=True> |
-| Country  | <profile_country>     | <CharField> | <blank_label='Country_*',_null=False,_blank=False> |
+| Full Name  | user |CharField| <max_length=50,_null=False,_blank=False> |
+| Phone Number | <profile_phone_number> |CharField| <max_length=20,_null=False,_blank=False> |
+| Address Line 1  | <profile_address_line1>|CharField| <max_length=80,_null=False,_blank=False> |
+| Address Line 2  | <profile_address_line2>|CharField | <max_length=80,_null=True,|blank=True> |
+| Town/City | <profile_town_or_city>     |CharField | <max_length=40,_null=False,_blank=False> |
+| PostCode  | <profile_county>     | CharField | <max_length=20,_null=True,_blank=True> |
+| County  | <your_stripe_secret_key>     | CharField | <max_length=80,_null=True,_blank=True> |
+| Postcode  | <profile_postcode>     | CharField | <max_length=20,_null=True,_blank=True> |
+| Country  | <profile_country>     | CharField | <blank_label='Country_*',_null=False,_blank=False> |
 
 ### Products Model
 
 |Name     | DataBase Key | Field Type | Validation |
 | ----------- | ----------- | -----------| ----------|
 | Category | <ForeignKey_'Category'> | <null=True,_blank=True,_on_delete=models.SET_NULL> |
-| Sku |  <sku> | <CharField> | <max_length=254,_null=True,_blank=True> | 
-| Name | <name> | <CharField> <max_length=254> |
-| Description |<description> | <TextField> | <max_length=800> |
-| Has_Size | <has_sizes> | <BooleanField> | <default=False,_null=True,_blank=True> |
-| Price | <price> | <DecimalField> | <max_digits=6,_decimal_places=2> |
-| Rating | <rating> | <DecimalField> | <max_digits=6,_decimal_places=2,_null=True,_blank=True> |
-| Image_Url | <image_url> | <URLField> | <max_length=1024,_null=True,_blank=True> |
-| Image | <image> | <ImageField> | <null=True,_blank=True>
+| Sku |  sku | <CharField> | <max_length=254,_null=True,_blank=True> | 
+| Name | name | CharField | <max_length=254> |
+| Description |description | <TextField> | <max_length=800> |
+| Has_Size | has sizes | <BooleanField> | <default=False,_null=True,_blank=True> |
+| Price | price | <DecimalField> | <max_digits=6,_decimal_places=2> |
+| Rating | rating | <DecimalField> | <max_digits=6,_decimal_places=2,_null=True,_blank=True> |
+| Image_Url | image_url | URLField | <max_length=1024,_null=True,_blank=True> |
+| Image | image | <ImageField> | <null=True,_blank=True>
 
 ### Categories Model
 
@@ -233,14 +233,14 @@ using these and also the Allauth secure software.
 |Name     | DataBase Key | Field Type | Validation |
 | ----------- | ----------- | -----------| ----------|
 | Trips | <ForeignKey_'Category'> |<null=True_blank=True_on_delete=models.SET_NULL> |
-| Sku |  <sku> | <CharField> | <max_length=254,_null=True,_blank=True> | 
-| Name | <name> | <CharField> <max_length=254> |
-| Description |<description> | <TextField> | <max_length=800> |
-| Has_People | <has_people> | <BooleanField> | <default=False,_null=True,_blank=True> |
-| Price | <price> | <DecimalField> | <max_digits=6,_decimal_places=2> |
-| Rating | <rating> | <DecimalField> | <max_digits=6,_decimal_places=2,_null=True,_blank=True> |
-| Image_Url | <image_url> | <URLField> | <max_length=1024,_null=True,_blank=True> |
-| Image | <image> | <ImageField> | <null=True,_blank=True> |
+| Sku |  sku | CharField | <max_length=254,_null=True,_blank=True> | 
+| Name | name | <CharField>| <max_length=254> |
+| Description |description | TextField | <max_length=800> |
+| Has_People | has_people | BooleanField | <default=False,_null=True,_blank=True> |
+| Price | price | DecimalField | <max_digits=6,_decimal_places=2> |
+| Rating | rating | DecimalField | <max_digits=6,_decimal_places=2,_null=True,_blank=True> |
+| Image_Url | image_url | <URLField> | <max_length=1024,_null=True,_blank=True> |
+| Image | image | <ImageField> | <null=True,_blank=True> |
 
 ### Checkout App
 
@@ -251,7 +251,7 @@ using these and also the Allauth secure software.
 | Order_Number | <order_number> | <CharField> | <max_length=32,_null=False,_editable=False> |
 | User_Profile | <user_profile> | <ForeignKey> | <UserProfile,_on_delete=models.SET_NULL,_null=True,_blank=True,_related_name='orders'> |
 | Full_Name  | <profile_full_name> | <max_length=50,_null=False,_blank=False> |
-| Email | <email>| <EmailField> | <max_length=254,_null=False,_blank=False> |
+| Email | email| <EmailField> | <max_length=254,_null=False,_blank=False> |
 | Phone_Number  | <profile_phone_number> | <CharField> | <max_length=20,_null=False,_blank=False> |
 | Address_Line_1  | <profile_address_line1>| <CharField> | <max_length=80,_null=False,_blank=False> |
 | Address_Line_2  | <profile_address_line2>| <CharField> | <max_length=80,_null=True,|blank=True> |
