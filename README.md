@@ -12,7 +12,7 @@ Plastic is a killer of the oceans and in turn, the planet and we need to change 
 
 Welcome to Envirosea
 
-#### Contents
+## Contents
 
 ### UX
 
@@ -197,8 +197,6 @@ using these and also the Allauth secure software.
 
 |Name     | DataBase Key | Field Type | Validation |
 | ----------- | ----------- | -----------| ----------|
-| ----------- | ----------- | -----------| ----------|
-| User | <user> |
 | Full_Name  | <profile_full_name> | <max_length=50,_null=False,_blank=False> |
 | Phone_Number  | <profile_phone_number> | <CharField> | <max_length=20,_null=False,_blank=False> |
 | Address_Line_1  | <profile_address_line1>| <CharField> | <max_length=80,_null=False,_blank=False> |
@@ -370,7 +368,7 @@ then worked on each phase by working on the plan, testing and noting the results
 
 ## Product List Page
 
-# Plan: 
+#### Plan: 
 
 An e-commerce site is an online shopping experience and so needs available products or sale items. Users can browse through the 
 products that the business has to offer. I spent a great deal of time sourcing materials made from recycled poducts as I wanted this
@@ -378,7 +376,7 @@ to be an enviormentally specific site. Time went into the layout of the home pag
 themselves and the layout was relatively straightforward as a template but showcases the products neatly and efficiently. I wanted to 
 include the same level of design with the bookings page for consistency without making the site overloaded.
 
-# Method: 
+#### Method: 
 
 Once I had setup the products and bookings models, I migrated the tables into the database and I could then create 
 the view within the products and bookings applications that uses a GET request to talk to the database returning the products and 
@@ -386,122 +384,122 @@ bookings into the products variables. This is then available at the front end vi
 return statement meaning I could loop through the products in the database. This would then render the information using 
 Djangos template language in the HTML.
 
-# Testing: 
+#### Testing: 
 
 Testing that the feature worked, I navigated to both products.html and bookings.html page to see each product/booking in the database had been rendered into the HTML.
 
-# Outcome: 
+#### Outcome: 
 
 All products and bookings displayed correctly on the front end pages.
 
-# Plan: 
+#### Plan: 
 
 Each product and booking needed a more informative page which held more information to what each item was about. As I was using branded products, I didn't include names for copyright purposes and so I had a short description about what the product was made from or what the booking was about such as cage diving or diving with Turtles. These pages would also include the options to add more quantity to a purchase or more people to a booking.
 
-# Method: 
+#### Method: 
 
 Using the primary Key of the product or booking (primary key within the database), via the URL meant that I was able to select a product from the database when the product is chosen by the user, this allowed me to build up a page with the products only selected by the user.
 
-# Testing: 
+#### Testing: 
 
 To test this option I navigated to the product list page, selected any product available to see if the item and information would load on the page. I checked the url to see what ID was correct against it's JSON data equivalent and the database information which meant it was all working.
 
-# Outcome: 
+#### Outcome: 
 
 The page displayed as expected with the correct product or booking information. I could then up the quantity of the item or find out more about the product/ booking and add the item to a cart.
 
-# Bag (add-to, edit-bag, view-bag)
+### Testing the Bag (add-to, edit-bag, view-bag)
 
-# Plan: 
+#### Plan: 
 
 As mentioned before, an e-commerce website needs a functioning shopping bag and so planning and testing for this feature was important. The bag had to be available to view throughout the shopping experience whether user was signed in or not. More people can use the site even without entering their personal information and so they're not "tied in" just to browse. but, if they do sign in, gathering session information is an important part of e-commerce site as it helps build brand awareness and indicates how the store is operating with growth and other factors.
 
-# Plan: 
+#### Plan: 
 
 A context.py file was needed to function within the bag application and also needed to be included within the context processor section within templates in the settings.py file. This tells the app what the bag should look like and what information is available to it. This is also required as the bag is not stored in the database, it is stored in the session. Once done, I put the view function together so Adding to the bag, Editing the quantity in the bag, and Viewing the bag contents was available.
 
-# Testing: 
+#### Testing: 
 
 To test these features I did the following:
 
 1: Navigated to the products and booking list pages and checked the product detail and booking details pages. I added items to the bag and saw the total of the bag add up as hoped.
 2: Then, I waited to see if the returned page was a new version of the bag.html page with products and bookings showing as expected with each change.
 
-# Outcome: 
+#### Outcome: 
 
 The website correctly changed as I edited the contents during the session. The bag.html page displayed correctly with each change as I edited the quantity of the contents Using the Update and Remove buttons. The bag page automatically reloaded correctly as expected to show the correct items remaining in the cart.
 
 
 ## Checkout (using the STRIPE API)
 
-# Plan: 
+#### Plan: 
 
 Being able to buy and checkout products on an e-commerce is the most importand part and a requirement. Users have to feel comfortable and have an expectation that the website they are using will securely handle their sensitive information with the highest of care and conform to strict legal guidelines. As a major feature within the project, it needed to work seamlessly and inform the user at each stage during the payment process.
 
-# Method: 
+#### Method: 
 
 Using the course material supplied by Code Institute aswell as the Django & stripe documentation, I produced the Order and OrderItem models in the checkout app and peformed migrations which setup the tables in the database. Once done, I could then create the views and forms needed allowing the customer to input their personal details and process their orders. Once I had finished building these, I then setup validation required by STRIPE in a stripe.js file which handled the creation of the stripe_id. This is required in order to process a payment with the API.
 
-# Testing: 
+#### Testing: 
 
 To test the checkout feature, I needed to add products to the bag, then go to the checkout.html page and enter dummy contact information. I used stripe test card details (available on the STRIPE website) to attempt to create a purchase. I tested the feature with incorrect payment information on purpose to create an error message to make sure they were both visible and clear to flag a warning for the user, again, keeping them informed throughout the process.
 
-# Outcome: 
+#### Outcome: 
 
 The payment was processed and checking the stripe dashboard, I could see stripe had processed the dummy payment for the products or bookings inside the bag.
 
 ## Profile Dashboard (orders & edit account information)
 
-# Plan: 
+#### Plan: 
 
 I wanted a profile section in which a user can access information about items they had purchased, and orders they had made. The user can also edit information about themselves.
 
-# Method: 
+#### Method: 
 
 To implement this feature I had the Order and OrderItem model in the checkout app so each order in the database is looped through which pulls out the orders matched to the logged in users id, then within the template looping over each order.item to render the order in the dashboard. In terms of editing the user details, I had to create a form that would update the user details in the User table based on the information inputted.
 
-# Tesing: 
+#### Tesing: 
 
 To test the orders section of the profile dashboard. I placed dummy orders from the products on the site and followed through the process until I got to the final order form on the website. This showed that my information was stored in the database and rendered on the webpage. I then checked to see if I could edit information associated with the account information section.
 
-# Outcome:
+#### Outcome:
 
 Changes made worked as expected and information changes updated within the database.
 
 
 ## Search Bars for products and bookings
 
-# Plan: 
+#### Plan: 
 
 I wanted to develop a search feature for the website that could be used for both functions of the site but I was unable to work it out in time so there are seperate search options but, these are different options within the site. As the site builds, more trips and more products would be added so keeping them separate I believe works better anyway. A user could search for products or bookings using data from the JSON files. This is an expected feature in an e-commerce sites so was a necessity of the site and a priority in my user stories.
 
-# Method: 
+#### Method: 
 
 I created a view in the search applications that fetches a product or available trip depenedent on which search box is used and based on the query collected by the search form. The products or bookings returns multiple results based on the 'word' searched for so it users the word as the reference and ties anything with that word into the result. Using an if statement to return a 'no-results' page was also designed in case a users word choice wasn't included in any of the products or bookings descriptions or name or costings.
 
-# Testing: 
+#### Testing: 
 
 To test the search functionality I inputed various search queries into the search bar and hit enter. Searching for non existing products and words displayed the correct 'No results' option and all options with infomation in regards to the search dislpayed an available product or booking.
 
-# Outcome: 
+#### Outcome: 
 
 Searching for yellow would include all products with Yellow in it. Be that a bag, coat, dress etc. Same for sun which would included sunglasses, sunshine etc. The same for bookings if I searched for cage, sea, shark.
 
 ## User Authentication (register, login, logout)
 
-# Plan: 
+#### Plan: 
 
 Any e-commerce website needs to allow users to create an account, login and logout. They can then view relevant information for their account and any orders which may have placed. Using the django.auth settings this feature would be heavily supported by the existing functionality that comes with django as part of it's inbuilt functionality.
 
-# Method: 
+#### Method: 
 
 User tables exist in django as standard, So all I had to do was construct forms and views in order which allow the user to register an account, login to their account and logout from their account simply and easily.
 
-# Testing: 
+#### Testing: 
 
 To test the User features I had to perform each view step by step, First I Created a 'test-account' and checked that the records had been added to the database, Then I attempted a login to the website using those details, after that I logged out of the account using the logout view.
 
-# Outcome: 
+#### Outcome: 
 
 A 'test-account' I created was displayed in the database, and when attempting to login to the account I was redirected to the profile page. Finally logging out cleared that session and so I would have to log back into the test-account to return to the profile page.
 
