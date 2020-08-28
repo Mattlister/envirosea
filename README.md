@@ -197,8 +197,8 @@ using these and also the Allauth secure software.
 
 |Name     | DataBase Key | Field Type | Validation |
 | ----------- | ----------- | -----------| ----------|
-| Full Name  | <name></name> |Charfield| <max_length=50,_null=False,_blank=False> |
-| Phone Number  | <profile_phone_number> |Charfield| <max_length=20,_null=False,_blank=False> |
+| Full Name  | <name> |Charfield| <max_length=50,_null=False,_blank=False> |
+| Phone Number | <profile_phone_number> |Charfield| <max_length=20,_null=False,_blank=False> |
 | Address Line 1  | <profile_address_line1>|Charfield| <max_length=80,_null=False,_blank=False> |
 | Address Line 2  | <profile_address_line2>|Charfield | <max_length=80,_null=True,|blank=True> |
 | Town/City | <profile_town_or_city>     |Charfield | <max_length=40,_null=False,_blank=False> |
