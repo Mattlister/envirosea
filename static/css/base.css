@@ -1,8 +1,10 @@
 /* html elements for vertical centering */
 
+
 html {
   height: 100%x;
 }
+
 /* Video background image */
 #videoBG {
     position: fixed;
@@ -61,7 +63,7 @@ section {
 h1 {
   padding: 60px;
   text-align: right;
-  color: white;
+  color: red;
   font-size: 10vw;
   font-family: "Hind";
 }
@@ -92,7 +94,7 @@ float: right;
   border: 5px solid transparent;
 }
 
-/* Buttons styling and design */
+/* Buttons styling and design */m
 
 .shop-now-button {
   width: 100px;
@@ -379,6 +381,7 @@ input[name="q"]::placeholder {
 
   body {
     height: calc(100vh - 116px);
+    background-color: blue;
   }
 
   .display-4.logo-font.text-black {
