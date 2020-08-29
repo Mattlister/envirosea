@@ -85,16 +85,6 @@ float: right;
 }
 /* content wrapper for oceans and changes information */
 
-.wrapper-gradient {
-  background: linear-gradient(rgb(248, 248, 248), rgb(255, 255, 255)),
- linear-gradient(to right, rgb(2, 99, 155), rgb(0, 179, 0));
-  background-origin: padding-box, border-box;
-  background-repeat: no-repeat; /* this is important */
-  padding: 7px;
-  border-radius: 10px;
-  border: 5px solid transparent;
-}
-
 /* Buttons styling and design */m
 
 .shop-now-button {
@@ -112,6 +102,8 @@ float: right;
   min-width: 260px;
   left: 100px;
 }
+
+/* Search and quantity buttons colouring */
 
 .btn-black {
   background:  green;
@@ -152,8 +144,11 @@ float: right;
 
   color: rgb(11, 173, 73);
 }
+
+/* Header icons colouring */
+
 .text-black {
-  color: orange;
+  color: rgb(96, 243, 236);
 }
 
 .border-black {
@@ -362,6 +357,7 @@ input[name="q"]::placeholder {
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
   .fixed-top-desktop-only {
+    background-color: blue;  
     position: fixed;
     top: 0;
     right: 0;
