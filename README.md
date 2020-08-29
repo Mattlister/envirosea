@@ -212,6 +212,20 @@ realisation of what we're fighting for.
   <img width="300" height="500" src="wireframes/iteminfomob.jpg">
 </p>
 
+#### Booking Form to complete order
+
+<p align="center">
+  <img width="700" height="400" src="wireframes/bookingformfs.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="700" src="wireframes/bookingformtab.jpg">
+</p>
+
+<p align="center">
+  <img width="300" height="500" src="wireframes/bookingformmob.jpg">
+
+
 ### Information Architecture
 
 * To develop the project, I used sqlite3 which is the database installed as part of Django. For the deployment itself, a PostgreSQL database is an add-on provided by the Heroku platform.
