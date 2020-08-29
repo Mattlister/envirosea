@@ -158,6 +158,7 @@ realisation of what we're fighting for.
 
 ### Wireframes and concept drawings
 
+
 #### Home page on Full screen/ Tablet and Mobile
 
 <p align="center">
@@ -168,14 +169,15 @@ realisation of what we're fighting for.
   <img width="300" height="500" src="wireframes/enviroseamob.jpg">
 </p>
 
-<p align="center">
-  <img width="700" height="400" src="wireframes/oceanfullscreen.jpg">
-</p>
-
 #### Oceans page original wireframes Tablet and Mobile
 
 <p align="center">
-  <img width="400" height="700" src="wireframes/oceantab.jpg">
+  <img width="400" height="700" src="wireframes/oceanfullscreen.jpg">
+</p>
+
+
+<p align="center">
+  <img width="500" height="700" src="wireframes/oceantab.jpg">
 </p>
 
 <p align="center">
@@ -199,7 +201,7 @@ realisation of what we're fighting for.
 #### Item information and quantity options on Fullscree/. Tablet and Mobile
 
 <p align="center">
-  <img width="700" height="400" src="wireframes/iteminfoFScreen.jpg">
+  <img width="700" height="400" src="wireframes/iteminfofscreen.jpg">
 </p>
 
 <p align="center">
