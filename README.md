@@ -158,6 +158,8 @@ realisation of what we're fighting for.
 
 ### Wireframes and concept drawings
 
+#### Home page on Full screen/ Tablet and Mobile
+
 <p align="center">
   <img width="400" height="700" src="wireframes/enviroseatab.jpg">
 </p>
@@ -170,6 +172,8 @@ realisation of what we're fighting for.
   <img width="700" height="400" src="wireframes/oceanfullscreen.jpg">
 </p>
 
+#### Oceans page original wireframes Tablet and Mobile
+
 <p align="center">
   <img width="400" height="700" src="wireframes/oceantab.jpg">
 </p>
@@ -177,6 +181,21 @@ realisation of what we're fighting for.
 <p align="center">
   <img width="700" height="400" src="wireframes/oceanmob.jpg">
 </p>
+
+#### Products and Bookings page layout wireframe on Fullscreen/ Tablet and Mobile
+
+<p align="center">
+  <img width="700" height="400" src="wireframes/ProdBookFScreen.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="700" src="wireframes/ProdBookTab.jpg">
+</p>
+
+<p align="center">
+  <img width="700" height="400" src="wireframes/ProdBookMob.jpg">
+</p>
+
 
 ### Information Architecture
 
