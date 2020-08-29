@@ -179,23 +179,36 @@ realisation of what we're fighting for.
 </p>
 
 <p align="center">
-  <img width="700" height="400" src="wireframes/oceanmob.jpg">
+  <img width="300" height="500" src="wireframes/oceanmob.jpg">
 </p>
 
 #### Products and Bookings page layout wireframe on Fullscreen/ Tablet and Mobile
 
 <p align="center">
-  <img width="700" height="400" src="wireframes/ProdBookFScreen.jpg">
+  <img width="700" height="400" src="wireframes/prodbookfscreen.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="700" src="wireframes/ProdBookTab.jpg">
+  <img width="400" height="700" src="wireframes/prodbooktab.jpg">
 </p>
 
 <p align="center">
-  <img width="700" height="400" src="wireframes/ProdBookMob.jpg">
+  <img width="300" height="500" src="wireframes/prodbookmob.jpg">
 </p>
 
+#### Item information and quantity options on Fullscree/. Tablet and Mobile
+
+<p align="center">
+  <img width="700" height="400" src="wireframes/iteminfoFScreen.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="700" src="wireframes/iteminfotab.jpg">
+</p>
+
+<p align="center">
+  <img width="300" height="500" src="wireframes/iteminfomob.jpg">
+</p>
 
 ### Information Architecture
 
