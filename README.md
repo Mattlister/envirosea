@@ -198,7 +198,7 @@ realisation of what we're fighting for.
   <img width="300" height="500" src="wireframes/prodbookmob.jpg">
 </p>
 
-#### Item information and quantity options on Fullscree/. Tablet and Mobile
+#### Item information and quantity options on Fullscreen/ Tablet and Mobile
 
 <p align="center">
   <img width="700" height="400" src="wireframes/iteminfofscreen.jpg">
