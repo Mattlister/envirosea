@@ -319,10 +319,6 @@ input[name="q"]::placeholder {
   border-color: #222;
 }
 
-.allauth-form-inner-content a {
-  color: #17a2b8; /* text-info */
-}
-
 /* Product Form */
 
 .btn-file {
