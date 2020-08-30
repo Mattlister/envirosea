@@ -161,6 +161,12 @@ realisation of what we're fighting for.
 
 #### Home page on Full screen/ Tablet and Mobile
 
+Originally planned to be a Full screen with no search options but now slighlty altered.
+
+<p align="center">
+  <img width="700" height="400" src="wireframes/enviroseatab.jpg">
+</p>
+
 <p align="center">
   <img width="400" height="700" src="wireframes/enviroseatab.jpg">
 </p>
@@ -177,7 +183,7 @@ realisation of what we're fighting for.
 
 
 <p align="center">
-  <img width="500" height="700" src="wireframes/oceantab.jpg">
+  <img width="400" height="700" src="wireframes/oceantab.jpg">
 </p>
 
 <p align="center">
@@ -205,7 +211,7 @@ realisation of what we're fighting for.
 </p>
 
 <p align="center">
-  <img width="400" height="700" src="wireframes/iteminfotab.jpg">
+  <img width="500" height="700" src="wireframes/iteminfotab.jpg">
 </p>
 
 <p align="center">
