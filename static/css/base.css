@@ -76,12 +76,21 @@ h1 {
 
 /* Oceans and Mission page wrapper */
 
+.wrapper-gradient {
+  background: linear-gradient(rgb(248, 248, 248), rgb(255, 255, 255)),
+    linear-gradient(to right, rgb(2, 99, 155), rgb(0, 179, 0));
+  background-origin: padding-box, border-box;
+  background-repeat: no-repeat; /* this is important */
+  padding: 7px;
+  border-radius: 10px;
+  border: 5px solid transparent;
+}
+
 .previous {
 float: left;
 }
 
 .next {
-float: right;
 }
 /* content wrapper for oceans and changes information */
 
@@ -377,7 +386,7 @@ input[name="q"]::placeholder {
 
   body {
     height: calc(100vh - 116px);
-    background-color: blue;
+    background-color: red;
   }
 
   .display-4.logo-font.text-black {
