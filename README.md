@@ -159,7 +159,7 @@ realisation of what we're fighting for.
 ### Wireframes and concept drawings
 
 
-#### Home page on Full screen/ Tablet and Mobile
+<summary>Home / Landing Page original wireframes</summary>
 
 Originally planned to be a Full screen with no search options but now slighlty altered.
 
@@ -175,7 +175,7 @@ Originally planned to be a Full screen with no search options but now slighlty a
   <img width="300" height="500" src="wireframes/enviroseamob.jpg">
 </p>
 
-#### Oceans page original wireframes Tablet and Mobile
+<summary>Oceans explore page original wireframes</summary>
 
 <p align="center">
   <img width="400" height="700" src="wireframes/oceanfullscreen.jpg">
@@ -190,7 +190,7 @@ Originally planned to be a Full screen with no search options but now slighlty a
   <img width="300" height="500" src="wireframes/oceanmob.jpg">
 </p>
 
-#### Products and Bookings page layout wireframe on Fullscreen/ Tablet and Mobile
+<summary>Products and Bookings page original wireframes</summary>
 
 <p align="center">
   <img width="700" height="400" src="wireframes/prodbookfscreen.jpg">
@@ -204,7 +204,7 @@ Originally planned to be a Full screen with no search options but now slighlty a
   <img width="300" height="500" src="wireframes/prodbookmob.jpg">
 </p>
 
-#### Item information and quantity options on Fullscreen/ Tablet and Mobile
+<summary>Quantity or Add a person original wireframes</summary>
 
 <p align="center">
   <img width="700" height="400" src="wireframes/iteminfofscreen.jpg">
@@ -218,7 +218,7 @@ Originally planned to be a Full screen with no search options but now slighlty a
   <img width="300" height="500" src="wireframes/iteminfomob.jpg">
 </p>
 
-#### Booking Form to complete order
+<summary>Booking Form original wireframes</summary>
 
 <p align="center">
   <img width="700" height="400" src="wireframes/bookingformfs.jpg">
@@ -231,7 +231,7 @@ Originally planned to be a Full screen with no search options but now slighlty a
 <p align="center">
   <img width="300" height="500" src="wireframes/bookingformmob.jpg">
 
-  #### Receipt and Thank you Full Screen/ Tab and Mobile
+  <summary>Receipt and Thank you original wireframes</summary>
 
   <p align="center">
   <img width="700" height="400" src="wireframes/receiptfscreen.jpg">
