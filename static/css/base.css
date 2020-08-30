@@ -157,11 +157,11 @@ float: left;
 /* Header icons colouring */
 
 .text-black {
-  color: rgb(96, 243, 236);
+  color: rgb(18, 191, 221);
 }
 
 .border-black {
-  border: 1px solid blue !important;
+  border: 1px solid rgb(13, 223, 76) !important;
 }
 
 .bg-black {
