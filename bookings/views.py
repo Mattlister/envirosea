@@ -1,9 +1,11 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
 from .models import Booking
+from .forms import ProductForm
 
 # Create your views here.
 
@@ -74,13 +76,71 @@ def booking_detail(request, booking_id):
     return render(request, 'bookings/booking_detail.html', context)
 
 
-def add_booking_to_bag(request):
+@ login_required
+def add_booking(request):
     """ Add a booking to the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
 
-    return render(request)
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            booking = form.save()
+            messages.success(request, 'Successfully added Booking!')
+            return redirect(reverse('booking_detail', args=[booking.id]))
+        else:
+            messages.error(
+                request, 'Failed to add booking. Please ensure the form is valid.')
+    else:
+        form = ProductForm()
+
+    template = 'bookings/add_booking.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
 
 
-def add_booking(request, booking_id):
-    """ Add a booking to the store """
+@login_required
+def edit_booking(request, booking_id):
+    """ Edit a booking in the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
 
-    return render(request)
+    booking = get_object_or_404(Booking, pk=booking_id)
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES, instance=booking)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated product!')
+            return redirect(reverse('booking_detail', args=[booking.id]))
+        else:
+            messages.error(
+                request, 'Failed to update product. Please ensure the form is valid.')
+    else:
+        form = ProductForm(instance=booking)
+        messages.info(request, f'You are editing {booking.name}')
+
+    template = 'bookings/edit_booking.html'
+    context = {
+        'form': form,
+        'product': booking,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def delete_booking(request, booking_id):
+    """ Delete a product from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+    product = get_object_or_404(Booking, pk=booking_id)
+    product.delete()
+    messages.success(request, 'Booking deleted!')
+    return redirect(reverse('bookings'))
