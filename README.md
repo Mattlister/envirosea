@@ -172,7 +172,7 @@ Originally planned to be a Full screen with no search options but now slighlty a
 </p>
 
 <p align="center">
-  <img width="300" height="600" src="wireframes/enviroseamob.jpg">
+  <img width="300" height="500" src="wireframes/enviroseamob.jpg">
 </p>
 
 </details>
@@ -190,7 +190,7 @@ Originally planned to be a Full screen with no search options but now slighlty a
 </p>
 
 <p align="center">
-  <img width="300" height="500" src="wireframes/oceanmob.jpg">
+  <img width="300" height="600" src="wireframes/oceanmob.jpg">
 </p>
 </details>
 
