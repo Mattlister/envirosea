@@ -5,10 +5,12 @@ from django.conf import settings
 
 from .models import Order, OrderLineItem
 from products.models import Product
+from bookings.models import Booking
 from profiles.models import UserProfile
 
 import json
 import time
+
 
 class StripeWH_Handler:
     """Handle Stripe webhooks"""
@@ -25,13 +27,13 @@ class StripeWH_Handler:
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.txt',
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-        
+
         send_mail(
             subject,
             body,
             settings.DEFAULT_FROM_EMAIL,
             [cust_email]
-        )        
+        )
 
     def handle_event(self, event):
         """
@@ -121,10 +123,12 @@ class StripeWH_Handler:
                 )
                 for item_id, item_data in json.loads(bag).items():
                     product = Product.objects.get(id=item_id)
+                    booking = Booking.objects.get(id=item_id)
                     if isinstance(item_data, int):
                         order_line_item = OrderLineItem(
                             order=order,
                             product=product,
+                            booking=booking,
                             quantity=item_data,
                         )
                         order_line_item.save()
@@ -133,6 +137,7 @@ class StripeWH_Handler:
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
+                                booking=booking,
                                 quantity=quantity,
                                 product_size=size,
                             )

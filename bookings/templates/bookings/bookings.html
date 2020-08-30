@@ -15,7 +15,7 @@
 	<div class="row">
 		<div class="col text-center mt-3">
 			<h2 class="logo-font">Bookings</h2>
-			{% for t in current_trips %}
+			{% for c in current_trips %}
 			<a class="category-badge text-decoration-none" href="{% url 'bookings' %}?trips={{ .name }}">
 				<span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
 			</a>
@@ -31,7 +31,7 @@
 			</div>
 			<div class="col-12 col-md-6 order-md-first">
 				<p class="text-muted mt-3 text-center text-md-left">
-					{% if search_term or current_category or current_sorting != 'None_None' %}
+					{% if search_term or current_trips or current_sorting != 'None_None' %}
 					<span class="small"><a href="{% url 'bookings' %}">Bookings Home</a> | </span>
 					{% endif %}
 					{{ bookings|length }} Bookings{% if search_term %} found for

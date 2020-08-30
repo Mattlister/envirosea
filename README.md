@@ -158,13 +158,13 @@ realisation of what we're fighting for.
 
 ### Wireframes and concept drawings
 
-
+<details>
 <summary>Home / Landing Page original wireframes</summary>
-
+<br>
 Originally planned to be a Full screen with no search options but now slighlty altered.
 
 <p align="center">
-  <img width="700" height="400" src="wireframes/enviroseatab.jpg">
+  <img width="400" height="380" src="wireframes/enviroseafullscreen.jpg">
 </p>
 
 <p align="center">
@@ -175,76 +175,90 @@ Originally planned to be a Full screen with no search options but now slighlty a
   <img width="300" height="500" src="wireframes/enviroseamob.jpg">
 </p>
 
-<summary>Oceans explore page original wireframes</summary>
+</details>
 
+<details>
+<summary>Oceans explore page original wireframes</summary>
+<br>
 <p align="center">
-  <img width="400" height="700" src="wireframes/oceanfullscreen.jpg">
+  <img width="700" height="400" src="wireframes/oceanfullscreen.jpg">
 </p>
 
 
 <p align="center">
-  <img width="400" height="700" src="wireframes/oceantab.jpg">
+  <img width="400" height="380" src="wireframes/oceantab.jpg">
 </p>
 
 <p align="center">
   <img width="300" height="500" src="wireframes/oceanmob.jpg">
 </p>
+</details>
 
+<details>
 <summary>Products and Bookings page original wireframes</summary>
-
+<br>
 <p align="center">
   <img width="700" height="400" src="wireframes/prodbookfscreen.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="700" src="wireframes/prodbooktab.jpg">
+  <img width="400" height="380" src="wireframes/prodbooktab.jpg">
 </p>
 
 <p align="center">
   <img width="300" height="500" src="wireframes/prodbookmob.jpg">
 </p>
 
-<summary>Quantity or Add a person original wireframes</summary>
+</details>
 
+<details>
+<summary>Quantity or Add a person original wireframes</summary>
+<br>
 <p align="center">
   <img width="700" height="400" src="wireframes/iteminfofscreen.jpg">
 </p>
 
 <p align="center">
-  <img width="500" height="700" src="wireframes/iteminfotab.jpg">
+  <img width="400" height="380" src="wireframes/iteminfotab.jpg">
 </p>
 
 <p align="center">
   <img width="300" height="500" src="wireframes/iteminfomob.jpg">
 </p>
 
-<summary>Booking Form original wireframes</summary>
+</details>
 
+<details>
+<summary>Booking Form original wireframes</summary>
+<br>
 <p align="center">
   <img width="700" height="400" src="wireframes/bookingformfs.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="700" src="wireframes/bookingformtab.jpg">
+  <img width="400" height="380" src="wireframes/bookingformtab.jpg">
 </p>
 
 <p align="center">
   <img width="300" height="500" src="wireframes/bookingformmob.jpg">
 
-  <summary>Receipt and Thank you original wireframes</summary>
+</details>
 
+<details>
+<summary>Receipt and Thank you original wireframes</summary>
+<br>
   <p align="center">
   <img width="700" height="400" src="wireframes/receiptfscreen.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="700" src="wireframes/receipttab.jpg">
+  <img width="400" height="380" src="wireframes/receipttab.jpg">
 </p>
 
 <p align="center">
   <img width="300" height="500" src="wireframes/receiptmob.jpg">
 
-
+</details>
 ### Information Architecture
 
 * To develop the project, I used sqlite3 which is the database installed as part of Django. For the deployment itself, a PostgreSQL database is an add-on provided by the Heroku platform.
