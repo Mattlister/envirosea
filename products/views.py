@@ -5,7 +5,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 
 from .models import Product, Category
-from .forms import BookingForm
+from .forms import ProductForm
 
 # Create your views here.
 
@@ -82,7 +82,7 @@ def add_product(request):
         return redirect(reverse('home'))
 
     if request.method == 'POST':
-        form = BookingForm(request.POST, request.FILES)
+        form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
             product = form.save()
             messages.success(request, 'Successfully added product!')
@@ -91,7 +91,7 @@ def add_product(request):
             messages.error(
                 request, 'Failed to add product. Please ensure the form is valid.')
     else:
-        form = BookingForm()
+        form = ProductForm()
 
     template = 'products/add_product.html'
     context = {
@@ -110,7 +110,7 @@ def edit_product(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
-        form = BookingForm(request.POST, request.FILES, instance=product)
+        form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully updated product!')
@@ -119,7 +119,7 @@ def edit_product(request, product_id):
             messages.error(
                 request, 'Failed to update product. Please ensure the form is valid.')
     else:
-        form = BookingForm(instance=product)
+        form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
 
     template = 'products/edit_product.html'

@@ -5,7 +5,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 
 from .models import Booking
-from .forms import ProductForm
+from .forms import BookingForm
 
 # Create your views here.
 
@@ -84,7 +84,7 @@ def add_booking(request):
         return redirect(reverse('home'))
 
     if request.method == 'POST':
-        form = ProductForm(request.POST, request.FILES)
+        form = BookingForm(request.POST, request.FILES)
         if form.is_valid():
             booking = form.save()
             messages.success(request, 'Successfully added Booking!')
@@ -93,7 +93,7 @@ def add_booking(request):
             messages.error(
                 request, 'Failed to add booking. Please ensure the form is valid.')
     else:
-        form = ProductForm()
+        form = BookingForm()
 
     template = 'bookings/add_booking.html'
     context = {
@@ -112,22 +112,22 @@ def edit_booking(request, booking_id):
 
     booking = get_object_or_404(Booking, pk=booking_id)
     if request.method == 'POST':
-        form = ProductForm(request.POST, request.FILES, instance=booking)
+        form = BookingForm(request.POST, request.FILES, instance=booking)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Successfully updated product!')
+            messages.success(request, 'Successfully updated booking!')
             return redirect(reverse('booking_detail', args=[booking.id]))
         else:
             messages.error(
-                request, 'Failed to update product. Please ensure the form is valid.')
+                request, 'Failed to update booking. Please ensure the form is valid.')
     else:
-        form = ProductForm(instance=booking)
+        form = BookingForm(instance=booking)
         messages.info(request, f'You are editing {booking.name}')
 
     template = 'bookings/edit_booking.html'
     context = {
         'form': form,
-        'product': booking,
+        'booking': booking,
     }
 
     return render(request, template, context)
@@ -135,12 +135,12 @@ def edit_booking(request, booking_id):
 
 @login_required
 def delete_booking(request, booking_id):
-    """ Delete a product from the store """
+    """ Delete a booking from the store """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
-    product = get_object_or_404(Booking, pk=booking_id)
-    product.delete()
+    booking = get_object_or_404(Booking, pk=booking_id)
+    booking.delete()
     messages.success(request, 'Booking deleted!')
     return redirect(reverse('bookings'))
