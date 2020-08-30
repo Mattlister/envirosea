@@ -100,8 +100,6 @@ h1 {
 }
 
 
-/* content wrapper for oceans and changes information */
-
 
 /* Buttons styling and design */
 
@@ -440,4 +438,46 @@ input[name="q"]::placeholder {
 	.decrement-qty {
 		padding: 0.25rem 0.5rem !important;
 	}
+}
+
+/* Footer styling */
+
+h4 {
+  font-family: 'Montserrat', sans-serif; 
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  1px 1px 3px #00ffff;
+}
+
+/* social media links styling */
+
+.fab {
+    color: white;
+    padding: 15px;
+}
+
+.fab:hover {
+  color: rgb(19, 191, 221;
+}
+
+/* review buttons */
+
+h5 {
+  font-family: 'Montserrat', sans-serif;     
+  border: 2px solid white;
+  border-radius: 9px;
+  padding-top: 25px;
+  display: inline-block;
+  padding: 23px;
+  margin: 40px;
+}
+
+body {
+    text-align: center; 
+}
+
+textarea{
+    margin-left: auto;
+    margin-right: auto;
 }
