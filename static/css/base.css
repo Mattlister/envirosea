@@ -386,7 +386,8 @@ input[name="q"]::placeholder {
 
   body {
     height: calc(100vh - 116px);
-    background-color: red;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(221,221,240,1) 0%, rgba(131,229,249,1) 100%);
   }
 
   .display-4.logo-font.text-black {
