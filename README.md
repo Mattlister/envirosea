@@ -164,7 +164,7 @@ realisation of what we're fighting for.
 Originally planned to be a Full screen with no search options but now slighlty altered.
 
 <p align="center">
-  <img width="400" height="380" src="wireframes/enviroseafullscreen.jpg">
+  <img width="700" height="400" src="wireframes/enviroseafullscreen.jpg">
 </p>
 
 <p align="center">
@@ -172,7 +172,7 @@ Originally planned to be a Full screen with no search options but now slighlty a
 </p>
 
 <p align="center">
-  <img width="300" height="500" src="wireframes/enviroseamob.jpg">
+  <img width="300" height="600" src="wireframes/enviroseamob.jpg">
 </p>
 
 </details>
