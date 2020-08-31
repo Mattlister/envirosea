@@ -4,12 +4,12 @@
     "model": "bookings.booking",
     "fields": {
       "sku": "28",
-      "name": "Cage Dive 1",
-      "description": "The best place to go",
+      "name": "Shark Dive",
+      "description": "See these amazing animals in their natural environment as they explore the ocean off the coast of South Africa",
       "price": 25.0,
       "rating": 9,
-      "image_url": "https://mattlister-envirosea.s3.eu-west-2.amazonaws.com/media/close.jpg",
-      "image": "close.jpg"
+      "image_url": "https://mattlister-envirosea.s3.eu-west-2.amazonaws.com/media/blacksharks.jpg",
+      "image": "blacksharks.jpg"
     }
   },
   {
@@ -17,12 +17,12 @@
     "model": "bookings.booking",
     "fields": {
       "sku": "29",
-      "name": "See the amazing Giant Turtles as they majestically float through the ocean",
+      "name": "See the amazing Giant Turtles as they majestically float through the ocean in the deepest oceans of the Pacific",
       "description": "The giant turtle is one of the oldest creatures in the world. You can snorkel with out qualified team to see them in their element",
       "price": 25.0,
       "rating": 9,
-      "image_url": "https://mattlister-envirosea.s3.eu-west-2.amazonaws.com/media/turtleamazing.jpg",
-      "image": "turtleamzing.jpg"
+      "image_url": "https://mattlister-envirosea.s3.eu-west-2.amazonaws.com/media/turtleunderwater.jpg",
+      "image": "turtleunderwater.jpg"
     }
   },
   {
@@ -30,12 +30,12 @@
     "model": "bookings.booking",
     "fields": {
       "sku": "30",
-      "name": "Cage Dive 3",
-      "description": "The best place to go",
+      "name": "Coral Dive at the Grat Barrier Reef",
+      "description": "Coral is one of the most beautiful natural treasures this planet has to offer.",
       "price": 25.0,
       "rating": 9,
-      "image_url": "wreck.jpg",
-      "image": "https://mattlister-envirosea.s3.eu-west-2.amazonaws.com/media/wreck.jpg"
+      "image_url": "https://mattlister-envirosea.s3.eu-west-2.amazonaws.com/media/coral2.jpg",
+      "image": "coral2.jpg"
     }
   },
   {
@@ -43,12 +43,12 @@
     "model": "bookings.booking",
     "fields": {
       "sku": "31",
-      "name": "The Great White Shark in open water is a mesmerising vision that you will never forget",
-      "description": "See the Great White Shark in the deepest depths of the ocean off the coast of South Africa",
+      "name": "Here, we'll take you to one of the great wonders of the ocean. A vast array of fish to visit off the coast of Spain",
+      "description": "The colour of the fish is unbelievable and you can see them close up. Like being in a giant aquariam",
       "price": 25.0,
       "rating": 9,
-      "image_url": "https://mattlister-envirosea.s3.eu-west-2.amazonaws.com/media/up+close.jpg",
-      "image": "up close.jpg"
+      "image_url": "https://mattlister-envirosea.s3.eu-west-2.amazonaws.com/media/yellowfish.jpg",
+      "image": "yellowfish.jpg"
     }
   }
 ]
