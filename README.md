@@ -602,6 +602,8 @@ A 'test-account' I created was displayed in the database, and when attempting to
 
 * Due to time, my plan with the bookings didn't go according to plan so I had to change it to a redirect to the DB with a success message.
 
+* Also, I didn't get chance to have all my JavaScript into separate folders.
+
 ### Deployment
 
 ### Software Deployment and Software Cloning Technologies Used:

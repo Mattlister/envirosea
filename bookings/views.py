@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
@@ -87,7 +86,7 @@ def booking_detail(request, booking_id):
     else:
         form = BookingForm()
 
-    template = 'products/add_product.html'
+    template = 'bookings/bookings.html'
     context = {
         'form': form,
     }
