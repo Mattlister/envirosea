@@ -45,7 +45,7 @@
              {% if request.user.is_superuser %}
                        <small class="ml-3">
                         <a href="{% url 'edit_booking' booking.id %}">Edit</a> | 
-                        <a class="text-danger" href="{% url 'delete_booking' product.id %}">Delete</a>
+                        <a class="text-danger" href="{% url 'delete_booking' booking.id %}">Delete</a>
                         </small>
                 {% endif %}
 			    <p class="mt-3">{{ booking.description }}</p>
