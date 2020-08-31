@@ -78,7 +78,7 @@ def booking_detail(request, booking_id):
         form = BookingForm(request.POST, request.FILES)
         if form.is_valid():
             booking = form.save()
-            messages.success(request, 'You were succesful in your request.!')
+            messages.success(request, 'You were succesful in your request!')
             return redirect(reverse('booking_detail', args=[booking.id]))
         else:
             messages.error(

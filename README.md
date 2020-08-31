@@ -390,6 +390,9 @@ Users can send a message via the contact form on the contact page via email.
 * More bookings available so users can do more.
 * A volunteers program that will help users to become involved in local activities such as beach clean up's.
 * Discussions with other recycling product manufacturers to build the portfolio or products.
+* THe bookings to work and actually allow people to book a holiday to go on a dive to visit areas of the ocean. See fish in their natural habitat and appreciate what we're striving to save. I have the edit features and delete as it was going to be working but I didn't have time to finish it unfortunately.
+
+* Fought to the last minute as it's 11:55 PM on final day but had to send.
 
 ### Technologies Used
 
