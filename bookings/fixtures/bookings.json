@@ -5,11 +5,11 @@
     "fields": {
       "sku": "28",
       "name": "Shark Dive",
-      "description": "See these amazing animals in their natural environment as they explore the ocean off the coast of South Africa",
+      "description": "See these haunting amazing animals in their natural environment in open water as they explore the ocean off the coast of South Africa",
       "price": 25.0,
       "rating": 9,
-      "image_url": "https://mattlister-envirosea.s3.eu-west-2.amazonaws.com/media/blacksharks.jpg",
-      "image": "blacksharks.jpg"
+      "image_url": "https://mattlister-envirosea.s3.eu-west-2.amazonaws.com/media/blacksharkhaunting.jpg",
+      "image": "sharkhaunting.jpg"
     }
   },
   {
