@@ -2,6 +2,10 @@
 
 html {
 	height: 100%;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 body {
@@ -41,12 +45,6 @@ ul:nth-of-type(5) {
 
 /* sets base style for each page */
 
-html {
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
 
 
 /* from Bulma */
@@ -486,4 +484,9 @@ body {
 textarea{
     margin-left: auto;
     margin-right: auto;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
 }
