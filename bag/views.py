@@ -51,6 +51,7 @@ def add_product_to_bag(request, item_id):
     request.session['bag'] = bag
     return redirect(redirect_url)
 
+
 def add_booking_to_bag(request, item_id):
     """ Add a quantity of the specified booking to the shopping bag """
 
