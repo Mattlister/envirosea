@@ -598,7 +598,9 @@ To test the User features I had to perform each view step by step, First I Creat
 
 A 'test-account' I created was displayed in the database, and when attempting to login to the account I was redirected to the profile page. Finally logging out cleared that session and so I would have to log back into the test-account to return to the profile page.
 
+### Major issues
 
+* Due to time, my plan with the bookings didn't go according to plan so I had to change it to a redirect to the DB with a success message.
 
 ### Deployment
 

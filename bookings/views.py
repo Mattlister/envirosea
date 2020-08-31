@@ -74,3 +74,22 @@ def booking_detail(request, booking_id):
     }
 
     return render(request, 'bookings/booking_detail.html', context)
+
+    if request.method == 'POST':
+        form = BookingForm(request.POST, request.FILES)
+        if form.is_valid():
+            booking = form.save()
+            messages.success(request, 'You were succesful in your request.!')
+            return redirect(reverse('booking_detail', args=[booking.id]))
+        else:
+            messages.error(
+                request, 'Failed to add product. Please ensure the form is valid.')
+    else:
+        form = BookingForm()
+
+    template = 'products/add_product.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
