@@ -51,13 +51,11 @@ def add_product_to_bag(request, item_id):
     request.session['bag'] = bag
     return redirect(redirect_url)
 
-
 def add_booking_to_bag(request, item_id):
     """ Add a quantity of the specified booking to the shopping bag """
 
     booking = get_object_or_404(Booking, pk=item_id)
     quantity = int(request.POST.get('quantity'))
-    redirect_url = request.POST.get('redirect_url')
     person = None
     if 'person_age' in request.POST:
         person = request.POST['booking_person']
@@ -87,7 +85,7 @@ def add_booking_to_bag(request, item_id):
             messages.success(request, f'Added {booking.name} to your bag')
 
     request.session['bag'] = bag
-    return redirect(redirect_url)
+    return redirect('view_bag')
 
 
 def adjust_bag(request, item_id):
