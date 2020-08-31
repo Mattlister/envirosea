@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Booking, Trips
+from .models import Booking
 from .forms import BookingForm
 
 # Create your views here.
