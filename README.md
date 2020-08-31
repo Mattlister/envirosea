@@ -145,6 +145,21 @@ when I started working on the project.
 
 ### images
 
+* The images for the products, I apologise that they are out of shape but. I want to make this site into a potentially genuine site for people to use. I love the ocean and this was a personal project for me. So, the images user are genuinely made recyclable products. I sourced them from various sites such as:
+
+[https://www.adidas.co.uk/parley] (*trainers-t-shirts-and-coat)
+[https://crubag.co.uk/] (*Notebooks)
+[https://waterhaul.co/] (*Sunglasses)
+[https://inhabitat.com/https://inhabitat.com/][patagonias-black-hole-bags-are-made-from-recycled-plastic-bottles/] (*Brown Rucksack)
+
+These are just a few. I want this site to raise awareness and these images were specific to site. Thank you for understanding.
+
+All other images were sourced from: [https://unsplash.com/s/photos/ocean]
+
+The video link for the site on the oceans page is from: [https://www.iucn.org/] helping to protect the ocean
+
+I didn't want to grab any products, yes they'd be neater but what I've chosen. You can actually buy them and they're made specifially to help fight the destruction of plastics in the ocean.
+
 * The images I've chosen for the site are used to show the destruction of the oceans but... on the other side, there are the images
 which show the pure wonder and the beauty of the sea. I feel that if someone is going to use this website as an informative source
 of our oceans disaster areas, it needs to show whats happening and what we're fighting for.
