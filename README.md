@@ -384,15 +384,15 @@ Users can take the cart of items or bookings and checkout using the secure Strip
 Users can send a message via the contact form on the contact page via email.
 
 
-## Future features to develop:
+## Future Plans:
 
 * An interchangeable video background for each page.
 * More bookings available so users can do more.
 * A volunteers program that will help users to become involved in local activities such as beach clean up's.
 * Discussions with other recycling product manufacturers to build the portfolio or products.
-* THe bookings to work and actually allow people to book a holiday to go on a dive to visit areas of the ocean. See fish in their natural habitat and appreciate what we're striving to save. I have the edit features and delete as it was going to be working but I didn't have time to finish it unfortunately.
+* The Pay On Aarival bookings to work and actually allow people to book a holiday to go on a dive to visit areas of the ocean. See fish in their natural habitat and appreciate what we're striving to save. I have the edit and delete code added as it was going to be working but I didn't have time to finish it unfortunately. This is a part of the future development though.
 
-* Fought to the last minute as it's 11:55 PM on final day but had to send.
+* I fought to the last minute as it's 11:55 PM on final day but had to send.
 
 ### Technologies Used
 
@@ -438,7 +438,7 @@ resources. My goal is for this to become a mainstream site and help change the p
 clever, well built and robust and showcases what can be achieved as a full stack developer.
 
 2. Made me think more about the environment, what we're doing and what can we do to help. I want a user to feel the same and to use this 
-site to help re-shape the future of our ocenas and the planet.
+site to help re-shape the future of our oceans and the planet.
 
 3. Hopefully started something. I want the site to grow a following and to help the ongoing fight of protecting all marine life. We can't 
 ignore what we're doing and I want to be able make a difference and using the internet and this site is a good place to start.
@@ -556,7 +556,7 @@ I wanted a profile section in which a user can access information about items th
 
 To implement this feature I had the Order and OrderItem model in the checkout app so each order in the database is looped through which pulls out the orders matched to the logged in users id, then within the template looping over each order.item to render the order in the dashboard. In terms of editing the user details, I had to create a form that would update the user details in the User table based on the information inputted.
 
-#### Tesing: 
+#### Testing: 
 
 To test the orders section of the profile dashboard. I placed dummy orders from the products on the site and followed through the process until I got to the final order form on the website. This showed that my information was stored in the database and rendered on the webpage. I then checked to see if I could edit information associated with the account information section.
 
@@ -603,7 +603,7 @@ A 'test-account' I created was displayed in the database, and when attempting to
 
 ### Major issues
 
-* Due to time, my plan with the bookings didn't go according to plan so I had to change it to a redirect to the DB with a success message.
+* Due to time, my plan with the bookings didn't go according to plan so I have added this to future development.
 
 * Also, I didn't get chance to have all my JavaScript into separate folders.
 
